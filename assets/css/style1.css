@@ -1,0 +1,1181 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2023 sbit-shop
+ */
+
+
+
+
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root{
+
+    /**
+   * colors
+   */
+
+   --blue-1: hsl(238, 95%, 45%);
+   --blue-2: hsl(220, 97%, 46%);
+   --blue-3: hsl(205, 98%, 48%);
+   --blue-4: hsl(185, 99%, 57%);
+   --offer-bg-1: hsl(271, 58%, 87%);
+   --offer-bg-2: hsl(197, 59%, 80%);
+   --offer-bg-3: hsl(204, 52%, 59%);
+   --offer-bg-4: hsl(32, 68%, 90%);
+   --offer-bg-5: hsl(32, 79%, 85%);
+   --todays-deal-bg:hsl(0, 0%, 95%);
+   --white: hsl(0, 0%, 100%);
+   --black: hsl(0, 0%, 0%);
+   --dark-blue: hsl(212, 100%, 19%);
+   --mobile-phone: hsl(207, 93%, 29%);
+
+    /**
+   *************** More Custom Color **************************
+   */
+
+   --light-steel-blue: hsl(218, 33%, 77%);
+   --royal-blue-light: hsl(225, 68%, 53%);
+   --flickr-blue_30: hsla(225, 68%, 53%, 0.3);
+   --carolina-blue: hsl(201, 92%, 47%);
+   --oxford-blue-1: hsl(218, 70%, 18%);
+   --oxford-blue-2: hsl(217, 100%, 12%);
+   --oxford-blue-3: hsl(218, 71%, 11%);
+   --gainsboro_50: hsla(0, 0%, 85%, 0.5);
+   --lavender-web: hsl(225, 67%, 91%);
+   --sonic-silver: hsl(0, 0%, 47%);
+   --light-gray: hsl(0, 0%, 84%);
+   --cultured: hsl(0, 0%, 97%);
+   --black_10: hsla(0, 0%, 0%, 0.1);
+   --black_8: hsla(0, 0%, 0%, 0.08);
+   --jet: hsl(0, 0%, 20%);
+
+   /**
+   * gradient color
+   */
+   --gradient: linear-gradient( 90deg, var(--carolina-blue) 0%, var(--royal-blue-light) 100%);
+   --gradient-banner-bg: linear-gradient( 161.61deg, var(--blue-1) 4.02%, var(--blue-2) 37.84%,var(--blue-3) 62.87% ,var(--blue-4) 79.98%);
+   --gradient-offer-bg-1: linear-gradient( 97.4deg, var(--offer-bg-2) 10.97%, var(--offer-bg-3) 98.63%);
+   --gradient-offer-bg-2: linear-gradient( 97.4deg, var(--offer-bg-4) 10.97%, var(--offer-bg-5) 98.63%);
+   --gradient-category-bg: linear-gradient( 161.61deg, var(--blue-1) 4.02%, var(--blue-2) 37.84%,var(--blue-3) 62.87% ,var(--blue-4) 79.98%);
+   --gradient-todays-deal-bg: linear-gradient(68.8deg, rgba(0, 0, 0, 0.95) 1.8%, rgb(0, 55, 79) 31.8%, rgb(9, 93, 134) 56.2%, rgb(15, 155, 217) 89%);
+   --gradient-mobile-phone-bg: linear-gradient(160.26deg, rgba(6, 12, 223, 0.5) -8.09%, rgba(4, 81, 232, 0.5) 21.06%, rgba(3, 140, 241, 0.5) 47.43%, rgba(38, 237, 254, 0.5) 83.54%); 
+   --gradient-btn: linear-gradient(70.26deg, rgba(6, 12, 223, 0.5) -8.09%, rgba(4, 81, 232, 0.5) 21.06%, rgba(3, 140, 241, 0.5) 47.43%, rgba(38, 237, 254, 0.5) 83.54%); 
+
+   /**
+   * typography
+   */
+
+--ff-montserrat: 'Montserrat', sans-serif;
+--ff-poppins: "Poppins", sans-serif;
+
+--fs-1: 7rem;
+--fs-2: 3.6rem;
+--fs-3: 3.2rem;
+--fs-4: 2.4rem;
+--fs-5: 2.2rem;
+--fs-6: 1.8rem;
+--fs-7: 1.6rem;
+--fs-8: 1.3rem;
+
+--fw-800: 800;
+--fw-700: 700;
+--fw-600: 600;
+--fw-500: 500;
+--fw-400: 400;
+
+
+
+/**
+   * spacing
+   */
+   --section-padding-desktop: 120px;
+   --section-padding-mobile: 60px;
+
+    /**
+   * shadow
+   */
+   --shadow-1: 4px 4px 15px var(--black_10);
+   --shadow-2: 0 10px 15px var(--black_10);
+   --shadow-3: 0px 20px 60px var(--black_8);
+   --shadow-4: 0px 10px 30px var(--flickr-blue_30);
+   --shadow-5: 0px 2px 60px 0px var(--black_10);
+   --shadow-6: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   --shadow-7: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+   /**
+   * border radius
+   */
+
+   --radius-8: 8px;
+   --radius-6: 6px;
+   --radius-4: 4px;
+
+    /**
+   * transition
+   */
+   --transition: 0.25s ease;
+   --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+
+
+}
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a,
+img,
+span,
+input,
+button,
+ion-icon{display: block;}
+
+img{
+    height: auto;
+}
+
+input,
+button{
+    background: none;
+    border: none;
+    font: inherit;
+}
+
+input {width: 100%;}
+
+button {cursor: pointer;}
+
+ion-icon {pointer-events: none;}
+
+address {font-style: normal;}
+
+html{
+    font-family: var(--ff-poppins);
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--white);
+    font-size: 1.5rem;
+   
+}
+
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+
+.section {padding-block: var(--section-padding-mobile);}
+.img-cover{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*-----------------------------------*\
+  #HEDER
+\*-----------------------------------*/
+
+/* Hamburger Menu Start */
+.menuItem {
+  display: block;
+  margin: 1rem 4rem;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+ 
+}
+
+.menuItem:hover {
+  text-decoration: underline;
+  background: -webkit-linear-gradient(100.61deg, #060CDF 4.02%, #0451E8 37.84%, #038CF1 62.87%, #26EDFE 79.98%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 2rem;
+  right: 2.5rem;
+  padding: 4px;
+  border: 2px solid #26EDFE;
+  background: -webkit-linear-gradient(100.61deg, #060CDF 4.02%, #0451E8 37.84%, #038CF1 62.87%, #26EDFE 79.98%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+  background: var(--black);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  
+}
+.showMenu {
+  transform: translateY(0);
+}
+
+.banner-top-adjust{
+  /* margin-top: 10px; */
+  position: relative;
+}
+.position{
+  position: absolute;
+  z-index: 6;
+}
+.position img{
+  margin-top: 2px;
+  /* z-index: 6; */
+  left: 10%;
+  animation: bounce 1.3s infinite;
+}
+.zindex{
+  position: fixed;
+  z-index: 100;
+  top: 1.6rem;
+  left: 2.5rem;
+  padding: 4px;
+}
+  /* Hamburger Menu End */
+ 
+/*-----------------------------------*\
+  #Offer Section
+\*-----------------------------------*/
+
+.img-hover{
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.img-hover:hover{
+  
+  transform: scale(1.1);
+}
+
+.offer-bg-1 {
+  background-color: #DFCCF1;
+  border-radius: 8px;
+
+  
+}
+.offer-h3{font-size: var(--fs-2);}
+.offer-p{font-size: var(--fs-5);}
+.offer-p-sm{font-size: var(--fs-7);}
+.offer-btn{
+  background-color: #03C68B;
+  padding: 8px 15px;
+  color: #ffffff;
+  border: none;
+  font-size: var(--fs-7);
+  border-radius: 3px;
+}
+.offer-content{margin-block-start: 1.2em;}
+
+.offer-bg-2{
+  background: linear-gradient(97.4deg, #AED9EA 10.97%, #60A2CD 98.63%);
+  border-radius: 8px;
+ 
+}
+.offer-vr-sub-title{font-weight: var(--fw-600);}
+.offer-vr-p-sm{
+  font-size: var(--fs-5);
+ color: var(--white);
+ font-weight: var(--fw-600);
+
+}
+
+.offer-bg-3{
+  background: linear-gradient(97.4deg, #F7E6D3 10.97%, #F7DAB9 98.63%);
+  border-radius: 8px; 
+
+}
+.offer-headphone-h3{
+  font-size: var(--fs-2);
+ 
+}
+.offer-headphone-sub-title{
+  font-size: var(--fs-6);
+
+ 
+ 
+  font-weight: var(--fw-600);
+}
+.offer-headphone-p-sm{
+  color: #B16A00;
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
+}
+
+/*-----------------------------------*\
+  #Category Section
+\*-----------------------------------*/
+
+.category-bg{
+  background: linear-gradient(175.61deg, #060CDF 4.02%, #0451E8 37.84%, #038CF1 62.87%, #26EDFE 79.98%);
+  border-radius: 10px;
+  /* padding: 5px; */
+}
+.category-div-width{
+  max-width: 45%!important;
+  margin-inline: 5px;
+}
+
+.category-img-slide-up{
+  transform: translateY(-40px);
+}
+.storage-img img{
+  transform: translateY(-25px)!important;
+}
+
+.storage-img h5{transform: translateY(0px);}
+.category-div-margin-top{
+  margin-block-start: 5em!important;
+}
+.category-title-h5{
+  transform: translateY(-30px);
+  color: var(--white);
+  font-weight: var(--fw-600);
+}
+/*-----------------------------------*\
+  #Today's Deal Section
+\*-----------------------------------*/
+
+/* Today's Deal Section Start*/
+
+.todays-deal{
+  background: var(--dark-blue);
+}
+.product-cart{
+  margin-inline: 2em;
+}
+.todays-deal-product{
+  padding: 1em;
+  margin-block-end: 1em;
+  
+}
+.todays-content h5{
+  font-size: var(--fs-8);
+}
+.product-price{
+  font-size: var(--fs-5);
+}
+
+.product-border-shadow{
+  box-shadow: var(--shadow-7);
+  border: 1px solid var(--light-gray);
+}
+.bg-color2{
+  background: linear-gradient(175.61deg, #060CDF 4.02%, #0451E8 37.84%, #038CF1 62.87%, #26EDFE 79.98%);
+}
+
+.todays-deal-img{
+  height: 200px!important;
+  object-fit: contain;
+}
+/* Today's Deal Section End*/
+
+
+
+/*-----------------------------------*\
+  #Mobile Phone
+\*-----------------------------------*/
+
+
+.mob-img-design{
+  background: var(--gradient-mobile-phone-bg); 
+ 
+}
+
+.mob-img-design img{
+  transform: translateY(29px);
+ object-fit: cover;
+
+}
+.mobile-model{
+  color: var(--mobile-phone);
+  font-size: var(--fs-2);
+  font-weight: var(--fw-600);
+  padding-inline: 0.2em;
+  margin-block-start: 0.7em;
+}
+.description{
+  font-size: var(--fs-7);
+  color: var(--black);
+  font-weight: var(--fw-500);
+  padding-inline: 0.7em;
+  
+}
+
+.btn-design{
+  background: var(--gradient-btn);
+  padding: 6px 30px;
+  border-radius: 30px;
+  color: var(--white);
+  border: none;
+  font-size: var(--fs-7);
+  font-weight: var(--fw-600);
+  position: relative;
+  margin-inline-start: 8px;
+}
+.btn-design span{
+position: absolute;
+top: 55%;
+right: -15%;
+transform: translate(-50%, -50%);
+padding-inline: 10px;
+}
+
+.mobile-content-border-shadow{
+  box-shadow: var(--shadow-6);
+  padding-block-end: 3em;
+}
+
+
+/*-----------------------------------*\
+  #Related Product Item
+\*-----------------------------------*/
+ .related-item{
+  padding: 1em;
+} 
+.related-product-description{
+  font-size: var(--fs-7);
+}
+
+.related-product-price{
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+}
+/* .related-product-img{
+  
+  object-fit: cover!important;
+} */
+
+.related-product-img{
+ 
+  object-fit: contain!important;
+  height: 250px!important;
+}
+
+/*-----------------------------------*\
+  #Television Section
+\*-----------------------------------*/
+
+.television-item{
+  padding-inline: 1em!important;
+  margin-block-end: 2em;
+}
+.television-description{
+  font-size: var(--fs-7);
+}
+
+.television-price{
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+}
+
+/*-----------------------------------*\
+ #Headphone
+\*-----------------------------------*/
+
+.headphone-img{
+  object-fit: contain!important;
+  height: 250px!important;
+}
+
+.headphone-description{
+  font-size: var(--fs-7);
+  
+}
+
+.headphone-price{
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+}
+/*-----------------------------------*\
+ #Accessories
+\*-----------------------------------*/
+
+.accessories-img{
+  object-fit: contain!important;
+  height: 250px!important;
+}
+.accessories-description{
+  font-size: var(--fs-7);
+}
+
+.accessories-price{
+  font-size: var(--fs-5);
+}
+
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+.logo{
+  color: var(--oxford-blue-1);
+  font-family: var(--ff-poppins);
+  font-size: 3.4rem;
+  font-weight: var(--fw-800);
+}
+.footer-text {
+  line-height: 1.6;
+  margin-block: 15px;
+  font-size: var(--fs-8);
+}
+.footer-top{
+  background-color: var(--oxford-blue-2);
+  color: var(--light-steel-blue);
+}
+
+.footer-top .container{
+  display: grid;
+  gap: 30px;
+}
+
+.footer-brand .logo{color: var(--white);}
+
+.footer-text {
+  line-height: 1.6;
+  margin-block: 15px;
+}
+
+.schedule{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.schedule-icon,
+.footer-item .item-icon{
+  background-image: var(--gradient);
+  color: var(--white);
+  font-size: 18px;
+  padding: 11px;
+  border-radius: 50%;
+}
+
+.schedule .span,
+.footer-item .item-text{
+  line-height: 1.6;
+}
+
+.footer-list-title{
+  color: var(--white);
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-700);
+  margin-block-end: 10px;
+}
+
+.footer-link{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-block: 10px;
+  transition: var(--transition);
+}
+
+.footer-link ion-icon{
+  color: var(--royal-blue-light);
+  --ionicon-stroke-width: 50px
+}
+
+.footer-link:is(:hover, :focus){color: var(--white);}
+
+.footer-item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-item:not(:first-child){margin-block-start: 20px;}
+
+.footer-bottom {
+  background-color: var(--oxford-blue-3);
+  padding-block: 50px;
+  text-align: center;
+}
+
+.copyright{
+  color: var(--white);
+  line-height: 1.6;
+  margin-block-end: 25px;
+}
+
+.footer .social-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer .social-link {
+  padding: 11px;
+  background-color: hsla(0, 0%, 100%, 0.2);
+  color: var(--white);
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+
+.footer .social-link:is(:hover, :focus) {background-image: var(--gradient);}
+
+
+
+/*-----------------------------------*\
+  #BACK TO TOP
+\*-----------------------------------*/
+
+.back-top-btn{
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: var(--royal-blue-light);
+  font-size: 18px;
+  color: var(--white);
+  padding: 14px;
+  border-radius: 50%;
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--transition);
+
+}
+
+.back-top-btn.active{
+  transform: translateY(-10px);
+  visibility: visible;
+  opacity: 1;
+}
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+
+/**
+ * responsive for larger than 575px screen
+ */
+
+ @media(min-width: 575px){
+   /**
+   * CUSTOM PROPERTY
+   */
+
+   :root{
+    
+    /**
+     * typography
+     */
+
+     --fs-1: 5.5rem;
+     
+   }
+
+   
+  /**
+   * REUSED STYLE
+   */
+
+   /**
+   * HEADER
+   */
+
+   .hamburger{
+    right: 4rem!important;
+   }
+   .menu {
+    height: 85vh;
+    top: 0;
+    
+  }
+
+
+   /**
+   * Offer 
+   */
+
+  .offer-bg-1{
+    height: 400px!important;
+  }
+
+  .offer-bg-2, .offer-bg-3{
+    height: 450px!important;
+    max-width: 45%!important;
+   
+  }
+
+  /*-----------------------------------*\
+  #Category Section
+\*-----------------------------------*/
+  .category-div-width{
+    max-width: 33%!important;
+    margin-inline: 5px;
+  }
+    /**
+   * Footer
+   */
+
+   .footer-top .container{
+    grid-template-columns: 1fr 1fr;
+   }
+
+   /*-----------------------------------*\
+  #Today's Deal Section
+  \*-----------------------------------*/
+
+  .product-cart-1{
+    padding: 2em!important;
+  } 
+
+  .product-cart{
+    margin-inline: 0em!important;
+    padding: 0em!important;
+  }
+  .todays-deal-img{
+    height: 200px!important;
+    object-fit: contain;
+  }
+  .television-item{
+    padding-inline: 1em!important;
+    margin-block-end: 3em;
+  }
+  .todays-deal-product{
+    
+    margin-block-end: 3em;
+    
+  }
+  /*-----------------------------------*\
+  #Mobile Phone
+\*-----------------------------------*/
+
+
+.mob-img-design img{
+  transform: translateY(68px);
+}
+
+.mobile-model{
+  font-size: var(--fs-2);
+  font-weight: var(--fw-600);
+  padding-inline-start: 1em;
+  margin-block-start: 0.7em;
+}
+.description{
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  margin-inline-start: 1.5em;
+  
+}
+.btn-design{
+  padding: 10px 50px;
+  font-size: var(--fs-7);
+  font-weight: var(--fw-600);
+  margin-inline-start: 3em;
+}
+
+.btn-design span{
+  right: 2%;
+  padding-inline: 2px;
+  }
+ 
+  /*-----------------------------------*\
+  #Related Item
+\*-----------------------------------*/
+
+  .related-item{
+    margin-block-end: 10em!important;
+  }
+
+  .related-product-img,
+  .accessories-img{
+    height: 250px!important;
+    object-fit: cover;
+  }
+  .television-img{
+    height: 200px!important;
+    object-fit: contain;
+  }
+
+  /*-----------------------------------*\
+  #Headphone
+\*-----------------------------------*/
+
+.headphone-img{
+  height: 250px!important;
+  object-fit: contain;
+}
+
+
+/*-----------------------------------*\
+ #Accessories
+\*-----------------------------------*/
+
+.accessories-img{
+  object-fit: contain;
+  height: 250px!important;
+}
+
+/**
+   * Footer
+   */
+
+   .footer-top .container{
+    grid-template-columns: 1fr 1fr;
+   }
+ }
+
+
+
+
+ /**
+ * responsive for larger than 768px screen
+ */
+
+ @media(min-width: 768px){
+   /**
+   * CUSTOM PROPERTY
+   */
+
+   :root{
+    
+    /**
+     * typography
+     */
+
+     --fs-2: 4.8rem;
+   }
+
+     /**
+   * RESET
+   */
+
+  body { font-size: 1.6rem; }
+
+   /**
+   * REUSED STYLE
+   */
+
+   
+
+
+
+   /**
+   * Header
+   */
+
+   .home-3d-animated-img img {
+    width: 60%;
+}
+/* Hamburger Menu Start */
+
+.hamburger{
+  right: 12rem!important;
+ }
+.menuItem {
+  margin-left: 50%;
+  font-size: var(--fs-3);
+}
+
+.menu {
+  height: 85vh;
+  top: 0;
+  
+}
+  /* Hamburger Menu End */
+
+    /**
+   * Offer 
+   */
+
+  .offer-bg-2, .offer-bg-3, .offer-bg-1{
+    height: 450px!important;
+    max-width: 45%!important;
+   
+  }
+
+  /**
+   * SERVICE
+   */
+   
+   
+   
+   /* Today's Deal Section Start*/
+
+.todays-deal-product{
+  padding: 0em;
+  max-width: 47%!important;
+}
+.todays-content h5{
+  font-size: var(--fs-6);
+}
+
+    /*-----------------------------------*\
+  #Mobile Phone
+\*-----------------------------------*/
+
+
+.mob-img-design img{
+  transform: translateY(55px);
+}
+
+
+  /*-----------------------------------*\
+  #Mobile Phone
+\*-----------------------------------*/
+
+.mob-img-design img{
+  transform: translateY(79px);
+}
+
+.mobile-model{
+  font-size: var(--fs-1);
+
+  padding-inline-start: 1em;
+  margin-block-start: 0.7em;
+}
+
+
+.btn-design span{
+  right: 2%;
+  padding-inline: 2px;
+  }
+ 
+
+
+  .related-product-img{
+ 
+    object-fit: contain;
+  }
+
+     /**
+   * CTA
+   */
+
+ 
+   
+  /**
+   * FOOTER
+   */
+
+   .footer-bottom{
+    padding-block: 30px;
+   }
+
+   .footer-bottom .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+
+    /**
+   * BACK TO TOP
+   */
+
+   .back-top-btn{
+    bottom: 70px;
+    right: 50px;
+   }
+
+ }
+
+
+ /**
+ * responsive for larger than 992px screen
+ */
+ @media(min-width: 992px){
+  /**
+  * CUSTOM PROPERTY
+  */
+
+  :root{
+   
+   /**
+    * typography
+    */
+
+    --fs-2: 6rem;
+    --fs-1: 4.6rem;
+    --fs-3: 4.6rem;
+  }
+
+   /**
+   * REUSED STYLE
+   */
+
+   .container{max-width: 980px;}
+
+    /**
+   * HEADER
+   */
+
+   /* .header-bottom{display: none;} */
+
+   
+     /**
+   * SERVICE
+   */
+
+    /**
+   * Offer 
+   */
+
+   .offer-bg-1, .offer-bg-2, .offer-bg-3{
+    height: 500px!important;
+    max-width: 30%!important;
+   
+  }
+
+   
+  /**
+   * ABOUT
+   */
+
+  /* Today's Deal Section Start*/
+
+
+
+.todays-deal-product{
+  padding: 0em;
+  max-width: 47%!important;
+}
+.todays-content h5{
+  font-size: var(--fs-6);
+}
+
+  /*-----------------------------------*\
+  #Mobile Phone
+\*-----------------------------------*/
+
+.mob-img-design img{
+  transform: translateY(62px);
+}
+  
+
+   
+  /**
+   * CTA
+   */
+
+
+   /**
+   * BLOG
+   */
+
+  
+    /**
+   * FOOTER
+   */
+
+   .footer-top .container{
+    grid-template-columns: 1fr 0.5fr 0.6fr 0.75fr;
+   }
+   
+}
+
+/**
+ * responsive for larger than 1200px screen
+ */
+
+ @media (min-width: 1200px) {
+
+  /**
+   * CUSTOM PROPERTY
+   */
+
+   :root {
+
+    /**
+     * typography
+     */
+
+    --fs-2: 8rem;
+    --fs-1: 5.5rem;
+    --fs-3: 4.8rem;
+
+  }
+
+    /**
+   * REUSED STYLE
+   */
+
+   .container { max-width: 1180px; }
+
+     /**
+   * HEADER
+   */
+
+
+
+  /**
+   * ABOUT
+   */
+
+ 
+  /*-----------------------------------*\
+  #Today's Deal Section
+\*-----------------------------------*/
+
+/* Today's Deal Section Start*/
+
+.todays-content h5{
+  font-size: var(--fs-5);
+}
+
+  /*-----------------------------------*\
+  #Mobile Phone
+\*-----------------------------------*/
+
+.mob-img-design img{
+  transform: translateY(78px);
+}
+  
+
+
+    /**
+   * CTA
+   */
+
+  
+ }
+

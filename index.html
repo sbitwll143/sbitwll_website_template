@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>SBIT Shop</title>
+
+   <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="carousel2.css">
+
+     <!-- 
+    - bootstrap link
+  -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    
+     <!-- Link Swiper's CSS -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+   />
+
+    <!-- Remixicon cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!-- Google Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+       <!-- Material Icon -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+   
+        <section class=" home">
+          <div class="position banner-shadow home-3d-animated-img">
+            <img src="assets/images/banner-1.png" class="img-fluid" alt="image">
+        </div> 
+
+           <!-- Hamburger Menu Start  -->
+
+     <ul class="menu overlay">
+         <li><a class="menuItem" href="#">Home</a></li>
+         <li><a class="menuItem" href="#">Pages</a></li>
+         <li><a class="menuItem" href="#">Shop</a></li>
+         <li><a class="menuItem" href="#">Contacts Us</a></li>
+       </ul>
+       <button class="hamburger">
+        <!-- material icons https://material.io/resources/icons/ -->
+        <i class="menuIcon material-icons">menu</i>
+        <i class="closeIcon material-icons">close</i>
+        
+      </button>
+        <!-- Hamburger Menu End  -->
+        <div class="card bg-transparent border border-0 banner-top-adjust">
+         
+          <!-- Bootstrap Carousel -->
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-controls">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active" style="background-image:url('assets/images/carousel/headphone.png')"></li>
+                <li data-target="#carousel" data-slide-to="1" style="background-image:url('assets/images/carousel/headphone-2.png')"></li>
+                <li data-target="#carousel" data-slide-to="2" style="background-image:url('assets/images/carousel/iphone.png')"></li>
+                <li data-target="#carousel" data-slide-to="3" style="background-image:url('assets/images/carousel/TV.png')"></li>
+                <li data-target="#carousel" data-slide-to="4" style="background-image:url('assets/images/carousel/laptop.jpg')"></li>
+                
+              </ol>
+              <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+               <img src="assets/images/carousel/left-arrow.svg" alt="Prev"> 
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+              <img src="assets/images/carousel/right-arrow.svg" alt="Next">
+            </a>
+            </div>
+            <div class="carousel-inner">
+              <!-- Carousel Item-1 -->
+              <div class="carousel-item active">
+                <video class="myVideo" loop muted autoplay="autoplay">
+                  <source src="assets/images/carousel/headphone-2.mp4" type="video/mp4">
+                </video>
+              
+                <div class="container">
+                   <h2>JBL TUNE 760NC</h2>
+                   <p>Boss of Bass</p>
+                </div>
+              </div>
+               <!-- Carousel Item-2 -->
+              <div class="carousel-item">
+                <video class="myVideo" loop muted autoplay="autoplay">
+                  <source src="assets/images/carousel/headphone-3.mp4" type="video/mp4">
+              </video>
+                <div class="container">
+                   <h2>BL TUNE 760NC</h2>
+                   <p>Boss of Bass</p>
+                </div>
+              </div>
+               <!-- Carousel Item-3 -->
+              <div class="carousel-item">
+                <video class="myVideo" loop muted autoplay="autoplay">
+                  <source src="assets/images/carousel/Mobile.mp4" type="video/mp4">
+              </video>
+                <div class="container">
+                   <h2>IPHONE 14 Pro MAX</h2>
+                   <p>The best gets even better</p>
+                </div>
+              </div>
+                 <!-- Carousel Item-4 -->
+                 <div class="carousel-item">
+                  <video class="myVideo" loop muted autoplay="autoplay">
+                    <source src="assets/images/carousel/tv.mp4" type="video/mp4">
+                </video>
+                  <div class="container">
+                     <h2>Sony Bravia TV</h2>
+                     <p>High resolution with cristal clear</p>
+                  </div>
+                </div>
+                 <!-- Carousel Item-5 -->
+                 <div class="carousel-item">
+                  <video class="myVideo" loop muted autoplay="autoplay">
+                    <source src="assets/images/carousel/laptop.mp4" type="video/mp4">
+                </video>
+                  <div class="container">
+                     <h2>Mac Book Pro</h2>
+                     <p>High resolution with cristal clear</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right Bottom Image -->
+        <div class="right-img banner-shadow">
+          <img src="assets/Design_copy.png" class="img-fluid" alt="">
+        </div> 
+         </section>
+          
+
+    <main>
+      <article>
+             <!-- Offer Section Start -->
+      <section class="section offer" id="offer" aria-label="offer">
+        <img src="assets/images/Offer/Categories.png" class="img-fluid" alt="">
+        <div class="container mx-auto">
+          <div class=" row justify-content-center gap-5">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-5 offer-bg-1">
+             <div class="d-flex flex-column-reverse flex-md-row flex-sm-row p-4 align-items-center" >
+               <div class="offer-content">
+                 <h3 class="fw-bold offer-h3">30% off</h3>
+                 <p class="iphone-model offer-p">On Your Fav<br>
+                   <span class="iphone-model-1">IPHONE 14 Pro MAX</span></p>
+                   <p class="offer-p-sm">Exclusively only available for Today!!!</p>
+                   <button class="offer-btn">Grab Now</button>
+               </div>
+               <div class="offer-img">
+                 <img src="assets/images/Offer/iPhone.png" class="img-fluid iphone img-hover iphone-shadow" >
+               </div>
+             </div>
+            </div>
+             <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-5 offer-bg-2">
+               <div class="d-flex flex-column p-4 align-items-center" >
+               
+                 <div class="offer-vr-img">
+                   <img src="assets/images/Offer/VR.png" class="img-fluid iphone img-hover vr-shadow" alt="">
+                 </div>
+                 <div>
+                   <h3 class="offer-h3">25% off</h3>
+                   <p class="offer-vr-sub-title offer-p">Hop into the future with <br>
+                     All New<br>
+                     <p class="vr-model offer-vr-p-sm">Oculus F5 Pro <small class="vr-model-inner">Future is here</small></p>
+                     
+                 </div>
+                 
+               </div>
+             </div>
+ 
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-5 offer-bg-3">
+             <div class="p-4 align-items-center" >
+               
+               <div class="offer-headphone-img">
+                <img src="assets/images/Offer/headphone.png" class="img-fluid iphone img-hover">
+               </div>
+                <div>
+                  <h3 class="offer-headphone-h3">50% off</h3>
+                  <p class="offer-headphone-sub-title offer-p">Get rid with the noise of outside world <br>
+                    with the newly launched premium headphone<br>
+                    <p class="headphone-model offer-headphone-p-sm">Marshall D7.1 <small class="headphone-model-inner">Boss of Bass</small></p>
+                    
+                </div>
+                
+              </div>
+            </div>
+             
+         </div>
+        </div>
+      </section>
+      <!-- Offer Section End -->
+
+      <!-- Category Section Start -->
+      <section class="section category" id="category" aria-label="category">
+        <img src="assets/images/category/category.png" class="img-fluid" alt="">
+        <div class="container mt-5">
+          <div class="row mx-auto justify-content-center justify-sm-content-center g-3 category-div-margin-top">
+            <div class="category-bg col-6 col-sm-3 col-md-3 col-lg-2 category-div-width category-div-margin-top">
+             <div class="d-flex flex-column align-items-center">
+              <img src="assets/images/category/laptop.png" class="img-fluid category-img-slide-up p-2" alt="">
+             <h5 class="category-title-h5">Laptop</h5>
+             </div>
+            </div>
+            <div class="category-bg col-6 col-sm-3 col-md-3 col-lg-2 category-div-width category-div-margin-top">
+             <div class="d-flex flex-column align-items-center ">
+              <img src="assets/images/category/camera.png" class="img-fluid category-img-slide-up p-2"  alt="">
+             <h5 class="category-title-h5">Camera</h5>
+             </div>
+            </div>
+            <div class="category-bg col-6 col-sm-3 col-md-3 col-lg-2 category-div-width category-div-margin-top">
+            <div class="d-flex flex-column align-items-center ">
+              <img src="assets/images/category/stand.png" class="img-fluid category-img-slide-up p-2"  alt="">
+              <h5 class="category-title-h5">Accessories</h5>
+            </div>
+            </div>
+            <div class="category-bg col-6 col-sm-3 col-md-3 col-lg-2 category-div-width category-div-margin-top">
+            <div class="d-flex flex-column align-items-center ">
+              <img src="assets/images/category/tv.png" class="img-fluid category-img-slide-up p-2"  alt="">
+              <h5 class="category-title-h5">TV</h5>
+            </div>
+            </div>
+            <div class="category-bg col-6 col-sm-3 col-md-3 col-lg-2 category-div-width category-div-margin-top">
+             <div class="d-flex flex-column align-items-center ">
+              <img src="assets/images/category/Headphone.png" class="img-fluid category-img-slide-up p-2" alt="">
+             <h5 class="category-title-h5">Headphones</h5>
+             </div>
+            </div>
+            <div class="category-bg col-6 col-sm-3 col-md-3 col-lg-2 category-div-width category-div-margin-top">
+             <div class="d-flex flex-column align-items-center storage-img">
+              <img src="assets/images/category/sd-card.png" class="img-fluid category-img-slide-up p-2" alt="">
+             <h5 class="category-title-h5">Storage</h5>
+             </div>
+            </div>
+            <div class="category-bg col-6 col-sm-3 col-md-3 col-lg-2 category-div-width category-div-margin-top">
+            <div class="d-flex flex-column align-items-center">
+              <img src="assets/images/category/speaker.png" class="img-fluid category-img-slide-up p-2" alt="">
+              <h5 class="category-title-h5">Home Theater</h5>
+            </div>
+            </div>
+    
+         </div>
+        </div>
+      </section>
+      <!-- Category Section End -->
+
+      <!-- Today's Deal Section Start -->
+      <section class="section todays-deal" id="todays-deal" aria-label="todays-deal">
+        <div class="d-flex flex-row justify-content-between">
+          <img src="assets/today's deal/todays deal.png" class="img-fluid" alt="">
+        <img src="assets/today's deal/view all.png" class="img-fluid" alt="">
+        </div>
+       <div class="container">
+        
+          <div class="row product-cart justify-content-between ">
+            <!-- Product Cart-1 -->
+            <div class="col-md-6 col-12 col-sm-12 todays-deal-product bg-light product-cart-1">
+              <div class="card text-bg-light bg-color2 product-cart-size">
+                <img src="assets/images/today's deal/speaker.png" class="img-fluid img-hover todays-deal-img" alt="Image">
+                <div class="card-body todays-content">
+                  <h5 class="card-text text-white">Zebronics ZEB-JUKE BAR DOLBY ATMOS Home Theater With Subwoofer</h5>
+                  <div class="d-flex flex-row">
+                    <p class="card-text mr-2 fw-bold product-price">$99.99</p>
+                    <p class="card-text text-decoration-line-through product-price">$99.99</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Cart-2 -->
+            
+            <div class="col-md-6 col-12 col-sm-12 todays-deal-product">
+              <div class="card p-4 bg-light">
+                <img src="assets/images/today's deal/camera-1.png" class="mx-auto img-fluid img-hover todays-deal-img" alt="Image">
+                <div class="card-body todays-content">
+                  <h5 class="card-text">Lenovo Legion 5 11th Gen Intel Core i7 15.6"(39.62cm) FHD IPS Gaming Laptop</h5>
+                  <div class="d-flex flex-row">
+                    <p class="card-text fw-bold product-price">$99.99</p>
+                    <p class="card-text text-decoration-line-through product-price">$99.99</p>
+                  </div>
+                  <div class="container">
+                    <div class="row gap-3 d-flex mx-auto">
+                      <div class="col product-border-shadow p-3 d-flex justify-content-center">
+                        <img src="assets/images/today's deal/scamera-1.png"  class="img-fluid img-hover" alt="Small Image 1">
+                      </div>
+                      <div class="col product-border-shadow p-3 d-flex justify-content-center">
+                        <img src="assets/images/today's deal/scamera-2.png"  class="img-fluid img-hover" alt="Small Image 1">
+                      </div>
+                      <div class="col product-border-shadow p-3 d-flex justify-content-center">
+                        <img src="assets/images/today's deal/scamera-3.png"  class="img-fluid img-hover" alt="Small Image 1">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Cart-3 -->
+            <div class="col-md-6 col-12 col-sm-12 todays-deal-product">
+              <div class="card p-4 bg-light">
+                <div class="mx-auto">
+                  <img src="assets/images/today's deal/tv.png"  class="mx-auto img-fluid img-hover todays-deal-img"  alt="Image">
+                </div>
+                <div class="card-body todays-content">
+                  <h5 class="card-text">Lenovo Legion 5 11th Gen Intel Core i7 15.6"(39.62cm) FHD IPS Gaming Laptop</h5>
+                  <div class="d-flex flex-row">
+                    <p class="card-text mr-2 fw-bold product-price">$99.99</p>
+                    <p class="card-text text-decoration-line-through product-price">$99.99</p>
+                  </div>
+                  <div class="container">
+                    <div class="row gap-3 ">
+                      <div class="col product-border-shadow p-3 d-flex justify-content-center">
+                        <img src="assets/images/today's deal/stv-1.png"  class="img-fluid" alt="Small Image 1">
+                      </div>
+                      <div class="col product-border-shadow p-3 d-flex justify-content-center">
+                        <img src="assets/images/today's deal/stv-2.png"  class="img-fluid" alt="Small Image 1">
+                      </div>
+                      <div class="col product-border-shadow p-3 d-flex justify-content-center">
+                        <img src="assets/images/today's deal/tvremote.png"  class="img-fluid" alt="Small Image 1">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Cart-4 -->
+            
+            <div class="col-md-6 col-12 col-sm-12 todays-deal-product">
+              <div class="card p-4 bg-light ">
+                <img src="assets/images/today's deal/camera-1.png" class="mx-auto img-fluid img-hover todays-deal-img" alt="Image">
+                <div class="card-body todays-content">
+                  <h5 class="card-text">Lenovo Legion 5 11th Gen Intel Core i7 15.6"(39.62cm) FHD IPS Gaming Laptop</h5>
+                  <div class="d-flex flex-row">
+                    <p class="card-text mr-2 fw-bold product-price">$99.99</p>
+                    <p class="card-text text-decoration-line-through product-price">$99.99</p>
+                  </div>
+                  <div class="container">
+                    <div class="row gap-3 ">
+                      <div class="col product-border-shadow p-3 d-flex justify-content-center">
+                        <img src="assets/images/today's deal/scamera-1.png"  class="img-fluid" alt="Small Image 1">
+                      </div>
+                      <div class="col product-border-shadow p-3 d-flex justify-content-center">
+                        <img src="assets/images/today's deal/scamera-1.png"  class="img-fluid" alt="Small Image 1">
+                      </div>
+                      <div class="col product-border-shadow p-3 d-flex justify-content-center">
+                        <img src="assets/images/today's deal/scamera-1.png"  class="img-fluid" alt="Small Image 1">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+         
+       </div>
+
+      </section>
+      <!-- Today's Deal Section End -->
+
+      <!-- Banner Carousel second part -->
+       <!-- Hero Part -->
+       <section class="home1 carousel-bg-color">
+        <!-- <div class="position banner-shadow">
+         <img src="assets/banner-1.png" class="img-fluid" alt="image">
+     </div>  -->
+        <div class="card bg-transparent border border-0 banner-top-adjust">
+          <!-- Bootstrap Carousel -->
+          <div id="carousell" class="carousel slide" data-ride="carousell">
+            <div class="carousel-controls">
+              <a class="carousel-control-prev" href="#carousell" role="button" data-slide="prev">
+               <img src="assets/images/carousel/left-arrow.svg" alt="Prev"> 
+            </a>
+            <a class="carousel-control-next" href="#carousell" role="button" data-slide="next">
+              <img src="assets/images/carousel/right-arrow.svg" alt="Next">
+            </a>
+            </div>
+            <div class="carousel-inner">
+              <!-- Carousel Item-1 -->
+              <div class="carousel-item active">
+                
+                <div class="container">
+                  <div class="row d-flex flex-column-reverse flex-md-row align-items-center">
+                    <div class="col-md-6 text-center">
+                      <h2>Sony X85G 65-Inch 4K</h2>
+                      <p>Sony KD-65X8577G</p>
+                      <p>Starting at 499 $</p>
+                    </div>
+                    <div class="col-md-6 text-center carousel-img-shadow">
+                      <img src="assets/images/banner-tv.png" class="img-fluid" alt="Brand Image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <!-- Carousel Item-2 -->
+              <div class="carousel-item">
+                
+                <div class="container">
+                  <div class="row d-flex flex-column-reverse flex-md-row align-items-center">
+                    <div class="col-md-6 text-center">
+                      <h2>LG GRAM I7 </h2>
+                      <p>12th Gen Core i7 / Win11 / Microsoft 365 </p>
+                      <p>Starting at 499 $</p>
+                    </div>
+                    <div class="col-md-6 text-center carousel-img-shadow">
+                      <img src="assets/images/Laptop image.png" class="img-fluid" alt="Brand Image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <!-- Carousel Item-3 -->
+              <div class="carousel-item">
+                
+                <div class="container">
+                  <div class="row d-flex flex-column-reverse flex-md-row align-items-center">
+                    <div class="col-md-6 text-center">
+                      <h2>Virtual Reality Box</h2>
+                      <p>Shinecon G05 VR 3D model presents the user to virtually watch</p>
+                      <p>Starting at 499 $</p>
+                    </div>
+                    <div class="col-md-6 text-center carousel-img-shadow">
+                      <img src="assets/images/VR.png" class="img-fluid" alt="Brand Image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right Bottom Image -->
+           <div class="right-img banner-shadow">
+            <img src="assets/Design_copy.png" class="img-fluid" alt="">
+          </div> 
+       </section>
+ 
+
+      <!-- Banner Carousel second part End -->
+
+      <!-- Mobile Phone Section Start -->
+      <section class="section mobile-phone" id="mobile-phone" aria-label="mobile-phone">
+        <div class="d-flex flex-row justify-content-between ">
+          <img src="assets/mobile-phone/mob.png" class="img-fluid" alt="">
+        <img src="assets/mobile-phone/view.png" class="img-fluid" alt="">
+        </div>
+        <div class="row mobile-section mt-5">
+          <div class="col-lg-7 mob-img-design">
+            <img src="assets/images/mobile-phone/phone.png" class="img-fluid" alt="iPhone">
+          </div>
+          <div class="col-lg-5 d-flex flex-column justify-content-center bg-white mobile-content-border-shadow">
+            <h2 class="mobile-model">IPHONE 13<br>
+              13 Pro MAX</h2>
+            <p class=" description">Sleek Design.Smoooooth Performance,
+              Dslr like Camera.</p>
+              <p class=" description">All in one Premium Smart phone.</p>
+            <div class="w-50">
+              <button class="btn-design ">Purchase
+                <span><i class="ri-arrow-right-circle-line"></i></span>
+              </button>
+             
+            </div>
+          </div>
+        </div>
+        <!-- Right Bottom Image -->
+        <div class="bottom-right-img">
+          <img src="assets/mobile-phone/alexa.png" class="img-fluid" alt="">
+        </div> 
+      </section>
+      
+      <!-- Mobile Phone Section End -->
+
+      <!-- New Relase iPhone Section Start -->
+      <section class="container mb-5" style="margin-top: 150px;">
+        <div class="d-flex flex-row justify-content-between">
+          <img src="assets/related item/related.png" class="img-fluid" alt="">
+        <img src="assets/related item/view.png" class="img-fluid" alt="">
+        </div>
+          <div class="row mt-4">
+            <!-- Product Cart-1 -->
+           <div class="col-md-3 mb-4 mr-2">
+            <div class="border-image-clip-path">
+              <img src="assets/new-relase-iphone/mob-1.png" alt="your image">
+              <p>fdsfdsfdfsdf</p>
+              <h5>Price</h5>
+            </div>
+           </div>
+
+            <!-- Product Cart-2 -->
+            
+            <div class="col-md-3 mb-4 mr-2">
+              <div class="border-image-clip-path">
+                <img src="assets/new-relase-iphone/mob-1.png" alt="your image">
+                <p>fdsfdsfdfsdf</p>
+                <h5>Price</h5>
+              </div>
+             </div>
+
+
+            <!-- Product Cart-3 -->
+            
+            <div class="col-md-3 mb-4 mr-2">
+              <div class="border-image-clip-path">
+                <img src="assets/new-relase-iphone/mob-1.png" alt="your image">
+                <p>fdsfdsfdfsdf</p>
+                <h5>Price</h5>
+              </div>
+             </div>
+
+            <!-- Product Cart-4 -->
+            
+            <div class="col-md-3 mb-4 mr-2">
+              <div class="border-image-clip-path">
+                <img src="assets/new-relase-iphone/mob-1.png" alt="your image">
+                <p>fdsfdsfdfsdf</p>
+                <h5>Price</h5>
+              </div>
+             </div>
+          </div>
+
+      </section>
+      <!-- New Relase iPhone Section End -->
+      
+      <!-- Your Related Item Section Start -->
+
+      <section class=" section related-item mb-5" id="related-item" aria-label="related-item">
+        <div class="d-flex flex-row justify-content-between">
+          <img src="assets/related item/related.png" class="img-fluid" alt="">
+          <img src="assets/related item/view.png" class="img-fluid" alt="">
+        </div>
+          <div class="container">
+            <div class="row mt-4">
+              <!-- Product Cart-1 -->
+              <div class="col-md-4 col-lg-3 col-sm-6 img-hover related-item" >
+                <div class="card p-4 ">
+                  <img src="assets/images/related item/laptop.png" class="card-img-top img-fluid related-product-img" alt="Image">
+                  <div class="card-body related-item-content">
+                    
+                    <p class="card-text related-product-description">Product description goes here</p>
+                    <p class="card-text fw-semibold related-product-price">$99.99</p>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Product Cart-2 -->
+              
+              <div class="col-md-4 col-lg-3 col-sm-6 img-hover related-item" >
+                <div class="card p-4">
+                  <img src="assets/images/related item/headphone image.png" class="card-img-top img-fluid related-product-img" alt="Image">
+                  <div class="card-body">
+                    
+                    <p class="card-text related-product-description">Product description goes here</p>
+                    <p class="card-text fw-semibold related-product-price">$99.99</p>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <!-- Product Cart-3 -->
+              
+              <div class="col-md-4 col-lg-3 col-sm-6 img-hover related-item" >
+                <div class="card p-4">
+                  <img src="assets/images/related item/pendrive.png" class="card-img-top img-fluid related-product-img" alt="Image">
+                  <div class="card-body">
+                    
+                    <p class="card-text related-product-description">Product description goes here</p>
+                    <p class="card-text fw-semibold related-product-price">$99.99</p>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Product Cart-4 -->
+              
+              <div class="col-md-4 col-lg-3 col-sm-6 img-hover related-item" >
+                <div class="card p-4">
+                  <img src="assets/images/related item/speaker.png" class="card-img-top img-fluid related-product-img" alt="Image" >
+                  <div class="card-body">
+                    
+                    <p class="card-text related-product-description">Product description goes here</p>
+                    <p class="card-text fw-semibold related-product-price">$99.99</p>
+                  </div>
+                </div>
+              </div>
+  
+              
+            </div>
+          </div>
+      </section>
+      <!-- Your Related Item Section End -->
+
+      <!-- Television Section Start -->
+
+      <section class="section television" id="television" aria-label="television">
+        <div class="d-flex flex-row justify-content-between">
+          <img src="assets/Television/television.png" class="img-fluid" alt="">
+        <img src="assets/Television/view.png" class="img-fluid" alt="">
+        </div>
+
+        <!-- Television videos start -->
+        <div class="container">
+          <div class="row mt-5 rounded p-4 tv-video-design">
+            <video loop muted autoplay="autoplay">
+              <source src="assets/images/Television/television.mp4"  type="video/mp4" class="video-size">
+          </video>
+          </div>
+        </div>
+        <!-- Television videos end -->
+
+
+        <!-- Product card start -->
+          <div class="container">
+            <div class="row" >
+              <!-- Product Cart-1 -->
+              <div class="col-md-4 col-lg-3 col-sm-6 img-hover television-item">
+                <div class="card p-4">
+                  <img src="assets/images/Television/TV-1.png" class="card-img-top img-fluid television-img" alt="Image">
+                  <div class="card-body">
+                    
+                    <p class="card-text television-description">Product description goes here</p>
+                    <p class="card-text fw-semibold television-price">$99.99</p>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Product Cart-2 -->
+              
+              <div class="col-md-4 col-lg-3 col-sm-6 img-hover television-item">
+                <div class="card p-4">
+                  <img src="assets/images/Television/TV-2.png" class="card-img-top img-fluid television-img" alt="Image" >
+                  <div class="card-body">
+                    
+                    <p class="card-text television-description">Product description goes here</p>
+                    <p class="card-text fw-semibold television-price">$99.99</p>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <!-- Product Cart-3 -->
+              
+              <div class="col-md-4 col-lg-3 col-sm-6 img-hover television-item">
+                <div class="card p-4" >
+                  <img src="assets/images/Television/TV-3.png" class="card-img-top img-fluid television-img" alt="Image" >
+                  <div class="card-body">
+                    
+                    <p class="card-text television-description">Product description goes here</p>
+                    <p class="card-text fw-semibold television-price">$99.99</p>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Product Cart-4 -->
+              
+              <div class="col-md-4 col-lg-3 col-sm-6 img-hover television-item">
+                <div class="card p-4" >
+                  <img src="assets/images/Television/TV-4.png" class="card-img-top img-fluid television-img" alt="Image" >
+                  <div class="card-body">
+                    
+                    <p class="card-text television-description">Product description goes here</p>
+                    <p class="card-text fw-semibold television-price">$99.99</p>
+                  </div>
+                </div>
+              </div>
+  
+  
+            </div>
+          </div>
+
+      </section>
+      <!-- Television Section End -->
+
+      <!-- Headphone Section Start -->
+      <section class="container my-5">
+        <div class="d-flex flex-row justify-content-between">
+          <img src="assets/images/Headphone/Headphone.png" class="img-fluid" alt="">
+        <img src="assets/images/Headphone/view.png" class="img-fluid" alt="">
+        </div>
+          <div class="row mt-4">
+            <!-- Product Cart-1 -->
+            <div class="col-md-4 col-lg-3 col-sm-6 mb-4 img-hover">
+              <div class="card p-4">
+                <img src="assets/images/Headphone/headphone-1.png" class="card-img-top img-fluid headphone-img" alt="Image" >
+                <div class="card-body">
+                  
+                  <p class="card-text headphone-description">Product description goes here</p>
+                  <p class="card-text headphone-price">$99.99</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Cart-2 -->
+            
+            <div class="col-md-4 col-lg-3 col-sm-6 mb-4 img-hover">
+              <div class="card p-4">
+                <img src="assets/images/Headphone/headphone-2.png" class="card-img-top img-fluid headphone-img" alt="Image" >
+                <div class="card-body">
+                  
+                  <p class="card-text headphone-description">Product description goes here</p>
+                  <p class="card-text headphone-price">$99.99</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Cart-3 -->
+            
+            <div class="col-md-4 col-lg-3 col-sm-6 mb-4 img-hover">
+              <div class="card p-4">
+                <img src="assets/images/Headphone/headphone-3.png" class="card-img-top img-fluid headphone-img" alt="Image" >
+                <div class="card-body">
+                  
+                  <p class="card-text headphone-description">Product description goes here</p>
+                  <p class="card-text headphone-price">$99.99</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Cart-4 -->
+            
+            <div class="col-md-4 col-lg-3 col-sm-6 mb-4 img-hover">
+              <div class="card p-4">
+                <img src="assets/images/Headphone/headphone-4.png" class="card-img-top img-fluid headphone-img" alt="Image">
+                <div class="card-body">
+                  
+                  <p class="card-text headphone-description">Product description goes here</p>
+                  <p class="card-text headphone-price">$99.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </section>
+      <!-- Headphone Section End -->
+
+      <section id="section-margin-top">
+        <div id="curve">
+          <div id="mysection">
+            <div class="wrapper">
+              <img src="https://picsum.photos/seed/picsum1/300/300" />
+              <img src="https://picsum.photos/seed/picsum2/300/300" />
+              <img src="https://picsum.photos/seed/picsum3/300/300" />
+              <img src="https://picsum.photos/seed/picsum4/300/300" />
+              <img src="https://picsum.photos/seed/picsum5/300/300" />
+              <img src="https://picsum.photos/seed/picsum6/300/300" />
+              <img src="https://picsum.photos/seed/picsum7/300/300" />
+              <img src="https://picsum.photos/seed/picsum8/300/300" />
+              <img src="https://picsum.photos/seed/picsum9/300/300" />
+              <img src="https://picsum.photos/seed/picsum10/300/300" />
+              <img src="https://picsum.photos/seed/picsum11/300/300" />
+              <img src="https://picsum.photos/seed/picsum12/300/300" />
+              <img src="https://picsum.photos/seed/picsum13/300/300" />
+              <img src="https://picsum.photos/seed/picsum14/300/300" />
+              <img src="https://picsum.photos/seed/picsum15/300/300" />
+              <img src="https://picsum.photos/seed/picsum16/300/300" />
+            </div>
+          </div>
+  
+        </div>
+        <div >
+          <div class="bg-refrigerator">
+
+          </div>
+          <img src="assets/freez/cover-frize.png" class="cover-frize" alt="">
+          <h1 class="smart">Smart</h1>
+          <h3 class="refrigerator-text">Refrigerator</h3>
+
+        </div>
+      </section>
+
+      
+      <!-- Refrigator Section End -->
+
+
+
+      <!-- Accessories Section Start -->
+      <section class="section accessories accessories-margin-top" id="accessories" aria-label="accessories">
+        <div class="d-flex flex-row justify-content-between">
+          <img src="assets/Accessories/accessories.png" class="img-fluid" alt="">
+        <img src="assets/Accessories/view.png" class="img-fluid" alt="">
+        </div>
+          <div class="container">
+            <div class="row mt-4">
+              <!-- Product Cart-1 -->
+              <div class="col-md-4 col-lg-3 col-sm-6 mb-4 img-hover">
+                <div class="card p-4">
+                  <img src="assets/images/Accessories/acc-1.png" class="card-img-top img-fluid accessories-img" alt="Image" >
+                  <div class="card-body">
+                    
+                    <p class="card-text accessories-description">Product description goes here</p>
+                    <p class="card-text accessories-price">$99.99</p>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Product Cart-2 -->
+              
+              <div class="col-md-4 col-lg-3 col-sm-6 mb-4 img-hover">
+                <div class="card p-4">
+                  <img src="assets/images/Accessories/acc-2.png" class="card-img-top img-fluid accessories-img" alt="Image" >
+                  <div class="card-body">
+                    
+                    <p class="card-text accessories-description">Product description goes here</p>
+                    <p class="card-text accessories-price">$99.99</p>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Product Cart-3 -->
+              
+              <div class="col-md-4 col-lg-3 col-sm-6 mb-4 img-hover">
+                <div class="card p-4">
+                  <img src="assets/images/Accessories/acc-3.png" class="card-img-top img-fluid accessories-img" alt="Image" >
+                  <div class="card-body">
+                    
+                    <p class="card-text accessories-description">Product description goes here</p>
+                    <p class="card-text accessories-price">$99.99</p>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Product Cart-4 -->
+              
+              <div class="col-md-4 col-lg-3 col-sm-6 mb-4 img-hover">
+                <div class="card p-4" >
+                  <img src="assets/images/Accessories/acc-4.png" class="card-img-top img-fluid accessories-img" alt="Image">
+                  <div class="card-body">
+                    
+                    <p class="card-text accessories-description">Product description goes here</p>
+                    <p class="card-text accessories-price">$99.99</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </section>
+
+      <!-- Accessories Section End -->
+
+      <section class="container">
+        <!-- Tech videos start -->
+      <div class="row mt-5 rounded p-4 tv-video-design">
+        <video loop muted autoplay="autoplay">
+          <source src="assets/tech video/tech.mp4" type="video/mp4">
+      </video>
+      </div>
+      <!-- Tech videos end -->
+      </section>
+
+      <!-- Advertisement Section Start -->
+      <section class="container my-5">
+        <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0 bg-black">
+            <div class="card bg-transparent">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Advertisement Section End -->
+      </article>
+      
+    </main>
+
+    <!-- Footer Section Start -->
+     <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="footer-top section">
+        <div class="container">
+            <div class="footer-brand">
+                <a href="#" class="logo">Elecxo</a>
+
+                <p class="footer-text">
+                    Mauris non nisi semper, lacinia neque in, dapibus leo. Curabitur sagittis libero tincidunt tempor finibus. Mauris at dignissim ligula, nec tristique orci.Quisque vitae metus.
+                </p>
+
+                <div class="schedule">
+                    <div class="schedule-icon">
+                        <ion-icon name="time-outline"></ion-icon>
+                    </div>
+
+                    <span class="span">
+                        Monday - Saturday:<br>
+                        9:00am - 10:00Pm
+                    </span>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <p class="footer-list-title">Know Us</p>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">
+                        <ion-icon name="add-outline"></ion-icon>
+                        <span class="span">About Us</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#" class="footer-link">
+                        <ion-icon name="add-outline"></ion-icon>
+                        <span class="span">Contact Us</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#" class="footer-link">
+                        <ion-icon name="add-outline"></ion-icon>
+                        <span class="span">Press</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#" class="footer-link">
+                        <ion-icon name="add-outline"></ion-icon>
+                        <span class="span">Careers</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#" class="footer-link">
+                        <ion-icon name="add-outline"></ion-icon>
+                        <span class="span">Elexo Earn  </span>
+                    </a>
+                    
+                </li>
+              
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <p class="footer-list-title">Policy</p>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">
+                        <ion-icon name="add-outline"></ion-icon>
+                        <span class="span">Security</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#" class="footer-link">
+                        <ion-icon name="add-outline"></ion-icon>
+                        <span class="span">Privacy</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#" class="footer-link">
+                        <ion-icon name="add-outline"></ion-icon>
+                        <span class="span">Term of use</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#" class="footer-link">
+                        <ion-icon name="add-outline"></ion-icon>
+                        <span class="span">Return policy</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#" class="footer-link">
+                        <ion-icon name="add-outline"></ion-icon>
+                        <span class="span">Complience</span>
+                    </a>
+                    
+                </li>
+               
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <p class="footer-list-title">Contact Us</p>
+                </li>
+
+                <li class="footer-item">
+                    <div class="item-icon">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </div>
+
+                    <address class="item-text">
+                        1247/Plot No. 39, 15th Phase,<br>
+                        LHB Colony, Kanpur
+                    </address>
+                </li>
+
+                <li class="footer-item">
+                    <div class="item-icon">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
+
+                    <a href="tel:+91-7052-101-786" class="footer-link">+91-7052-101-786</a>
+                </li>
+
+
+                <li class="footer-item">
+                    <div class="item-icon">
+                       <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+
+                    <a href="mailto:help@example.com" class="footer-link">help@example.com</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="copyright">
+                &copy; 2022 All Rights Reserved by SBIT WLL.
+            </p>
+
+            <ul class="social-list">
+                <li>
+                    <a href="" class="social-link">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="social-link">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="social-link">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </footer>
+   <!-- Footer Section End -->
+    
+
+    <!-- Bootstrap js cdn link -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/bootstrap.bundle.min.js.map"></script> -->
+     
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+     <!-- Custom js link -->
+    <script src="script.js"></script>
+
+     <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
