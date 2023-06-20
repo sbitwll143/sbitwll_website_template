@@ -532,6 +532,113 @@ padding-inline: 10px;
   font-size: var(--fs-5);
   font-weight: var(--fw-600);
 }
+
+/*-----------------------------------*\
+ #Freez
+\*-----------------------------------*/
+
+.freez-img{
+  object-fit: contain!important;
+}
+
+/* .freez-slider-img {
+  height: 300px!important;
+  width: 100%;
+} */
+#section-margin-top{
+  /* margin-top: 150px; */
+}
+/* #curve {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  padding: 60px 0;
+  grid: 1fr -webkit-min-content -webkit-min-content 1fr/1fr;
+  grid: 1fr min-content min-content 1fr/1fr;
+  align-items: center;
+  justify-items: center;
+} */
+
+
+#mysection {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  /* --v-offset: 60px; */
+  /* --curve-height: 120px; */
+  
+}
+#mysection:before, #mysection:after {
+  content: "";
+  display: block;
+  background: white;
+  width: calc(100vw + 2 * var(--v-offset));
+  height: var(--curve-height);
+  position: absolute;
+  border-radius: 50%;
+  left: calc(-1 * var(--v-offset));
+  right: calc(-1 * var(--v-offset));
+  z-index: -2;
+}
+
+
+#mysection:before {
+  top: calc(-0.6 * var(--curve-height));
+
+}
+
+
+#mysection:after {
+  bottom: calc(-0.6 * var(--curve-height));
+ 
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 300px;
+  grid-auto-flow: column;
+  grid-gap: 24px;
+  overflow: hidden;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;   
+}
+
+.wrapper img {
+  scroll-snap-align: center;
+  z-index: -2;
+}
+
+.bg-refrigerator{
+  background: linear-gradient(95.78deg, #1C1D1D 22.55%, #CBD3E4 105.45%);
+  width: 100vw;
+  /* height: 200px; */
+  margin-top: 10px;
+  
+}
+.cover-frize{
+  width: 300px;
+  height: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: -1050px; */
+  z-index: 100;
+  overflow-x: hidden;
+}
+.smart{
+  font-size: var(--fs-1);
+  font-weight: var(--fw-700);
+  color: var(--black);
+  text-align: center;
+  /* margin-top: -30px; */
+}
+.refrigerator-text{
+  font-size: var(--fs-5);
+  font-weight: var(--fw-400);
+  color: var(--black);
+  text-align: center;
+  /* margin-top: -60px; */
+}
 /*-----------------------------------*\
  #Accessories
 \*-----------------------------------*/
@@ -709,6 +816,7 @@ padding-inline: 10px;
      */
 
      --fs-1: 5.5rem;
+     --fs-1-large: 8rem;
      
    }
 
@@ -845,7 +953,62 @@ padding-inline: 10px;
   object-fit: contain;
 }
 
-
+    /* Freez */
+    #section-margin-top{
+      margin-block-start: 100px; 
+      margin-block-end: 100px; 
+    }
+    #curve {
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      padding: 60px 0;
+      grid: 1fr -webkit-min-content -webkit-min-content 1fr/1fr;
+      grid: 1fr min-content min-content 1fr/1fr;
+      align-items: center;
+      justify-items: center;
+    } 
+    
+    #mysection {
+      width: 100vw;
+      overflow: hidden;
+      position: relative;
+      --v-offset: 60px;
+      --curve-height: 120px;
+      
+    }
+    
+    .bg-refrigerator{
+      background: linear-gradient(95.78deg, #1C1D1D 22.55%, #CBD3E4 105.45%);
+      width: 100vw;
+      height: 700px;
+      margin-top: -170px;
+      
+    }
+    .cover-frize{
+      width: 300px;
+      height: 600px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -850px;
+      z-index: 100;
+      overflow-x: hidden;
+    }
+    .smart{
+      font-size: 70px;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .refrigerator-text{
+      font-size: 60px;
+      font-weight: 400;
+      color: #fff;
+      text-align: center;
+      margin-top: 20px;
+    }
 /*-----------------------------------*\
  #Accessories
 \*-----------------------------------*/
@@ -883,6 +1046,7 @@ padding-inline: 10px;
      */
 
      --fs-2: 4.8rem;
+     --fs-1-large: 9rem;
    }
 
      /**
@@ -1017,6 +1181,15 @@ padding-inline: 10px;
     right: 50px;
    }
 
+   
+.smart{
+  font-size: var(--fs-1-large);
+  
+}
+.refrigerator-text{
+  font-size: 80px;
+
+}
  }
 
 

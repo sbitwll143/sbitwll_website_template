@@ -593,11 +593,6 @@ z-index: 99;
   
 }
 
-/* header {
-  font-size: 42px;
-  font-weight: bold;
-  text-align: center;
-} */
 
 #mysection {
   width: 100vw;
@@ -679,21 +674,7 @@ z-index: 99;
   text-align: center;
   margin-top: -60px;
 }
-/* .circle-border{
-  border-radius: 50%;
-	border: 1px solid white;
-	height: 100px;
-	width: 100px;
-  text-align:center;
-  
-}
-.circle-border img{
-  display: block;
-  margin: auto;
-  height: 80px;
-	width: 80px;
-  align-self: center;
-} */
+
 
 .accessories-margin-top{
   margin-top: 200px;
