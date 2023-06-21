@@ -1,62 +1,50 @@
-'use-strict';
 
-/**
- * addEvent on element
- */
+ /* Hamburger Menu Start */
 
-const addEventOnElem = function (elem, type, callback){
-    if(elem.length > 1){
-        for(let i = 0; i < elem.length; i++){
-            
-            elem[i].addEventListener(type, callback)
-        }
-    }
-    else{
-        elem.addEventListener(type, callback)
-        
-    }
+//  Variable declare for catching classes
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger= document.querySelector(".hamburger");
+const closeIcon= document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
+
+//ToggleMenu function declare for toggling hamburger menu
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
 }
 
+//AddEventListener for clickcing toggle menu
+hamburger.addEventListener("click", toggleMenu);
 
-/**
- * navbar toggle
- */
+//Foreach loop for iterating every menu.
+menuItems.forEach( 
+  function(menuItem) { 
+    menuItem.addEventListener("click", toggleMenu);
+  }
+)
 
-const navbar = document.querySelector("[data-navbar]");
-const navbarLinks = document.querySelectorAll("[data-nav-link]");
-const navbarToggle = document.querySelector("[data-nav-toggle]");
+
+//Hamburger menu hide after scrolling 200 px
 
 
-const toggleNav = function(){
-    navbar.classList.toggle("active");
-    navbarToggle.classList.toggle("active")
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".hamburger").style.top = "30px";
+    document.querySelector(".zindex").style.top = "30px";
+  } else {
+    document.querySelector(".hamburger").style.top = "-200px";
+    document.querySelector(".zindex").style.top  = "-200px";
+  }
+  prevScrollpos = currentScrollPos;
 }
-
-addEventOnElem(navbarToggle, "click", toggleNav)
-
-const closeNav = function(){
-    navbar.classList.remove("active");
-    navbarToggle.classList.remove("active");
-}
-
-addEventOnElem(navbarLinks, "click", closeNav)
-
-
-/**
- * header active
- */
-
-
-const header = document.querySelector("[data-header]");
-const backTopBtn = document.querySelector("[data-back-top-btn]")
-
-window.addEventListener("scroll", function(){
-    if(window.scrollY >= 100){
-        header.classList.add("active");
-        backTopBtn.classList.add("active")
-    }
-    else{
-        header.classList.remove("active");
-        backTopBtn.classList.remove("active")
-    }
-})
+ /* Hamburger Menu End */

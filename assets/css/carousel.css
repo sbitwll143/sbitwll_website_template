@@ -86,7 +86,8 @@
 	left: 50%;
 	bottom: 40px;
 	z-index: 10;
-	transform: translateX(-50%);
+	/* transform: translateX(-50%); */
+	transform: translate(-50%, -80%);
 }
 
 .home .carousel-indicators{
@@ -141,7 +142,7 @@
 }
 
 /**
- * responsive for larger than 768px screen
+ * responsive for larger than 575px screen
  */
 
  @media (min-width: 575px){
@@ -162,11 +163,14 @@
 	.home .home-3d-animated-img img{
 		display: block;
 	 }
+	 .right-design-alex{
+		display: block;
+	 }
 	 .home .carousel-item{
-		min-height: 85vh;
+		min-height: 100vh;
 	}
 	.myVideo{
-		min-height: 70%;
+		min-height: 100%;
 		transform: translateY(0px);
 	}
 	.home .carousel-control-next, 
