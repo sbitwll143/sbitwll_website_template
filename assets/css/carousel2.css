@@ -3,12 +3,11 @@
 .second-carousel-img{
 	display: none;
 }
-.carousel-bg-color{
+  .carousel-bg-color{
     background: linear-gradient(180.61deg, #060CDF 4.02%, #0451E8 37.84%, #038CF1 62.87%, #26EDFE 79.98%);
         width: 100%;
-        /* position: relative; */
         margin-top: 60px;
-}
+}  
 
 .right-img{
     position: absolute;
@@ -144,10 +143,10 @@
 } 
 
 @media(min-width: 768px){
-	.second-carousel-img{
+	/* .second-carousel-img{
 		display: block;
 		width: 150px;
-	}
+	} */
 	.home1 .carousel-control-next, 
 .home1 .carousel-control-prev{
 	display: block;

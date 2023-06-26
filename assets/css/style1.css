@@ -66,6 +66,7 @@
    --gradient-todays-deal-bg: linear-gradient(68.8deg, rgba(0, 0, 0, 0.95) 1.8%, rgb(0, 55, 79) 31.8%, rgb(9, 93, 134) 56.2%, rgb(15, 155, 217) 89%);
    --gradient-mobile-phone-bg: linear-gradient(160.26deg, rgba(6, 12, 223, 0.5) -8.09%, rgba(4, 81, 232, 0.5) 21.06%, rgba(3, 140, 241, 0.5) 47.43%, rgba(38, 237, 254, 0.5) 83.54%); 
    --gradient-btn: linear-gradient(70.26deg, rgba(6, 12, 223, 0.5) -8.09%, rgba(4, 81, 232, 0.5) 21.06%, rgba(3, 140, 241, 0.5) 47.43%, rgba(38, 237, 254, 0.5) 83.54%); 
+   --gradient-menu: linear-gradient(90deg, hsl(234, 100%, 18%), hsl(234, 100%, 55%), hsl(203, 94%, 65%));
 
    /**
    * typography
@@ -196,91 +197,26 @@ body{
   height: 100%;
   object-fit: cover;
 }
+
 /*-----------------------------------*\
-  #HEDER
+  #HEADER
 \*-----------------------------------*/
 
-/* Hamburger Menu Start */
-.menuItem {
-  display: block;
-  margin: 1rem 4rem;
-  font-size: 2rem;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
- 
+.nav-bg-color{
+  background-image: var(--gradient-menu);
 }
-
-.menuItem:hover {
-  text-decoration: underline;
-  background: -webkit-linear-gradient(100.61deg, #060CDF 4.02%, #0451E8 37.84%, #038CF1 62.87%, #26EDFE 79.98%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+.navbar-brand{
+  font-family: 'Playfair Display SC', serif!important;
 }
+.menu-bg-color{background-color: white!important;}
 
-.hamburger {
-  position: fixed;
-  z-index: 100;
-  top: 2rem;
-  right: 2.5rem;
-  padding: 4px;
-  border: 2px solid #26EDFE;
-  background: -webkit-linear-gradient(100.61deg, #060CDF 4.02%, #0451E8 37.84%, #038CF1 62.87%, #26EDFE 79.98%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-  cursor: pointer;
+.nav-link{
+  /* font-size: var(--fs-6)!important; */
+  color: black!important;
 }
-
-.closeIcon {
+.currency-list{
   display: none;
 }
-
-.menu {
-  position: absolute;
-  transform: translateY(-100%);
-  transition: transform 0.2s;
-  top: 20px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  color: white;
-  list-style: none;
-  padding-top: 4rem;
-  background: var(--black);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vh;
-  
-}
-.showMenu {
-  transform: translateY(0);
-}
-
-.banner-top-adjust{
-  /* margin-top: 10px; */
-  position: relative;
-}
-.position{
-  position: absolute;
-  z-index: 6;
-}
-.position img{
-  margin-top: 2px;
-  /* z-index: 6; */
-  left: 10%;
-  animation: bounce 1.3s infinite;
-}
-.zindex{
-  position: fixed;
-  z-index: 100;
-  top: 1.6rem;
-  left: 2.5rem;
-  padding: 4px;
-}
-  /* Hamburger Menu End */
- 
 /*-----------------------------------*\
   #Offer Section
 \*-----------------------------------*/
@@ -577,12 +513,17 @@ padding-inline: 10px;
   grid-gap: 24px;
   overflow: hidden;
   -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;   
+      scroll-snap-type: x mandatory; 
+      scroll-behavior: smooth;  
+      
+}
+.wrapper::-webkit-scrollbar { /* for chrome */
+  display: none;
 }
 
 .wrapper img {
   scroll-snap-align: center;
-  z-index: -2;
+  z-index: -1;
 }
 
 .bg-refrigerator{
@@ -590,6 +531,8 @@ padding-inline: 10px;
   width: 100vw;
   /* height: 200px; */
   margin-top: 10px;
+  z-index: -99999!important;
+  
   
 }
 .cover-frize{
@@ -598,22 +541,44 @@ padding-inline: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  z-index: 100;
+  z-index: 2;
   overflow-x: hidden;
+ 
 }
 .smart{
   font-size: var(--fs-1);
   font-weight: var(--fw-700);
-  color: var(--black);
+  color: var(--white);
   text-align: center;
 
 }
 .refrigerator-text{
   font-size: var(--fs-5);
   font-weight: var(--fw-400);
-  color: var(--black);
+  color: var(--white);
   text-align: center;
  
+}
+
+.buy-now-btn{
+
+  background-color: var(--light-gray);
+  color: var(--black);
+  padding: 10px 50px;
+  font-size: var(--fs-7);
+  font-weight: var(--fw-600);
+  /* margin-inline-start: 3em; */
+  margin-block-end: 3em;
+  position: relative;
+  border-radius: var(--radius-4);
+}
+
+.buy-now-btn span{
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translate(-50%, -50%);
+  padding-inline: 2px;
 }
 /*-----------------------------------*\
  #Accessories
@@ -680,7 +645,7 @@ padding-inline: 10px;
 \*-----------------------------------*/
 
 .logo{
-  color: var(--oxford-blue-1);
+  color: var(--white);
   font-family: var(--ff-poppins);
   font-size: 3.4rem;
   font-weight: var(--fw-800);
@@ -844,6 +809,11 @@ padding-inline: 10px;
    * REUSED STYLE
    */
 
+   .container{
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+   }
    /**
    * HEADER
    */
@@ -1016,33 +986,41 @@ padding-inline: 10px;
     .bg-refrigerator{
       background: linear-gradient(95.78deg, #1C1D1D 22.55%, #CBD3E4 105.45%);
       width: 100vw;
-      height: 700px;
-      margin-top: -170px;
+      height: 750px;
+      margin-top: -300px;
+      
       
     }
     .cover-frize{
       width: 300px;
-      height: 600px;
+      height: 300px;
       display: block;
       margin-left: auto;
       margin-right: auto;
-      margin-top: -850px;
+      margin-top: -400px;
       z-index: 100;
       overflow-x: hidden;
+    }
+
+    .margin-adjust{
+      margin-top: 200px;
     }
     .smart{
       font-size: 70px;
       font-weight: 700;
       color: #fff;
       text-align: center;
-      margin-top: 30px;
+      /* margin-top: -300px; */
+    
+      
+      
     }
     .refrigerator-text{
       font-size: 60px;
       font-weight: 400;
       color: #fff;
       text-align: center;
-      margin-top: 20px;
+     
     }
 /*-----------------------------------*\
  #Accessories
@@ -1094,7 +1072,7 @@ padding-inline: 10px;
    * REUSED STYLE
    */
 
-   
+   .container{max-width: 750px;}
 
 
 
@@ -1105,22 +1083,7 @@ padding-inline: 10px;
    .home-3d-animated-img img {
     width: 60%;
 }
-/* Hamburger Menu Start */
 
-.hamburger{
-  right: 12rem!important;
- }
-.menuItem {
-  margin-left: 50%;
-  font-size: var(--fs-3);
-}
-
-.menu {
-  height: 85vh;
-  top: 0;
-  
-}
-  /* Hamburger Menu End */
 
     /**
    * Offer 
@@ -1253,13 +1216,35 @@ padding-inline: 10px;
 
    .container{max-width: 980px;}
 
-    /**
+     /**
    * HEADER
    */
+   .menu-bg-color{
+    background-color: transparent!important;
+   }
+   .navbar-brand{
+    font-size: var(--fs-4)!important;
+    
+  }
+  .nav-link{
+    font-size: var(--fs-6)!important;
+    color: white!important;
+  }
+  .currency-list{
+    display: flex;
+    align-items: center;
+  }
 
-   /* .header-bottom{display: none;} */
+  .currency-list ion-icon{
+    margin-inline: 10px;
+    color: white;
+    --ionicon-stroke-width: 50px!important;
+    font-size: 16px;
+  }
+  .navbar-nav{
+    margin-left: auto!important;
 
-   
+  }
      /**
    * SERVICE
    */
@@ -1365,9 +1350,10 @@ padding-inline: 10px;
    .container { max-width: 1180px; }
    .section {padding-block-start: var(--section-padding-desktop);}
 
-     /**
+        /**
    * HEADER
    */
+
 
    
   /**
@@ -1396,7 +1382,13 @@ padding-inline: 10px;
   /*-----------------------------------*\
   #Freez
 \*-----------------------------------*/
-
+.bg-refrigerator{
+ 
+  margin-top: -420px;
+  height: 600px;
+  
+  
+}
 #section-margin-top{
   margin-top: 200px;
 }

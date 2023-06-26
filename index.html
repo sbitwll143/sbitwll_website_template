@@ -37,7 +37,7 @@
       <!-- Google Font -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display+SC:wght@700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
        <!-- Material Icon -->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -45,36 +45,92 @@
 </head>
 <body>
    
-        <section class=" home">
-          <div class="position banner-shadow home-3d-animated-img">
-            <img src="assets/images/banner-1.png" class="img-fluid" alt="image">
-        </div> 
 
-           <!-- Hamburger Menu Start  -->
+        <!-- 
+    - Header
+  -->
 
-     <ul class="menu overlay">
-         <li><a class="menuItem" href="#">Home</a></li>
-         <li><a class="menuItem" href="#">Pages</a></li>
-         <li><a class="menuItem" href="#">Shop</a></li>
-         <li><a class="menuItem" href="#">Contacts Us</a></li>
-       </ul>
-       <button class="hamburger">
-        <!-- material icons https://material.io/resources/icons/ -->
-        <i class="menuIcon material-icons">menu</i>
-        <i class="closeIcon material-icons">close</i>
+ <header>
+  <nav class="navbar navbar-expand-lg navbar-light nav-bg-color fixed-top">
+   <div class="container">
+    <a class="navbar-brand text-white" href="#">SBIT SHOP</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse menu-bg-color" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Shop</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sell Your Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
         
-      </button>
-        <!-- Hamburger Menu End  -->
+      </ul>
+      <div class="currency">
+        <ul class="currency-list">
+          <li>
+            <select name="currency">
+              <option value="usd" selected>USD</option>
+              <option value="bhd">BHD</option>
+              <option value="rupee">Rs</option>
+              <option value="euro">Euro</option>
+            </select>
+          </li>
+          <li>
+            <ion-icon name="person-outline"></ion-icon>
+          </li>
+          <li>
+            <ion-icon name="heart-outline"></ion-icon>
+          </li>
+          <li>
+            <ion-icon name="cart-outline"></ion-icon>
+          </li>
+        </ul>
+      </div>
+       <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <i class="bi bi-search"></i>
+      </form> 
+      
+    </div>
+   </div>
+  </nav>
+ </header>
+
+     
+
+    <main>
+      <article>
+         <!--
+            - #Hero
+        -->
+        <section class="home">
+          <!-- <div class="position banner-shadow home-3d-animated-img">
+            <img src="assets/images/banner-1.png" class="img-fluid" alt="image">
+        </div>  -->
+
         <div class="card bg-transparent border border-0 banner-top-adjust">
          
           <!-- Bootstrap Carousel -->
           <div id="carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-controls">
               <ol class="carousel-indicators">
-                <li data-target="#carousel" data-slide-to="0" class="active" style="background-image:url('assets/images/carousel/headphone.png')"></li>
-                <li data-target="#carousel" data-slide-to="1" style="background-image:url('assets/images/carousel/headphone-2.png')"></li>
-                <li data-target="#carousel" data-slide-to="2" style="background-image:url('assets/images/carousel/iphone.png')"></li>
-                <li data-target="#carousel" data-slide-to="3" style="background-image:url('assets/images/carousel/TV.png')"></li>
+                <li data-target="#carousel" data-slide-to="0" class="active" style="background-image:url('assets/images/carousel/iphone.png')"></li>
+                <li data-target="#carousel" data-slide-to="1" style="background-image:url('assets/images/carousel/TV.png')"></li>
+                <li data-target="#carousel" data-slide-to="2" style="background-image:url('assets/images/carousel/headphone.png')"></li>
+                <li data-target="#carousel" data-slide-to="3" style="background-image:url('assets/images/carousel/VR.png')"></li>
                 <li data-target="#carousel" data-slide-to="4" style="background-image:url('assets/images/carousel/laptop.jpg')"></li>
                 
               </ol>
@@ -89,41 +145,41 @@
               <!-- Carousel Item-1 -->
               <div class="carousel-item active">
                 <video class="myVideo" loop muted autoplay="autoplay">
-                  <source src="assets/images/carousel/headphone-2.mp4" type="video/mp4">
+                  <source src="assets/images/carousel/Mobile.mp4" type="video/mp4">
                 </video>
-              
                 <div class="container">
-                   <h2>JBL TUNE 760NC</h2>
-                   <p>Boss of Bass</p>
-                </div>
+                  <h2>IPHONE 14 Pro MAX</h2>
+                  <p>The best gets even better</p>
+               </div>
               </div>
                <!-- Carousel Item-2 -->
-              <div class="carousel-item">
+               <div class="carousel-item">
                 <video class="myVideo" loop muted autoplay="autoplay">
-                  <source src="assets/images/carousel/headphone-3.mp4" type="video/mp4">
+                  <source src="assets/images/carousel/tv.mp4" type="video/mp4">
               </video>
                 <div class="container">
-                   <h2>BL TUNE 760NC</h2>
-                   <p>Boss of Bass</p>
+                   <h2>Sony Bravia TV</h2>
+                   <p>High resolution with cristal clear</p>
                 </div>
               </div>
                <!-- Carousel Item-3 -->
               <div class="carousel-item">
                 <video class="myVideo" loop muted autoplay="autoplay">
-                  <source src="assets/images/carousel/Mobile.mp4" type="video/mp4">
+                  <source src="assets/images/carousel/headphone-2.mp4" type="video/mp4">
               </video>
+               
                 <div class="container">
-                   <h2>IPHONE 14 Pro MAX</h2>
-                   <p>The best gets even better</p>
+                  <h2>JBL TUNE 760NC</h2>
+                  <p>Boss of Bass</p>
                 </div>
               </div>
                  <!-- Carousel Item-4 -->
                  <div class="carousel-item">
                   <video class="myVideo" loop muted autoplay="autoplay">
-                    <source src="assets/images/carousel/tv.mp4" type="video/mp4">
+                    <source src="assets/images/carousel/VR.mp4" type="video/mp4">
                 </video>
                   <div class="container">
-                     <h2>Sony Bravia TV</h2>
+                     <h2>Fast VR</h2>
                      <p>High resolution with cristal clear</p>
                   </div>
                 </div>
@@ -145,10 +201,7 @@
           <img src="assets/Design_copy.png" class="img-fluid right-design-alex" alt="">
         </div> 
          </section>
-          
 
-    <main>
-      <article>
       <!-- Offer Section Start -->
       <section class="section offer" id="offer" aria-label="offer">
         <div class="container mx-auto">
@@ -206,6 +259,7 @@
         </div>
       </section>
       <!-- Offer Section End -->
+
 
       <!-- Category Section Start -->
       <section class="section category" id="category" aria-label="category">
@@ -1104,15 +1158,61 @@
   
         </div>
         <div >
-          <div class="bg-refrigerator">
-
-          </div>
           <img src="assets/images/freez/cover-frize.png" class="cover-frize img-fluid freez-img" alt="">
-          <div class="margin-adjust">
-            <h1 class="smart">Smart</h1>
-          <h3 class="refrigerator-text">Refrigerator</h3>
+          <div class="bg-refrigerator">
+           
+  
+            <div class="container">
+              <h1 class="smart">Smart</h1>
+              <h3 class="refrigerator-text">Refrigerator</h3>
+                <div class="row d-flex justify-content-center">
+                  <div class="d-flex col-md-6 mt-5 justify-content-center">
+                    <div class="gallery-icon">
+                      <img src="assets/images/freez/ref-1.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="gallery-content">
+                      <h3>Keep it cool</h3>
+                      <p class="w-75">Lorem ipsum dolor sit amet consectetur. Odio risus ultricies pellentesque bibendum quam vel </p>
+                    </div>
+                  </div>
+                  <div class="d-flex col-md-6 mt-5 justify-content-center">
+                    <div class="gallery-icon">
+                      <img src="assets/images/freez/ref-2.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="gallery-content">
+                      <h3>Sleek and stylish</h3>
+                      <p class="w-75">Lorem ipsum dolor sit amet consectetur. Odio risus ultricies pellentesque bibendum quam vel </p>
+                    </div>
+                  </div>
+                  <div class="d-flex col-md-6 mt-5 justify-content-center">
+                    <div class="gallery-icon">
+                      <img src="assets/images/freez/ref-3.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="gallery-content">
+                      <h3>Fresh and Spacious</h3>
+                      <p class="w-75">Lorem ipsum dolor sit amet consectetur. Odio risus ultricies pellentesque bibendum quam vel </p>
+                    </div>
+                  </div>
+                  <div class="d-flex col-md-6 mt-5 justify-content-center">
+                    <div class="gallery-icon">
+                      <img src="assets/images/freez/ref-4.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="gallery-content">
+                      <h3 class="w-75">Smart aI and Controls</h3>
+                      <p class="w-75">Lorem ipsum dolor sit amet consectetur. Odio risus ultricies pellentesque bibendum quam vel </p>
+                    </div>
+                  </div>
+                 
+                </div>
+               <div class="d-flex justify-content-center mt-5">
+                <button class="buy-now-btn">Buy Now
+                  <span><i class="ri-arrow-right-circle-line"></i></span>
+                </button>
+               </div>
+            </div>
+           
           </div>
-
+      
         </div>
       </section>
 
