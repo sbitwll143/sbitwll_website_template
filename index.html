@@ -127,11 +127,12 @@
           <div id="carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-controls">
               <ol class="carousel-indicators">
-                <li data-target="#carousel" data-slide-to="0" class="active" style="background-image:url('assets/images/carousel/iphone.png')"></li>
-                <li data-target="#carousel" data-slide-to="1" style="background-image:url('assets/images/carousel/TV.png')"></li>
-                <li data-target="#carousel" data-slide-to="2" style="background-image:url('assets/images/carousel/headphone.png')"></li>
-                <li data-target="#carousel" data-slide-to="3" style="background-image:url('assets/images/carousel/VR.png')"></li>
-                <li data-target="#carousel" data-slide-to="4" style="background-image:url('assets/images/carousel/laptop.jpg')"></li>
+                <li data-target="#carousel" data-slide-to="0" class="active" style="background-image:url('assets/images/carousel/laptop.jpg')"></li>
+                <li data-target="#carousel" data-slide-to="1" style="background-image:url('assets/images/carousel/iphone.png')"></li>
+                <li data-target="#carousel" data-slide-to="2" style="background-image:url('assets/images/carousel/TV.png')"></li>
+                <li data-target="#carousel" data-slide-to="3" style="background-image:url('assets/images/carousel/headphone-2.png')"></li>
+                <li data-target="#carousel" data-slide-to="4" style="background-image:url('assets/images/carousel/headphone.png')"></li>
+                <li data-target="#carousel" data-slide-to="5" style="background-image:url('assets/images/carousel/VR.png')"></li>
                 
               </ol>
               <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
@@ -145,27 +146,40 @@
               <!-- Carousel Item-1 -->
               <div class="carousel-item active">
                 <video class="myVideo" loop muted autoplay="autoplay">
-                  <source src="assets/images/carousel/Mobile.mp4" type="video/mp4">
+                  <source src="assets/images/carousel/laptop.mp4" type="video/mp4">
                 </video>
                 <div class="container">
-                  <h2>IPHONE 14 Pro MAX</h2>
-                  <p>The best gets even better</p>
+                  <h2>Mac Book Pro</h2>
+                  <p>High resolution with cristal clear</p>
                </div>
+              
               </div>
                <!-- Carousel Item-2 -->
                <div class="carousel-item">
                 <video class="myVideo" loop muted autoplay="autoplay">
-                  <source src="assets/images/carousel/tv.mp4" type="video/mp4">
+                  <source src="assets/images/carousel/Mobile.mp4" type="video/mp4">
               </video>
-                <div class="container">
-                   <h2>Sony Bravia TV</h2>
-                   <p>High resolution with cristal clear</p>
-                </div>
+              <div class="container">
+                <h2>IPHONE 14 Pro MAX</h2>
+                <p>The best gets even better</p>
+             </div>
+               
               </div>
                <!-- Carousel Item-3 -->
               <div class="carousel-item">
                 <video class="myVideo" loop muted autoplay="autoplay">
-                  <source src="assets/images/carousel/headphone-2.mp4" type="video/mp4">
+                  <source src="assets/images/carousel/tv.mp4" type="video/mp4">
+              </video>
+              <div class="container">
+                <h2>Sony Bravia TV</h2>
+                <p>High resolution with cristal clear</p>
+             </div>
+                
+              </div>
+               <!-- Carousel Item-3 -->
+              <div class="carousel-item">
+                <video class="myVideo" loop muted autoplay="autoplay">
+                  <source src="assets/images/carousel/headphone-3.mp4" type="video/mp4">
               </video>
                
                 <div class="container">
@@ -176,22 +190,23 @@
                  <!-- Carousel Item-4 -->
                  <div class="carousel-item">
                   <video class="myVideo" loop muted autoplay="autoplay">
-                    <source src="assets/images/carousel/VR.mp4" type="video/mp4">
+                    <source src="assets/images/carousel/headphone.mp4" type="video/mp4">
                 </video>
-                  <div class="container">
-                     <h2>Fast VR</h2>
-                     <p>High resolution with cristal clear</p>
-                  </div>
+                <div class="container">
+                  <h2>JBL TUNE 760NC</h2>
+                  <p>Boss of Bass</p>
+                </div>
+               
                 </div>
                  <!-- Carousel Item-5 -->
                  <div class="carousel-item">
                   <video class="myVideo" loop muted autoplay="autoplay">
-                    <source src="assets/images/carousel/laptop.mp4" type="video/mp4">
+                    <source src="assets/images/carousel/VR.mp4" type="video/mp4">
                 </video>
-                  <div class="container">
-                     <h2>Mac Book Pro</h2>
-                     <p>High resolution with cristal clear</p>
-                  </div>
+                <div class="container">
+                  <h2>Fast VR</h2>
+                  <p>High resolution with cristal clear</p>
+               </div>
                 </div>
             </div>
           </div>
@@ -205,7 +220,9 @@
       <!-- Offer Section Start -->
       <section class="section offer" id="offer" aria-label="offer">
         <div class="container mx-auto">
-          <img src="assets/images/Offer/Categories.png" class="img-fluid" alt="">
+          <div class="section-category-bg">
+            <p class="text-white p-2">Latest Offers </p>
+          </div>
           <div class=" row justify-content-center gap-5">
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-5 offer-bg-1">
              <div class="d-flex flex-column-reverse flex-md-row flex-sm-row p-4 align-items-center" >
@@ -216,7 +233,7 @@
                    <p class="offer-p-sm">Exclusively only available for Today!!!</p>
                    <button class="offer-btn">Grab Now</button>
                </div>
-               <div class="offer-img">
+               <div class="offer-iphone-img">
                  <img src="assets/images/Offer/iPhone.png" class="img-fluid iphone img-hover iphone-shadow" >
                </div>
              </div>
@@ -264,48 +281,68 @@
       <!-- Category Section Start -->
       <section class="section category" id="category" aria-label="category">
         <div class="container">
-          <img src="assets/images/category/category.png" class="img-fluid" alt="">
+          <div class="section-category-bg">
+            <p class="text-white p-2">Categories</p>
+          </div>
           <div class="row mx-auto justify-content-center justify-sm-content-center gap-md-5 category-div-margin-top">
-            <div class="category-bg col-6 col-sm-3 col-md-3 col-lg-2 category-div-width category-div-margin-top">
+            <div class="category-bg col-6 col-sm-6 col-md-3 col-lg-2 category-div-width category-div-margin-top">
              <div class="d-flex flex-column align-items-center">
-              <img src="assets/images/category/laptop.png" class="img-fluid category-img-slide-up p-2" alt="">
-             <h5 class="category-title-h5">Laptop</h5>
+              <img src="assets/images/category/category-1.png" class="img-fluid category-img-slide-up p-2" alt="">
+             <h5 class="category-title-h5">Mobile Phones & Accessories</h5>
              </div>
             </div>
-            <div class="category-bg col-6 col-sm-3 col-md-3 col-lg-2 category-div-width category-div-margin-top">
+            <div class="category-bg col-6 col-sm-6 col-md-3 col-lg-2 category-div-width category-div-margin-top">
              <div class="d-flex flex-column align-items-center ">
-              <img src="assets/images/category/camera.png" class="img-fluid category-img-slide-up p-2"  alt="">
-             <h5 class="category-title-h5">Camera</h5>
+              <img src="assets/images/category/category-2.png" class="img-fluid category-img-slide-up p-2"  alt="">
+             <h5 class="category-title-h5">TV’s & Speakers</h5>
              </div>
             </div>
-            <div class="category-bg col-6 col-sm-3 col-md-3 col-lg-2 category-div-width category-div-margin-top">
+            <div class="category-bg col-6 col-sm-6 col-md-3 col-lg-2 category-div-width category-div-margin-top">
             <div class="d-flex flex-column align-items-center ">
-              <img src="assets/images/category/stand.png" class="img-fluid category-img-slide-up p-2"  alt="">
-              <h5 class="category-title-h5">Accessories</h5>
+              <img src="assets/images/category/category-3.png" class="img-fluid category-img-slide-up p-2"  alt="">
+              <h5 class="category-title-h5">Kitchen & Appliances</h5>
             </div>
             </div>
-            <div class="category-bg col-6 col-sm-3 col-md-3 col-lg-2 category-div-width category-div-margin-top">
+            <div class="category-bg col-6 col-sm-6 col-md-3 col-lg-2 category-div-width category-div-margin-top">
             <div class="d-flex flex-column align-items-center ">
-              <img src="assets/images/category/tv.png" class="img-fluid category-img-slide-up p-2"  alt="">
-              <h5 class="category-title-h5">TV</h5>
+              <img src="assets/images/category/category-4.png" class="img-fluid category-img-slide-up p-2"  alt="">
+              <h5 class="category-title-h5">Computers & parts</h5>
             </div>
             </div>
-            <div class="category-bg col-6 col-sm-3 col-md-3 col-lg-2 category-div-width category-div-margin-top">
+            <div class="category-bg col-6 col-sm-6 col-md-3 col-lg-2 category-div-width category-div-margin-top">
              <div class="d-flex flex-column align-items-center ">
-              <img src="assets/images/category/Headphone.png" class="img-fluid category-img-slide-up p-2" alt="">
-             <h5 class="category-title-h5">Headphones</h5>
+              <img src="assets/images/category/category-5.png" class="img-fluid category-img-slide-up p-2" alt="">
+             <h5 class="category-title-h5">Washing Machines</h5>
              </div>
             </div>
-            <div class="category-bg col-6 col-sm-3 col-md-3 col-lg-2 category-div-width category-div-margin-top">
+            <div class="category-bg col-6 col-sm-6 col-md-3 col-lg-2 category-div-width category-div-margin-top">
              <div class="d-flex flex-column align-items-center storage-img">
-              <img src="assets/images/category/sd-card.png" class="img-fluid category-img-slide-up p-2" alt="">
-             <h5 class="category-title-h5">Storage</h5>
+              <img src="assets/images/category/category-6.png" class="img-fluid category-img-slide-up p-2" alt="">
+             <h5 class="category-title-h5">Cameras & lenses</h5>
              </div>
             </div>
-            <div class="category-bg col-6 col-sm-3 col-md-3 col-lg-2 category-div-width category-div-margin-top">
+            <div class="category-bg col-6 col-sm-6 col-md-3 col-lg-2 category-div-width category-div-margin-top">
             <div class="d-flex flex-column align-items-center">
-              <img src="assets/images/category/speaker.png" class="img-fluid category-img-slide-up p-2" alt="">
-              <h5 class="category-title-h5">Home Theater</h5>
+              <img src="assets/images/category/category-7.png" class="img-fluid category-img-slide-up p-2" alt="">
+              <h5 class="category-title-h5">Laptops</h5>
+            </div>
+            </div>
+            <div class="category-bg col-6 col-sm-6 col-md-3 col-lg-2 category-div-width category-div-margin-top">
+            <div class="d-flex flex-column align-items-center">
+              <img src="assets/images/category/category-8.png" class="img-fluid category-img-slide-up p-2" alt="">
+              <h5 class="category-title-h5">Fridges</h5>
+            </div>
+            </div>
+            <div class="category-bg col-6 col-sm-6 col-md-3 col-lg-2 category-div-width category-div-margin-top">
+            <div class="d-flex flex-column align-items-center">
+              <img src="assets/images/category/category-9.png" class="img-fluid category-img-slide-up p-2" alt="">
+              <h5 class="category-title-h5">ACs</h5>
+            </div>
+            </div>
+            <div class="category-bg col-6 col-sm-6 col-md-3 col-lg-2 category-div-width category-div-margin-top">
+            <div class="d-flex flex-column align-items-center">
+              <img src="assets/images/category/category-10.png" class="img-fluid category-img-slide-up p-2" alt="">
+              <h5 class="category-title-h5">Hard Disks Printers & Monitors</h5>
             </div>
             </div>
     
@@ -318,9 +355,8 @@
       <section class="section todays-deal" id="todays-deal" aria-label="todays-deal">
         
        <div class="container">
-        <div class="d-flex flex-row justify-content-between">
-          <img src="assets/images/today's deal/todays deal.png" class="img-fluid" alt="">
-        <img src="assets/images/today's deal/view all.png" class="img-fluid" alt="">
+        <div class="section-category-bg">
+          <p class="text-white p-2">Today’s Deal</p>
         </div>
           <div class="row product-cart justify-content-between mt-5">
             <!-- Product Cart-1 -->
@@ -432,9 +468,7 @@
       <!-- Banner Carousel second part -->
        <!-- Hero Part -->
        <section class="se home1 carousel-bg-color">
-        <div class="position banner-shadow">
-         <img src="assets/images/banner-1.png" class="img-fluid second-carousel-img" alt="image">
-     </div> 
+       
         <div class="card bg-transparent border border-0 banner-top-adjust">
           <!-- Bootstrap Carousel -->
           <div id="carousell" class="carousel slide" data-ride="carousell">
@@ -509,96 +543,40 @@
 
       <!-- Mobile Phone Section Start -->
       <section class="section mobile-phone" id="mobile-phone" aria-label="mobile-phone">
-        <div class="d-flex flex-row justify-content-between container mt-5">
-          <img src="assets/images/mobile-phone/mob.png" class="img-fluid" alt="">
-        <img src="assets/images/mobile-phone/view.png" class="img-fluid" alt="">
-        </div>
-        <div class="row mobile-section mt-5">
-          <div class="col-lg-7 mob-img-design">
-            <img src="assets/images/mobile-phone/phone.png" class="img-fluid" alt="iPhone">
+        <div class="container">
+          <div class="section-category-bg">
+            <p class="text-white p-2">Mobile Phones</p>
           </div>
-          <div class="col-lg-5 d-flex flex-column justify-content-center bg-white mobile-content-border-shadow">
-            <h2 class="mobile-model">IPHONE 13<br>
-              13 Pro MAX</h2>
-            <p class=" description">Sleek Design.Smoooooth Performance,
-              Dslr like Camera.</p>
-              <p class=" description">All in one Premium Smart phone.</p>
-            <div class="w-50">
-              <button class="btn-design">Purchase
-                <span><i class="ri-arrow-right-circle-line"></i></span>
-              </button>
-             
+          <div class="row mobile-section mt-5">
+            <div class="col-lg-7 mob-img-design">
+              <img src="assets/images/mobile-phone/phone.png" class="img-fluid" alt="iPhone">
+            </div>
+            <div class="col-lg-5 d-flex flex-column justify-content-center bg-white mobile-content-border-shadow">
+              <h2 class="mobile-model">IPHONE 13<br>
+                13 Pro MAX</h2>
+              <p class=" description">Sleek Design.Smoooooth Performance,
+                Dslr like Camera.</p>
+                <p class=" description">All in one Premium Smart phone.</p>
+              <div class="w-50">
+                <button class="btn-design">Purchase
+                  <span><i class="ri-arrow-right-circle-line"></i></span>
+                </button>
+               
+              </div>
             </div>
           </div>
+          <!-- Right Bottom Image -->
+          <div class="bottom-right-img">
+            <img src="assets/mobile-phone/alexa.png" class="img-fluid" alt="">
+          </div> 
         </div>
-        <!-- Right Bottom Image -->
-        <div class="bottom-right-img">
-          <img src="assets/mobile-phone/alexa.png" class="img-fluid" alt="">
-        </div> 
       </section>
       
       <!-- Mobile Phone Section End -->
 
-      <!-- Mobile Phone Grid mobile Gallery Section Start -->
-      <section class="section mobile-gallery" id="mobile-gallery" aria-label="mobile-gallery">
-        <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-2 mb-sm-4" style="background-image: url(assets/images/mobile-gallery/mob-gallery-1.png)" class="w-100 h-100">
-                <!-- <img src="assets/images/mobile-gallery/mob-gallery-1.png" class="w-100 h-100"  /> -->
-                <h3 class="gallery-title mt-5">Samsung S23 Ultra</h3>
-                <div class="d-flex mt-5">
-                  <div class="gallery-icon">
-                    <img src="assets/images/mobile-gallery/gallery-icon-1.png" class="img-fluid" alt="">
-                  </div>
-                  <div class="gallery-content">
-                    <h3>Bright HD Display</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Odio risus ultricies pellentesque bibendum quam vel </p>
-                  </div>
-                </div>
-                <div class="d-flex mt-5">
-                  <div class="gallery-icon">
-                    <img src="assets/images/mobile-gallery/gallery-icon-2.png" class="img-fluid" alt="">
-                  </div>
-                  <div class="gallery-content">
-                    <h3>Emmersive Sound</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Odio risus ultricies pellentesque bibendum quam vel </p>
-                  </div>
-                </div>
-                <div class="d-flex mt-5">
-                  <div class="gallery-icon">
-                    <img src="assets/images/mobile-gallery/gallery-icon-3.png" class="img-fluid" alt="">
-                  </div>
-                  <div class="gallery-content">
-                    <h3>Smooth performance</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Odio risus ultricies pellentesque bibendum quam vel </p>
-                  </div>
-                </div>
-                <div class="">
-                  <button class="gallary-btn mt-5">Purchase
-                    <span><i class="ri-arrow-right-circle-line"></i></span>
-                  </button>
-                 
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-12 gallery-img mb-sm-3">
-                <img src="assets/images/mobile-gallery/mob-gallery-2.png" class="w-100 h-100"/>
-              </div>
-               <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="assets/images/mobile-gallery/mob-gallery-3.png" class="w-100 h-25 py-2" />
-                <img src="assets/images/mobile-gallery/mob-gallery-4.png" class="w-100 h-75 gallery-img-4" />
-              </div>
-            </div>
-           
-        </div>
-      </section>
-      <!-- Mobile Phone Grid mobile Gallery Section End -->
-
-      <!-- New Relase iPhone Section Start -->
-      <section class=" section related-item" id="related-item" aria-label="related-item">
-        <div class="d-flex flex-row justify-content-between mt-5 container">
-          <img src="assets/images/related item/related.png" class="img-fluid" alt="">
-          <img src="assets/images/related item/view.png" class="img-fluid" alt="">
-        </div>
+       <!-- New Relase iPhone Section Start -->
+       <section class=" section related-item" id="related-item" aria-label="related-item">
+      
           <div class="container">
             <div class="row mt-4">
               <!-- Product Cart-1 -->
@@ -659,12 +637,68 @@
       </section>
       <!-- New Relase iPhone Section End -->
 
+      <!-- Mobile Phone Grid mobile Gallery Section Start -->
+      <section class="section mobile-gallery" id="mobile-gallery" aria-label="mobile-gallery">
+        <div class="container">
+          <div class="section-category-bg">
+            <p class="text-white p-2">Mobile Phones</p>
+          </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-2 mb-sm-4" style="background-image: url(assets/images/mobile-gallery/mob-gallery-1.png)" class="w-100 h-100">
+                <!-- <img src="assets/images/mobile-gallery/mob-gallery-1.png" class="w-100 h-100"  /> -->
+                <h3 class="gallery-title mt-5">Samsung S23 Ultra</h3>
+                <div class="d-flex mt-5">
+                  <div class="gallery-icon">
+                    <img src="assets/images/mobile-gallery/gallery-icon-1.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="gallery-content">
+                    <h3>Bright HD Display</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. Odio risus ultricies pellentesque bibendum quam vel </p>
+                  </div>
+                </div>
+                <div class="d-flex mt-5">
+                  <div class="gallery-icon">
+                    <img src="assets/images/mobile-gallery/gallery-icon-2.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="gallery-content">
+                    <h3>Emmersive Sound</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. Odio risus ultricies pellentesque bibendum quam vel </p>
+                  </div>
+                </div>
+                <div class="d-flex mt-5">
+                  <div class="gallery-icon">
+                    <img src="assets/images/mobile-gallery/gallery-icon-3.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="gallery-content">
+                    <h3>Smooth performance</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. Odio risus ultricies pellentesque bibendum quam vel </p>
+                  </div>
+                </div>
+                <div class="">
+                  <button class="gallary-btn mt-5">Purchase
+                    <span><i class="ri-arrow-right-circle-line"></i></span>
+                  </button>
+                 
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 gallery-img mb-sm-3">
+                <img src="assets/images/mobile-gallery/mob-gallery-2.png" class="w-100 h-100"/>
+              </div>
+               <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="assets/images/mobile-gallery/mob-gallery-3.png" class="w-100 h-25 py-2" />
+                <img src="assets/images/mobile-gallery/mob-gallery-4.png" class="w-100 h-75 gallery-img-4" />
+              </div>
+            </div>
+           
+        </div>
+      </section>
+      <!-- Mobile Phone Grid mobile Gallery Section End -->
+
+     
+
        <!-- Smart Phone Section Start -->
        <section class=" section related-item" id="related-item" aria-label="related-item">
-        <div class="d-flex flex-row justify-content-between mt-5 container">
-          <img src="assets/images/related item/related.png" class="img-fluid" alt="">
-          <img src="assets/images/related item/view.png" class="img-fluid" alt="">
-        </div>
+     
           <div class="container">
             <div class="row mt-4">
               <!-- Product Cart-1 -->
@@ -724,6 +758,58 @@
           </div>
       </section>
       <!-- Smart Phone Section End -->
+
+
+       <!-- Budget Phone Section Start -->
+       <section class=" section related-item" id="related-item" aria-label="related-item">
+     
+        <div class="container">
+          <div class="section-category-bg">
+            <p class="text-white p-2">Budget Phones</p>
+          </div>
+          <div class="row mt-4">
+            <!-- Product Cart-1 -->
+            <div class="col-md-4 col-sm-6 img-hover related-item" >
+              <div class="card p-4 budget-cart-bg-1">
+                <img src="assets/images/budget-phone/budget-phone-1.png" class="card-img-top img-fluid related-product-img" alt="Image">
+                <div class="card-body related-item-content">
+                  
+                  <h5 class="card-text budgeted-product-description">Relame Budget Flagship king</h5>
+                  
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Cart-2 -->
+            
+            <div class="col-md-4 col-sm-6 img-hover related-item" >
+              <div class="card p-4 budget-cart-bg-2">
+                <img src="assets/images/budget-phone/budget-phone-2.png" class="card-img-top img-fluid related-product-img" alt="Image">
+                <div class="card-body">
+                  
+                  <h5 class="card-text budgeted-product-description">Vivo-The best Budget all rounder</h5>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Product Cart-3 -->
+            
+            <div class="col-md-4 col-sm-6 img-hover related-item" >
+              <div class="card p-4 budget-cart-bg-3">
+                <img src="assets/images/budget-phone/budget-phone-3.png" class="card-img-top img-fluid related-product-img" alt="Image">
+                <div class="card-body">
+                  <h5 class="card-text budgeted-product-description">Shop with other brands mobiles</h5>
+                  
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+    </section>
+    <!-- Budget Phone Section End -->
 
       <!-- Headphone Section Start -->
       <section class=" section related-item" id="related-item" aria-label="related-item">

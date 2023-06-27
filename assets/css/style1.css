@@ -287,16 +287,24 @@ body{
 /*-----------------------------------*\
   #Category Section
 \*-----------------------------------*/
+.section-category-bg{
+  background-color: var(--black);
+  width: 120px;
+  font-size: var(--fs-7);
+  font-weight: var(--fw-600);
+  border-radius: var(--radius-6);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
 
 .category-bg{
-  background: linear-gradient(175.61deg, #060CDF 4.02%, #0451E8 37.84%, #038CF1 62.87%, #26EDFE 79.98%);
+  background: linear-gradient(180deg, #0761c0 0%, #002F65 100%);
   border-radius: 10px;
   /* padding: 5px; */
 }
 .category-div-width{
   max-width: 45%!important;
   margin-inline: 5px;
-}
+} 
 
 .category-img-slide-up{
   transform: translateY(-40px);
@@ -450,6 +458,26 @@ padding-inline: 10px;
   font-size: var(--fs-5);
   font-weight: var(--fw-600);
 }
+
+/*-----------------------------------*\
+ #Budget Phone
+\*-----------------------------------*/
+.budget-cart-bg-1{
+  background-color: #002F65!important;
+}
+
+.budget-cart-bg-2{
+  background-color: #8e44ad!important;
+}
+.budget-cart-bg-3{
+  background-color: #e1b12c!important;
+}
+.budgeted-product-description{
+  font-size: var(--fs-4);
+  color: var(--white);
+}
+
+
 
 /*-----------------------------------*\
  #Headphone
@@ -845,10 +873,10 @@ padding-inline: 10px;
   /*-----------------------------------*\
   #Category Section
 \*-----------------------------------*/
-  .category-div-width{
-    max-width: 33%!important;
-    margin-inline: 5px;
-  }
+.category-div-width{
+  max-width: 45%!important;
+  margin-inline: 12px;
+}
     /**
    * Footer
    */
@@ -1117,17 +1145,10 @@ padding-inline: 10px;
 
 
 .mob-img-design img{
-  transform: translateY(55px);
+  transform: translateY(75px);
 }
 
 
-  /*-----------------------------------*\
-  #Mobile Phone
-\*-----------------------------------*/
-
-.mob-img-design img{
-  transform: translateY(79px);
-}
 
 .mobile-model{
   font-size: var(--fs-1);
@@ -1229,6 +1250,7 @@ padding-inline: 10px;
   .nav-link{
     font-size: var(--fs-6)!important;
     color: white!important;
+    margin-inline-end: 18px;
   }
   .currency-list{
     display: flex;
@@ -1259,10 +1281,14 @@ padding-inline: 10px;
    
   }
 
-   
+
   /**
    * ABOUT
    */
+   .category-div-width{
+    max-width: 20%!important;
+    margin-inline: 5px;
+  } 
 
   /* Today's Deal Section Start*/
 
@@ -1281,7 +1307,7 @@ padding-inline: 10px;
 \*-----------------------------------*/
 
 .mob-img-design img{
-  transform: translateY(62px);
+  transform: translateY(55px);
 }
   
    /*-----------------------------------*\
@@ -1302,7 +1328,7 @@ padding-inline: 10px;
  
    
   /**
-   * CTA
+   * Freez
    */
 
 
@@ -1360,7 +1386,7 @@ padding-inline: 10px;
    * ABOUT
    */
 
- 
+
   /*-----------------------------------*\
   #Today's Deal Section
 \*-----------------------------------*/
@@ -1376,7 +1402,7 @@ padding-inline: 10px;
 \*-----------------------------------*/
 
 .mob-img-design img{
-  transform: translateY(78px);
+  transform: translateY(68px);
 }
  
   /*-----------------------------------*\
@@ -1385,10 +1411,10 @@ padding-inline: 10px;
 .bg-refrigerator{
  
   margin-top: -420px;
-  height: 600px;
-  
+  height: 800px;
   
 }
+
 #section-margin-top{
   margin-top: 200px;
 }
