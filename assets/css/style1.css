@@ -221,13 +221,14 @@ body{
   #Offer Section
 \*-----------------------------------*/
 
-.img-hover{
-  transition: all 0.4s ease;
-  cursor: pointer;
+.img-card .img-hover img{
+  /* transition: all 0.4s ease;
+  cursor: pointer; */
+  transition: var(--transition);
 }
-.img-hover:hover{
-  
+.img-card:is(:hover, :focus-within) .img-hover img {
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .offer-bg-1 {
@@ -502,7 +503,7 @@ padding-inline: 10px;
  #Freez
 \*-----------------------------------*/
 
-.freez-img{
+ .freez-img{
   object-fit: contain!important;
 }
 
@@ -521,7 +522,7 @@ padding-inline: 10px;
   border-radius: 50%;
   left: calc(-1 * var(--v-offset));
   right: calc(-1 * var(--v-offset));
-  z-index: -2;
+  /* z-index: -2; */
 }
 
 #mysection:before {
@@ -545,24 +546,27 @@ padding-inline: 10px;
       scroll-behavior: smooth;  
       
 }
-.wrapper::-webkit-scrollbar { /* for chrome */
+.wrapper::-webkit-scrollbar { 
   display: none;
 }
 
 .wrapper img {
   scroll-snap-align: center;
-  z-index: -1;
+  
 }
 
 .bg-refrigerator{
   background: linear-gradient(95.78deg, #1C1D1D 22.55%, #CBD3E4 105.45%);
   width: 100vw;
-  /* height: 200px; */
-  margin-top: 10px;
-  z-index: -99999!important;
-  
-  
+  height: 750px;
+  display: none;
+ 
 }
+.refrigetor-container{
+  margin-top: 0;
+  display: none;
+
+} 
 .cover-frize{
   width: 300px;
   height: 60px;
@@ -595,7 +599,7 @@ padding-inline: 10px;
   padding: 10px 50px;
   font-size: var(--fs-7);
   font-weight: var(--fw-600);
-  /* margin-inline-start: 3em; */
+
   margin-block-end: 3em;
   position: relative;
   border-radius: var(--radius-4);
@@ -607,7 +611,7 @@ padding-inline: 10px;
   right: 2%;
   transform: translate(-50%, -50%);
   padding-inline: 2px;
-}
+} 
 /*-----------------------------------*\
  #Accessories
 \*-----------------------------------*/
@@ -846,14 +850,7 @@ padding-inline: 10px;
    * HEADER
    */
 
-   .hamburger{
-    right: 4rem!important;
-   }
-   .menu {
-    height: 85vh;
-    top: 0;
-    
-  }
+
 
 
    /**
@@ -977,79 +974,72 @@ padding-inline: 10px;
     object-fit: contain;
   }
 
-  /*-----------------------------------*\
-  #Headphone
-\*-----------------------------------*/
-
-.headphone-img{
-  height: 250px!important;
-  object-fit: contain;
-}
-
-    /* Freez */
-    #section-margin-top{
-      margin-block-start: 100px; 
-      margin-block-end: 100px; 
-    }
-    #curve {
-      width: 100vw;
-      height: 100vh;
-      display: grid;
-      padding: 60px 0;
-      grid: 1fr -webkit-min-content -webkit-min-content 1fr/1fr;
-      grid: 1fr min-content min-content 1fr/1fr;
-      align-items: center;
-      justify-items: center;
-    } 
+  #section-margin-top{
+    margin-top: 100px;
+  }
+  #curve {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    padding: 60px 0;
+    grid: 1fr -webkit-min-content -webkit-min-content 1fr/1fr;
+    grid: 1fr min-content min-content 1fr/1fr;
+    align-items: center;
+    justify-items: center;
+  } 
+  
+  #mysection {
+    width: 100vw;
+overflow: hidden;
+position: relative;
+--v-offset: 80px;
+--curve-height: 150px;
+margin-block-start: -200px;
+/* z-index: -2; */
     
-    #mysection {
-      width: 100vw;
-      overflow: hidden;
-      position: relative;
-      --v-offset: 60px;
-      --curve-height: 120px;
-      
-    }
-    
-    .bg-refrigerator{
-      background: linear-gradient(95.78deg, #1C1D1D 22.55%, #CBD3E4 105.45%);
-      width: 100vw;
-      height: 750px;
-      margin-top: -300px;
-      
-      
-    }
-    .cover-frize{
-      width: 300px;
-      height: 300px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: -400px;
-      z-index: 100;
-      overflow-x: hidden;
-    }
+  }
+  
+  .bg-refrigerator{
+    background: linear-gradient(95.78deg, #1C1D1D 22.55%, #CBD3E4 105.45%);
+    width: 100vw;
+    height: 750px;
+    margin-top: -400px;
+    display: block;
+  }
 
-    .margin-adjust{
-      margin-top: 200px;
-    }
-    .smart{
-      font-size: 70px;
-      font-weight: 700;
-      color: #fff;
-      text-align: center;
-      /* margin-top: -300px; */
+  .refrigetor-container{
+    margin-top: -600px;
+    display: block;
+  } 
+  .cover-frize{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 100;
+    overflow-x: hidden;
+    margin-top: -400px;
+  }
+
+  .margin-adjust{
+    margin-top: 200px;
+  }
+  .smart{
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
     
-      
-      
-    }
-    .refrigerator-text{
-      font-size: 60px;
-      font-weight: 400;
-      color: #fff;
-      text-align: center;
-     
-    }
+  }
+  .refrigerator-text{
+    font-size: 60px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+   
+  } 
+  .buy-now-btn{margin-top: -20px;}
 /*-----------------------------------*\
  #Accessories
 \*-----------------------------------*/
@@ -1325,13 +1315,29 @@ padding-inline: 10px;
 .gallary-btn{
   margin-block-end: 1em;
 }
- 
-   
-  /**
-   * Freez
-   */
 
+   /*-----------------------------------*\
+  #Headphone
+\*-----------------------------------*/
 
+.headphone-img{
+  height: 250px!important;
+  object-fit: contain;
+}
+
+    /* Freez */
+
+    .refrigetor-container{
+      margin-top: -600px;
+    } 
+     .cover-frize{
+      margin-top: -300px;
+    } 
+
+    .margin-adjust{
+      margin-top: 200px;
+    }
+    
    /**
    * BLOG
    */
@@ -1408,16 +1414,12 @@ padding-inline: 10px;
   /*-----------------------------------*\
   #Freez
 \*-----------------------------------*/
-.bg-refrigerator{
- 
-  margin-top: -420px;
-  height: 800px;
-  
-}
 
-#section-margin-top{
-  margin-top: 200px;
-}
+
+.cover-frize{
+  margin-top: -400px;
+} 
+
    
 }
 
