@@ -290,7 +290,7 @@ body{
 \*-----------------------------------*/
 .section-category-bg{
   background-color: var(--black);
-  width: 120px;
+  width: 140px;
   font-size: var(--fs-7);
   font-weight: var(--fw-600);
   border-radius: var(--radius-6);
@@ -612,6 +612,33 @@ padding-inline: 10px;
   transform: translate(-50%, -50%);
   padding-inline: 2px;
 } 
+
+
+/* Washing-Machine */
+.washing-machine{
+   background: linear-gradient(90deg, #206975 0%, #6BA0B0 50%, #438A9B 100%)!important;
+}
+
+.washing-machine-img img{
+  object-fit: contain!important;
+  width: 800px!important;
+  height: 600px!important;
+}
+
+.washing-machine-title{
+  color: var(--white);
+  font-size: var(--fs-1-large);
+  font-weight: var(--fw-700);
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.washing-machine-text{
+  color: var(--white);
+  font-size: var(--fs-4);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
 /*-----------------------------------*\
  #Accessories
 \*-----------------------------------*/
