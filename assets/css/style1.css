@@ -749,11 +749,32 @@ right: -18%;
 transform: translate(-50%, -50%);
 padding-inline: 10px;
 }
+.headphone-quote{
+  font-size: var(--fs-6);
+}
 .headphone-title{
   color: var(--white);
   font-size: var(--fs-3);
   text-align: left;
   padding-left: .8em!important;
+  letter-spacing: 10px;
+   /*  Animation decalaration   */
+    animation-name: moveInleft;
+    animation-duration: 3s;
+}
+@keyframes moveInleft {
+  0% {
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+
+  80% {
+      transform: translateX(10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
 }
 .headphone-text{
   color: var(--white);
@@ -764,25 +785,91 @@ padding-inline: 10px;
   -webkit-text-fill-color: transparent;
   font-weight: var(--fw-600);
   padding-left: 2em!important;
+  animation-name: moveInRight;
+  animation-duration: 3s;
+  letter-spacing: 3px;
+}
+@keyframes moveInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(100px);
+  }
+
+  80% {
+      transform: translateX(-10px);
+  }
   
-}
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
 
+}
 .headphone-images img{
-  transform: translateY(-30px);
+  /* transform: translateY(-30px); */
+ 
+  animation: color-animation 1s linear infinite;
 }
 
 
+@keyframes color-animation {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
 .Nikhon-camera-bg{
   transform: translateY(-5px);
   background-color: #333;
 }
 .nikhon-camera-images img{
   transform: translateY(-20px);
+  animation: color-animation 1s linear infinite;
 }
 .nikon-video video{
   width: 100%!important;
   /* max-width: 900px!important; */
   height: 100%;
+}
+
+/*-----------------------------------*\
+  #ADVERTISEMENT
+\*-----------------------------------*/
+.advertisement-bg-color{
+  background-color: #58A0E2!important;
+}
+
+.advertisement-title{
+  font-size: var(--fs-3);
+  color: var(--white);
+  font-weight: var(--fw-400);
+  width: 300px;
+  
+}
+
+.advertisement-title span{
+  font-size: var(--fs-2);
+  color: var(--white);
+  font-weight: var(--fw-600);
+  display: inline-block;
+}
+
+.advertisement-text{
+  font-size: var(--fs-8);
+  color: var(--white);
+}
+.price-tag{
+  font-weight: var(--fw-600);
+  font-size: var(--fs-6);
+}
+
+.advertisement-bg-black{
+  background-image: url("../images/advertisement/advertisemtn-1.png")!important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /*-----------------------------------*\
   #FOOTER
@@ -1524,6 +1611,11 @@ margin-block-start: -200px;
     .headphone-text{
     
       font-size: var(--fs-5);
+    }
+
+    .gif-image{
+      margin-inline-start: 100px;
+      margin-block-start: -50px;
     }
    /**
    * BLOG
