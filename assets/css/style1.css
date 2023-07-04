@@ -621,13 +621,12 @@ padding-inline: 10px;
 
 .washing-machine-img img{
   object-fit: contain!important;
-  width: 800px!important;
-  height: 600px!important;
+ 
 }
 
 .washing-machine-title{
   color: var(--white);
-  font-size: var(--fs-1-large);
+  font-size: var(--fs-3);
   font-weight: var(--fw-700);
   text-align: center;
   font-family: 'Lato', sans-serif;
@@ -635,7 +634,7 @@ padding-inline: 10px;
 
 .washing-machine-text{
   color: var(--white);
-  font-size: var(--fs-4);
+  font-size: var(--fs-7);
   text-align: center;
   font-family: 'Poppins', sans-serif;
 }
@@ -834,6 +833,13 @@ padding-inline: 10px;
   height: 100%;
 }
 
+.gif-image{
+  margin-block-start: -10px;
+  padding-inline: 10px;
+}
+.headphone-title{
+  font-size: var(--fs-4);
+}
 /*-----------------------------------*\
   #ADVERTISEMENT
 \*-----------------------------------*/
@@ -842,34 +848,84 @@ padding-inline: 10px;
 }
 
 .advertisement-title{
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   color: var(--white);
   font-weight: var(--fw-400);
-  width: 300px;
-  
+  text-align: center;
 }
 
 .advertisement-title span{
-  font-size: var(--fs-2);
+  font-size: var(--fs-3);
   color: var(--white);
   font-weight: var(--fw-600);
   display: inline-block;
+  text-align: center;
 }
+ .advertise-image-2 img{
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 
+}
 .advertisement-text{
   font-size: var(--fs-8);
   color: var(--white);
+  text-align: center;
 }
 .price-tag{
   font-weight: var(--fw-600);
   font-size: var(--fs-6);
 }
 
-.advertisement-bg-black{
-  background-image: url("../images/advertisement/advertisemtn-1.png")!important;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.advertisemtn-bg-black{
+  background-color: black!important;
+}
+
+.advertise-image-1 img{
+  animation: color-animation 1s linear infinite;
+}
+
+.advertisement-title-1{
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: var(--fw-600);
+  text-align: center;
+}
+
+.advertisement-text-1{
+  color: var(--white);
+  font-size: var(--fs-7);
+  text-align: center;
+ 
+
+}
+
+.price-1{
+  color: #03C68B;
+  font-size: var(--fs-5);
+  font-weight: var(--fw-700);
+  display: inline;
+
+  
+}
+.advertisement-text-2{
+  color: var(--white);
+  font-size: var(--fs-5);
+  text-align: center;
+  
+
+ 
+}
+
+.btn-advertisement{
+  color: var(--white);
+  padding: 6px 30px;
+  box-shadow: rgba(231, 234, 236, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: var(--radius-4);
+  font-size: 1.2em;
+  text-align: center;
 }
 /*-----------------------------------*\
   #FOOTER
@@ -1155,6 +1211,10 @@ padding-inline: 10px;
   margin-block-end: 1em;
 }
  
+.gif-image {
+  padding-inline: 17px;
+  margin-left: 55px;
+}
   /*-----------------------------------*\
   #Related Item
 \*-----------------------------------*/
@@ -1382,7 +1442,36 @@ margin-block-start: -200px;
     
   }   */
 
-  
+  /* Nikhon Gallery */
+  .gif-image {
+    margin-left: 6px;
+}
+
+.headphone-title {
+  font-size: var(--fs-3)!important;
+  letter-spacing: 5px;
+}
+/* Headphone Gallery */
+  .headphone-bg {
+    height: 557px!important;
+}
+/* Washing Machine */
+
+  .washing-machine-title {
+    font-size: var(--fs-2);
+}
+
+.washing-machine-text {
+ 
+  font-size: var(--fs-6);
+ 
+}
+   /* Advertisement */
+.div-size{
+  /* width: 550px!important; */
+  height: 250px!important;
+}
+
    
   /**
    * FOOTER
@@ -1613,15 +1702,88 @@ margin-block-start: -200px;
       font-size: var(--fs-5);
     }
 
-    .gif-image{
-      margin-inline-start: 100px;
-      margin-block-start: -50px;
-    }
-   /**
-   * BLOG
-   */
-
   
+   /**
+   * Nikhon Photo gallery
+   */
+   .gif-image{
+    margin-inline-start: 100px;
+    margin-block-start: -50px;
+    padding-inline: 10px;
+  }
+  
+
+  /* Washing-Machine */
+
+
+.washing-machine-img img{
+
+ width: 800px!important;
+ height: 600px!important;
+}
+.washing-machine-title{
+ 
+  font-size: var(--fs-1-large);
+ 
+}
+
+.washing-machine-text{
+  font-size: var(--fs-4);
+}
+
+ /* Advertisement */
+.div-size{
+  width: 450px!important;
+  height: 300px!important;
+}
+.advertisement-title-1{
+  font-size: 3rem;
+  font-weight: var(--fw-600);
+  padding-inline-start: 20px;
+  
+}
+
+.advertisement-text-1{
+  font-size: var(--fs-7);
+  padding-inline-start: 20px;
+}
+
+.price-1{
+  font-size: var(--fs-5);
+  font-weight: var(--fw-700);
+ 
+  
+}
+.advertisement-text-2{
+  font-size: var(--fs-5);
+  padding-inline-start: 20px;
+}
+.btn-advertisement{
+  padding: 8px 25px;
+  margin-inline-start: 20px;
+  font-size: var(--fs-8);
+}
+
+.advertisement-title{
+  font-size: var(--fs-3);
+  font-weight: var(--fw-400);
+  width: 300px;
+  
+}
+
+.advertisement-title span{
+  font-size: var(--fs-3);
+  font-weight: var(--fw-600); 
+}
+
+.advertisement-text{
+  font-size: var(--fs-8);
+}
+.price-tag{
+  font-weight: var(--fw-600);
+  font-size: var(--fs-6);
+}
+
     /**
    * FOOTER
    */
@@ -1707,6 +1869,12 @@ margin-block-start: -200px;
 .headphone-bg{
   height: 650px;
  
+}
+
+ /* Advertisement */
+ .div-size{
+  width: 550px!important;
+  height: 350px!important;
 }
    
 }
