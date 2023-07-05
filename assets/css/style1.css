@@ -1004,6 +1004,10 @@ padding-inline: 10px;
   margin-block: 5px;
   font-size: var(--fs-8);
 }
+.footer-list-title{
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
+}
 
 /*-----------------------------------*\
   #BACK TO TOP
