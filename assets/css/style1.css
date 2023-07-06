@@ -361,6 +361,13 @@ body{
   height: 200px!important;
   object-fit: contain;
 }
+
+.todays-deal-top-left-img img{
+  display: none;
+}
+.todays-deal-bottom-right-img img{
+  display: none;
+}
 /* Today's Deal Section End*/
 
 
@@ -419,6 +426,10 @@ padding-inline: 10px;
   padding-block-end: 3em;
 }
 
+.bottom-right-img img{
+
+  display: none;
+}
 
 /*-----------------------------------*\
   #Related Product Item
@@ -475,13 +486,48 @@ padding-inline: 10px;
 .budget-cart-bg-3{
   background-color: #e1b12c!important;
 }
+
+.budget-cart-bg-3 img{
+  z-index: 5;
+}
 .budgeted-product-description{
   font-size: var(--fs-4);
   color: var(--white);
 }
 
+.budget-btn{
+  padding: 8px 20px;
+  font-size: var(--fs-7);
+  color: var(--white);
+  font-weight: var(--fw-600);
+  border-radius: 40px;
+  margin-block: 15px;
+}
 
+.budget-btn-1{
+  background-color: #318DFF;
+}
+.budget-btn-2{
+  background-color: #FFB5F7;
+  color: var(--black);
+}
+.budget-btn-3{
+  background-color: #FFC857;
+  color: var(--black);
+}
 
+.budget-chracter-1 img,
+.budget-chracter-2 img,
+.budget-chracter-3 img,
+.budget-chracter-4 img
+{
+  display: none
+}
+.budget-cart-bg-1,
+.budget-cart-bg-2,
+.budget-cart-bg-3{
+  height: 350px;
+}
 /*-----------------------------------*\
  #Headphone
 \*-----------------------------------*/
@@ -507,6 +553,7 @@ padding-inline: 10px;
 
  .freez-img{
   object-fit: contain!important;
+  animation: color-animation 1s linear infinite;
 }
 
 #mysection {
@@ -1268,6 +1315,7 @@ margin-block-start: -200px;
   } 
   .buy-now-btn{margin-top: -20px;}
 
+
   /*-----------------------------------*\
  #Headphone Gallery
 \*-----------------------------------*/
@@ -1289,13 +1337,7 @@ margin-block-start: -200px;
   height: 250px!important;
 }
 
-/**
-   * Footer
-   */
 
-   .footer-top .container{
-    grid-template-columns: 1fr 1fr;
-   }
  }
 
 
@@ -1606,7 +1648,9 @@ margin-block-start: -200px;
   /* Today's Deal Section Start*/
 
 
-
+.todays-deal{
+  position: relative;
+}
 .todays-deal-product{
   padding: 0em;
   max-width: 47%!important;
@@ -1614,7 +1658,22 @@ margin-block-start: -200px;
 .todays-content h5{
   font-size: var(--fs-6);
 }
-
+ 
+ .todays-deal-top-left-img img{
+  position: absolute;
+  left: -2px;
+  top: 200px;
+  animation: color-animation 1s linear infinite;
+  display: block;
+  z-index: 5;
+} 
+.todays-deal-bottom-right-img img{
+  position: absolute;
+  right: 20px;
+  bottom: -10px;
+  animation: color-animation 1s linear infinite;
+  display: block;
+}
   /*-----------------------------------*\
   #Mobile Phone
 \*-----------------------------------*/
@@ -1622,7 +1681,16 @@ margin-block-start: -200px;
 .mob-img-design img{
   transform: translateY(55px);
 }
-  
+  .iphone-13-pro{
+    position: relative;
+  }
+.bottom-right-img img{
+  position: absolute;
+  right: -20px;
+  bottom: -30px;
+  animation: color-animation 1s linear infinite;
+  display: block;
+}
    /*-----------------------------------*\
   #Gallery Mobile
 \*-----------------------------------*/
@@ -1638,7 +1706,50 @@ margin-block-start: -200px;
 .gallary-btn{
   margin-block-end: 1em;
 }
+/*-----------------------------------*\
+ #Budget Phone
+\*-----------------------------------*/
 
+.budgeted-product-item{
+  position: relative;
+}
+.budget-chracter-1 img{
+  position: absolute;
+  right: 5px;
+  bottom: -10px;
+  display: block;
+  animation: color-animation 1s linear infinite;
+}
+
+.budget-chracter-2 img{
+  position: absolute;
+  top: -50px;
+  right: 5px;
+  display: block;
+  animation: color-animation 1s linear infinite;
+}
+
+.budget-chracter-3 img{
+  position: absolute;
+  left: -2px;
+  bottom: -10px;
+  display: block;
+  animation: color-animation 1s linear infinite;
+}
+
+.budget-chracter-4 img{
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  display: block;
+  animation: color-animation 1s linear infinite;
+}
+
+.budget-cart-bg-1,
+.budget-cart-bg-2,
+.budget-cart-bg-3{
+  height: 430px;
+}
    /*-----------------------------------*\
   #Headphone
 \*-----------------------------------*/
@@ -1857,6 +1968,7 @@ margin-block-start: -200px;
   /**
    * ABOUT
    */
+
 
 
   /*-----------------------------------*\
