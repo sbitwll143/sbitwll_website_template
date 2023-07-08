@@ -553,7 +553,7 @@ padding-inline: 10px;
 
  .freez-img{
   object-fit: contain!important;
-  animation: color-animation 1s linear infinite;
+ 
 }
 
 #mysection {
@@ -748,6 +748,115 @@ transform: translate(-50%, -50%);
 padding-inline: 10px;
 }
 
+/*-----------------------------------*\
+  #iPhone secting by color
+\*-----------------------------------*/
+.banner-wrapper{
+  padding: 1.6rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  min-height: 100vh;
+}
+.banner-right img{
+  width: 100%;
+  display: block;
+}
+.banner-content{
+  flex: 1;
+  display: grid;
+  grid-template-columns: 100%;
+  text-align: center;
+  align-content: center;
+    justify-content: center;
+    background-color: var(--black);
+    border-radius: var(--radius-8);
+    padding: 5px;
+}
+.banner-left h2{
+  font-size: var(--fs-4);
+  text-transform: uppercase;
+    line-height: 1.2;
+    color: var(--white);
+    font-weight: var(--fw-700);
+}
+.banner-left p{
+  margin: 1.6rem 0;
+  line-height: 1.7;
+  color: var(--white);
+  font-size: var(--fs-8);
+}
+.banner-left span{
+  display: block;
+  font-size: 2.8rem;
+  color: var(--white);
+}
+.color-groups{
+  display: flex;
+  justify-content: center;
+}
+.color-content{
+  margin-top: 3.2rem;
+}
+.color:last-child{
+  margin-right: 0;
+}
+.color-content h3{
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: var(--white);
+  margin-block-end: 10px;
+}
+.color{
+  width: 25px;
+  height: 25px;
+  background: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  margin-block-end: 10px;
+}
+.color-black{
+  background-color: #242424;
+}
+.color-blue{
+  background-color: #085ea0;
+}
+.color-yellow{
+  background-color: #c0b50d;
+}
+.color-red{
+  background-color: #8b0516;
+}
+.color-pink{
+  background-color: #FFC0CB;
+}
+.color-orange{
+  background-color: #FFA500;
+}
+.color-white{
+  background-color: #ededed;
+}
+.color:hover{
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+}
+.active-color{
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.banner-right img{
+  max-height: 400px;
+  object-fit: contain;
+}
 /*-----------------------------------*\
   #HEADPHONE GALLERY
 \*-----------------------------------*/
@@ -1177,6 +1286,25 @@ padding-inline: 10px;
     margin-block-end: 3em;
     
   }
+
+  /*-----------------------------------*\
+  #iPhone seclecting by color
+\*-----------------------------------*/
+  .banner-content{
+    padding: 50px;
+  }
+  .banner-left h2{
+    font-size: var(--fs-4);
+  }
+  .banner-left p{
+   
+    font-size: var(--fs-7);
+  }
+  .banner-left span{
+
+    font-size: var(--fs-3);
+    
+  }
   /*-----------------------------------*\
   #Mobile Phone
 \*-----------------------------------*/
@@ -1442,15 +1570,24 @@ margin-block-start: -200px;
     object-fit: contain;
   }
 
-     /**
-   * CTA
-   */
-   /* .headphone-gallery-img-3
-   {
-    width: 100%!important;
-    min-width: 300px!important;
-    
-  }   */
+  /*-----------------------------------*\
+  #iPhone seclecting by color
+\*-----------------------------------*/
+.banner-content{
+  padding: 50px;
+}
+.banner-left h2{
+  font-size: var(--fs-2);
+}
+.banner-left p{
+ 
+  font-size: var(--fs-6);
+}
+.banner-left span{
+
+  font-size: var(--fs-2);
+  
+}
 
   /* Nikhon Gallery */
   .gif-image {
@@ -1623,9 +1760,55 @@ margin-block-start: -200px;
 
   }
      /**
-   * SERVICE
+   * iPhone selecting by color button.
    */
 
+   .color{
+    width: 35px;
+    height: 35px;
+   }
+   .banner-content{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+   
+}
+
+.banner-left h2{
+  font-size: 4rem;
+  font-weight: var(--fw-700);
+  color: var(--white);
+ 
+}
+.banner-left span{
+ 
+  font-size: 4rem;
+  font-weight: var(--fw-700);
+  color: var(--white);
+}
+.banner-left p{
+  font-size: var(--fs-7);
+  margin: 1.6rem 0;
+  line-height: 1.7;
+  color: var(--white);
+}
+
+.color-content h3{
+  color: var(--white);
+  margin-block-end: 15px;
+}
+
+.banner-right img{
+  
+  max-height: 550px;
+  object-fit: contain;
+  animation: bounce 3s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(-5px)  }
+  50% { transform: translateY(10px) }
+  100% { transform: translateY(-5px) }
+}
     /**
    * Offer 
    */
@@ -1663,16 +1846,17 @@ margin-block-start: -200px;
   position: absolute;
   left: -2px;
   top: 200px;
-  animation: color-animation 1s linear infinite;
   display: block;
   z-index: 5;
-} 
+  animation: bounce 3s infinite ease-in-out;
+}
+
 .todays-deal-bottom-right-img img{
   position: absolute;
   right: 20px;
   bottom: -10px;
-  animation: color-animation 1s linear infinite;
   display: block;
+  animation: bounce 3s infinite ease-in-out;
 }
   /*-----------------------------------*\
   #Mobile Phone
@@ -1688,9 +1872,11 @@ margin-block-start: -200px;
   position: absolute;
   right: -20px;
   bottom: -30px;
-  animation: color-animation 1s linear infinite;
   display: block;
+  animation: bounce 3s infinite ease-in-out;
 }
+
+
    /*-----------------------------------*\
   #Gallery Mobile
 \*-----------------------------------*/
@@ -1718,7 +1904,7 @@ margin-block-start: -200px;
   right: 5px;
   bottom: -10px;
   display: block;
-  animation: color-animation 1s linear infinite;
+ 
 }
 
 .budget-chracter-2 img{
@@ -1726,7 +1912,6 @@ margin-block-start: -200px;
   top: -50px;
   right: 5px;
   display: block;
-  animation: color-animation 1s linear infinite;
 }
 
 .budget-chracter-3 img{
@@ -1734,7 +1919,6 @@ margin-block-start: -200px;
   left: -2px;
   bottom: -10px;
   display: block;
-  animation: color-animation 1s linear infinite;
 }
 
 .budget-chracter-4 img{
@@ -1742,7 +1926,6 @@ margin-block-start: -200px;
   top: 0px;
   right: 5px;
   display: block;
-  animation: color-animation 1s linear infinite;
 }
 
 .budget-cart-bg-1,
@@ -1989,6 +2172,20 @@ margin-block-start: -200px;
   transform: translateY(68px);
 }
  
+
+
+.banner-left h2{
+  font-size: 5rem;
+}
+.banner-left span{
+ 
+  font-size: 5rem;
+ 
+}
+.banner-left p{
+  font-size: var(--fs-6);
+  
+}
   /*-----------------------------------*\
   #Freez
 \*-----------------------------------*/
