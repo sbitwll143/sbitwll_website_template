@@ -2110,7 +2110,93 @@ margin-block-start: -200px;
     margin-inline: auto;
     font-size: var(--fs-6);
   }
+
+    /**
+   * Product Page
+   */
+  .product-title{
+    color: var(--black);
+    font-family: Poppins;
+    font-size: var(--fs-5);
+    font-weight: var(--fw-600);
+    
+  }
+
+  .product-text{
+    color: var(--black);
+    font-size: var(--fs-6);
+  }
+
+  .product-price{
+    font-size: var(--fs-6);
+    font-weight: var(--fw-700);
+  }
+
+  .price-discount{
+    color: red;
+    font-weight: var(--fw-400);
+    font-size: var(--fs-8);
+    margin-inline-start: auto;
+  }
+  .star-icon ion-icon{
+    color: #FFAD33;
+    font-size: var(--fs-6);
+  }
+   .empty-star-icon ion-icon{
+    font-size: var(--fs-6);
+   }
+   .product-review{
+    color: rgb(59, 59, 59);
+   }
+
+   .product-stock{
+    color: #00FF66;
+   }
+   .size-dark{
+    padding: 8px 20px;
+   }
+
+   .size-white{
+    border: 1px solid gray;
+    padding: 8px 20px;
+   }
+
+   .product-size{
+    width: 90%;
+    padding: 20px;
+    border-radius: var(--radius-8);
+   }
+
+   .product-color{
+    padding: 15px 30px;
+    border-radius: var(--radius-6);
+   }
+
+   .dark-gray{
+    background-color: #354634;
+   }
+   .dark-red{
+    background-color: #AE2F2F;
+   }
+   .dark-sky{
+    background-color: #43758F;
+   }
+   .dark-black{
+    background-color: #000000;
+   }
+
+   .dark-pink{
+    background-color: #FBE2DD;
+   }
+
+   .product-offer-border{
+    border: 1px solid gray;
+    border-radius: var(--radius-6);
    
+   }
+   .product-offer{
+    color: #1A7F91;
+   }
 }
 
 /**
