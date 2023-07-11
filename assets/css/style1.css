@@ -1366,7 +1366,7 @@ padding-inline: 10px;
     margin-block-end: 10em!important;
   } */
 
-  .related-product-img,
+  /* .related-product-img,
   .accessories-img{
     height: 250px!important;
     object-fit: cover;
@@ -1394,23 +1394,24 @@ padding-inline: 10px;
     width: 100vw;
 overflow: hidden;
 position: relative;
---v-offset: 80px;
---curve-height: 150px;
+ --v-offset: 80px;
+--curve-height: 150px; 
 margin-block-start: -200px;
-/* z-index: -2; */
     
-  }
-  
-  .bg-refrigerator{
+  } */
+ 
+   .bg-refrigerator{
     background: linear-gradient(95.78deg, #1C1D1D 22.55%, #CBD3E4 105.45%);
     width: 100vw;
     height: 750px;
     margin-top: -400px;
     display: block;
-  }
-
+  } 
+.ref-section-top{
+  margin-top: 400px;
+}
   .refrigetor-container{
-    margin-top: -600px;
+    margin-top: 500px;
     display: block;
   } 
   .cover-frize{
@@ -1421,7 +1422,7 @@ margin-block-start: -200px;
     margin-right: auto;
     z-index: 100;
     overflow-x: hidden;
-    margin-top: -400px;
+    margin-top: 0px;
   }
 
   .margin-adjust{
@@ -1943,9 +1944,11 @@ margin-block-start: -200px;
 }
 
     /* Freez */
-
+    #section-margin-top{
+      margin-top: 600px!important;
+    }
     .refrigetor-container{
-      margin-top: -600px;
+      margin-top: -616px
     } 
      .cover-frize{
       margin-top: -300px;
