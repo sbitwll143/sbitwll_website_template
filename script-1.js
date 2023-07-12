@@ -1,8 +1,8 @@
-var radius = 400;
+var radius = 340;
 var autoRotate = true;
 var rotateSpeed = -60;
-var imgWidth = 140;
-var imgHeight = 190;
+var imgWidth = 120;
+var imgHeight = 170;
 
 // **************** Start ******************
 
@@ -97,8 +97,3 @@ document.onpointerdown = function (e){
 //     radius+= d;
 //     init(1);
 // };
-
-
-
-
-

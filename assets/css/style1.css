@@ -604,13 +604,13 @@ padding-inline: 10px;
   
 }
 
-.bg-refrigerator{
+/* .bg-refrigerator{
   background: linear-gradient(95.78deg, #1C1D1D 22.55%, #CBD3E4 105.45%);
   width: 100vw;
   height: 750px;
   display: none;
  
-}
+} */
 .refrigetor-container{
   margin-top: 0;
   display: none;
@@ -631,6 +631,7 @@ padding-inline: 10px;
   font-weight: var(--fw-700);
   color: var(--white);
   text-align: center;
+ 
 
 }
 .refrigerator-text{
@@ -638,6 +639,7 @@ padding-inline: 10px;
   font-weight: var(--fw-400);
   color: var(--white);
   text-align: center;
+
  
 }
 
@@ -1362,58 +1364,25 @@ padding-inline: 10px;
   #Related Item
 \*-----------------------------------*/
 
-  /* .related-item{
-    margin-block-end: 10em!important;
-  } */
-
-  /* .related-product-img,
-  .accessories-img{
-    height: 250px!important;
-    object-fit: cover;
-  }
-  .television-img{
-    height: 200px!important;
-    object-fit: contain;
-  }
-
-  #section-margin-top{
-    margin-top: 100px;
-  }
-  #curve {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    padding: 60px 0;
-    grid: 1fr -webkit-min-content -webkit-min-content 1fr/1fr;
-    grid: 1fr min-content min-content 1fr/1fr;
-    align-items: center;
-    justify-items: center;
-  } 
-  
-  #mysection {
-    width: 100vw;
-overflow: hidden;
-position: relative;
- --v-offset: 80px;
---curve-height: 150px; 
-margin-block-start: -200px;
-    
-  } */
  
    .bg-refrigerator{
     background: linear-gradient(95.78deg, #1C1D1D 22.55%, #CBD3E4 105.45%);
     width: 100vw;
     height: 750px;
-    margin-top: -400px;
+    /* margin-top: -200px; */
     display: block;
-  } 
+   
+  }  
 .ref-section-top{
-  margin-top: 400px;
-}
-  .refrigetor-container{
+  /* margin-top: 100px; */
+  /* height: 300px; */
+  
+
+} 
+  /* .refrigetor-container{
     margin-top: 500px;
     display: block;
-  } 
+  }  */
   .cover-frize{
     width: 300px;
     height: 300px;
@@ -1422,7 +1391,9 @@ margin-block-start: -200px;
     margin-right: auto;
     z-index: 100;
     overflow-x: hidden;
-    margin-top: 0px;
+    /* margin-top: -100px; */
+    
+    
   }
 
   .margin-adjust{
@@ -1431,15 +1402,17 @@ margin-block-start: -200px;
   .smart{
     font-size: 70px;
     font-weight: 700;
-    color: #fff;
+    color: var(--white);
     text-align: center;
+    
     
   }
   .refrigerator-text{
     font-size: 60px;
     font-weight: 400;
-    color: #fff;
+    color: var(--white);
     text-align: center;
+    
    
   } 
   .buy-now-btn{margin-top: -20px;}
@@ -1945,14 +1918,19 @@ margin-block-start: -200px;
 
     /* Freez */
     #section-margin-top{
-      margin-top: 600px!important;
-    }
-    .refrigetor-container{
-      margin-top: -616px
+      margin-top: 100px!important;
     } 
-     .cover-frize{
+
+    .smart-friz{
       margin-top: -300px;
-    } 
+    }
+    /* .refrigetor-container{
+      margin-top: -300px
+      
+    }   */
+     /* .cover-frize{
+      margin-top: -300px;
+    }  */
 
     .margin-adjust{
       margin-top: 200px;
@@ -2280,9 +2258,9 @@ margin-block-start: -200px;
 \*-----------------------------------*/
 
 
-.cover-frize{
-  margin-top: -400px;
-} 
+/* .cover-frize{
+  margin-top: -100px;
+}  */
 
 .headphone-gallery-container {
  
