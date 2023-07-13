@@ -250,7 +250,7 @@ body{
   font-size: var(--fs-7);
   border-radius: 3px;
 }
-.offer-content{margin-block-start: 1.2em;}
+/* .offer-content{margin-block-start: 1.2em;} */
 
 .offer-bg-2{
   background: linear-gradient(97.4deg, #AED9EA 10.97%, #60A2CD 98.63%);
@@ -287,6 +287,16 @@ body{
   font-weight: var(--fw-600);
 }
 
+/* View all */
+.view-all{
+  font-size: var(--fs-6);
+  font-weight: var(--fw-700);
+  text-decoration: underline;
+ 
+}
+.view-all p{
+  margin-bottom: 0!important;
+}
 /*-----------------------------------*\
   #Category Section
 \*-----------------------------------*/
@@ -556,61 +566,23 @@ padding-inline: 10px;
  
 }
 
-#mysection {
-  width: 100vw;
-  overflow: hidden;
-  position: relative;
-}
-#mysection:before, #mysection:after {
-  content: "";
-  display: block;
-  background: white;
-  width: calc(100vw + 2 * var(--v-offset));
-  height: var(--curve-height);
-  position: absolute;
-  border-radius: 50%;
-  left: calc(-1 * var(--v-offset));
-  right: calc(-1 * var(--v-offset));
-  /* z-index: -2; */
-}
 
-#mysection:before {
-  top: calc(-0.6 * var(--curve-height));
-
-}
-
-#mysection:after {
-  bottom: calc(-0.6 * var(--curve-height));
- 
-}
-
-.wrapper {
-  display: grid;
-  grid-template-rows: 300px;
-  grid-auto-flow: column;
-  grid-gap: 24px;
-  overflow: hidden;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory; 
-      scroll-behavior: smooth;  
-      
-}
-.wrapper::-webkit-scrollbar { 
-  display: none;
-}
 
 .wrapper img {
   scroll-snap-align: center;
   
 }
-
-/* .bg-refrigerator{
+.ref-section-top{
+  margin-block: 30px;
+}
+ .bg-refrigerator{
   background: linear-gradient(95.78deg, #1C1D1D 22.55%, #CBD3E4 105.45%);
   width: 100vw;
-  height: 750px;
-  display: none;
+  height: 100%;
+  min-height: 150px;
+  display: block;
  
-} */
+}
 .refrigetor-container{
   margin-top: 0;
   display: none;
@@ -1236,16 +1208,21 @@ padding-inline: 10px;
    /**
    * Offer 
    */
-
-  .offer-bg-1{
-    height: 400px!important;
-  }
-
-  .offer-bg-2, .offer-bg-3{
-    height: 450px!important;
-    max-width: 45%!important;
+  
    
+   .offer-iphone-img img,
+   .offer-vr-img img,
+   .offer-headphone-img img
+   {
+    height: 250px!important;
+    object-fit: contain;
+   }
+  .offer-bg-1,
+  .offer-bg-2, .offer-bg-3{
+    min-height: 550px!important;
   }
+
+ 
 
   /*-----------------------------------*\
   #Category Section
@@ -1365,20 +1342,14 @@ padding-inline: 10px;
 \*-----------------------------------*/
 
  
-   .bg-refrigerator{
+   /* .bg-refrigerator{
     background: linear-gradient(95.78deg, #1C1D1D 22.55%, #CBD3E4 105.45%);
     width: 100vw;
     height: 750px;
-    /* margin-top: -200px; */
     display: block;
    
-  }  
-.ref-section-top{
-  /* margin-top: 100px; */
-  /* height: 300px; */
-  
+  }   */
 
-} 
   /* .refrigetor-container{
     margin-top: 500px;
     display: block;
@@ -1497,6 +1468,13 @@ padding-inline: 10px;
    
   }
 
+  .offer-content{
+    height: 300px!important;
+  }
+
+  .offer-btn-2, .offer-btn-1{
+    margin-top: 60px;
+  }
   /**
    * SERVICE
    */
@@ -1593,6 +1571,13 @@ padding-inline: 10px;
   height: 250px!important;
 }
 
+
+.ref-section-top{
+   margin-top: -100px;
+ 
+  
+
+} 
  /**
    *   CONTACT
    */
@@ -1788,11 +1773,24 @@ padding-inline: 10px;
    */
 
    .offer-bg-1, .offer-bg-2, .offer-bg-3{
-    height: 500px!important;
+    
     max-width: 30%!important;
+    min-height: 600px!important;
    
+  } 
+  .offer-btn-1{
+    margin-top: 80px;
   }
-
+  .offer-btn-2{
+    margin-top: 60px;
+  }
+   /* .offer-content{
+    height: 300px!important;
+    padding-block-end: 60px!important;
+  }  */
+  /* .offer-btn-div{
+    padding-block-start: 50px;
+  } */
 
   /**
    * ABOUT
@@ -1886,6 +1884,7 @@ padding-inline: 10px;
   top: -50px;
   right: 5px;
   display: block;
+  animation: bounce 3s infinite ease-in-out;
 }
 
 .budget-chracter-3 img{
@@ -1985,15 +1984,17 @@ padding-inline: 10px;
 
   /* Washing-Machine */
 
+  .washing-machine{
+   height: 100vh;
+  }
+ .washing-machine-img img{
 
-.washing-machine-img img{
-
- width: 800px!important;
- height: 600px!important;
-}
+ width: 500px!important;
+ height: 400px!important;
+} 
 .washing-machine-title{
  
-  font-size: var(--fs-1-large);
+  font-size: var(--fs-1);
  
 }
 
