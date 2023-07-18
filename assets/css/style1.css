@@ -378,6 +378,65 @@ body{
 .todays-deal-bottom-right-img img{
   display: none;
 }
+
+
+.img-display,
+.img-display-2,
+.img-display-3,
+.img-display-4
+{
+    overflow: hidden;
+}
+.img-showcase,
+.img-showcase-2,
+.img-showcase-3,
+.img-showcase-4
+{
+    display: flex;
+    width: 100%;
+    
+    transition: all 0.5s ease;
+}
+.img-showcase img,
+.img-showcase-2 img,
+.img-showcase-3 img,
+.img-showcase-4 img
+{
+  width: 100%;
+    min-width: 100%;
+}
+.img-select,
+.img-select-2,
+.img-select-3,
+.img-select-4
+{
+    display: flex;
+}
+.img-item,
+.img-item-2{
+    margin: 0.3rem;
+    max-width: 120px;
+    max-height: 120px;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item-2:nth-child(1),
+.img-item-2:nth-child(2),
+.img-item-2:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover,
+.img-item-2:hover{
+    opacity: 0.8;
+}
+
+
+
+
+
 /* Today's Deal Section End*/
 
 
@@ -1430,18 +1489,6 @@ padding-inline: 10px;
 \*-----------------------------------*/
 
  
-   /* .bg-refrigerator{
-    background: linear-gradient(95.78deg, #1C1D1D 22.55%, #CBD3E4 105.45%);
-    width: 100vw;
-    height: 750px;
-    display: block;
-   
-  }   */
-
-  /* .refrigetor-container{
-    margin-top: 500px;
-    display: block;
-  }  */
   .cover-frize{
     width: 300px;
     height: 300px;
@@ -1450,9 +1497,7 @@ padding-inline: 10px;
     margin-right: auto;
     z-index: 100;
     overflow-x: hidden;
-    /* margin-top: -100px; */
-    
-    
+   
   }
 
   .margin-adjust{
@@ -1581,6 +1626,27 @@ padding-inline: 10px;
   font-size: var(--fs-6);
 }
 
+
+.img-showcase img,
+.img-showcase-2 img,
+.img-showcase-3 img,
+.img-showcase-4 img{
+  width: 100%;
+  max-width: 350px!important;
+  max-height: 500px!important;
+  object-fit: contain;
+}
+/* .card-second{
+  transform: translateY(-30px);
+}
+.card-second-2{
+  transform: translateY(-30px);
+} */
+
+.product-imgs{
+  width: 100%;
+  max-width: 520px!important;
+}
     /*-----------------------------------*\
   #Mobile Phone
 \*-----------------------------------*/
@@ -1874,13 +1940,7 @@ padding-inline: 10px;
   .offer-btn-2{
     margin-top: 60px;
   }
-   /* .offer-content{
-    height: 300px!important;
-    padding-block-end: 60px!important;
-  }  */
-  /* .offer-btn-div{
-    padding-block-start: 50px;
-  } */
+ 
 
   /**
    * ABOUT
@@ -2013,13 +2073,7 @@ padding-inline: 10px;
     .smart-friz{
       margin-top: -300px;
     }
-    /* .refrigetor-container{
-      margin-top: -300px
-      
-    }   */
-     /* .cover-frize{
-      margin-top: -300px;
-    }  */
+  
 
     .margin-adjust{
       margin-top: 200px;
@@ -2076,6 +2130,7 @@ padding-inline: 10px;
 
   .washing-machine{
    height: 100vh;
+   min-height: 700px;
   }
  .washing-machine-img img{
 
