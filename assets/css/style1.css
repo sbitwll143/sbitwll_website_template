@@ -412,11 +412,11 @@ body{
 {
     display: flex;
 }
-.img-item,
-.img-item-2{
+.img-item
+{
     margin: 0.3rem;
-    max-width: 120px;
-    max-height: 120px;
+    max-width: 100px;
+    max-height: 100px;
 }
 .img-item:nth-child(1),
 .img-item:nth-child(2),
@@ -434,7 +434,10 @@ body{
 }
 
 
-
+.product-imgs{
+  width: 100%;
+  max-width: 100%;
+}
 
 
 /* Today's Deal Section End*/
@@ -736,7 +739,10 @@ padding-inline: 10px;
   font-size: var(--fs-5);
 }
 
-
+.image1{
+  transform: translateY(-10px);
+  animation: color-animation 1s linear infinite;
+}
 /*-----------------------------------*\
   #Mobile-Gallery
 \*-----------------------------------*/
@@ -1413,6 +1419,7 @@ padding-inline: 10px;
     
   }
 
+  
   /*-----------------------------------*\
   #iPhone seclecting by color
 \*-----------------------------------*/
@@ -1636,16 +1643,11 @@ padding-inline: 10px;
   max-height: 500px!important;
   object-fit: contain;
 }
-/* .card-second{
-  transform: translateY(-30px);
-}
-.card-second-2{
-  transform: translateY(-30px);
-} */
+
 
 .product-imgs{
   width: 100%;
-  max-width: 520px!important;
+  max-width: 350px!important;
 }
     /*-----------------------------------*\
   #Mobile Phone
@@ -1979,6 +1981,11 @@ padding-inline: 10px;
   bottom: -10px;
   display: block;
   animation: bounce 3s infinite ease-in-out;
+}
+
+.product-imgs{
+  width: 100%;
+  max-width: 450px!important;
 }
   /*-----------------------------------*\
   #Mobile Phone
