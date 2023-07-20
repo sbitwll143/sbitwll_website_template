@@ -738,10 +738,56 @@ padding-inline: 10px;
 .accessories-price{
   font-size: var(--fs-5);
 }
-
+.acc-div{
+  height: 300px;
+  border: 1px solid red;
+}
 .image1{
-  transform: translateY(-10px);
+  transform: translateY(200px);
   animation: color-animation 1s linear infinite;
+  z-index: -1;
+}
+.image2{
+  z-index: 5;
+}
+.parent {
+  position: relative;
+}
+
+.parent img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.parent img:nth-child(1) {
+  /* Styling for the bottom image */
+  z-index: 2; /* Set the stacking order for the bottom image */
+}
+
+.parent img:nth-child(2) {
+  /* Styling for the top image */
+  z-index: 1; /* Set the stacking order for the top image (higher than the bottom image) */
+}
+
+.parent-div{
+  position: relative;
+  height: 400px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.parent-div img{
+  object-fit: cover;
+  margin-inline: auto;
+  padding: 20px;
+}
+.parent-div img:nth-child(1){
+  z-index: 2;
+}
+.parent-div img:nth-child(2){
+  position: absolute;
+  z-index: -1;
+  top: -15px;
+  margin-inline: auto;
 }
 /*-----------------------------------*\
   #Mobile-Gallery
@@ -1545,12 +1591,15 @@ padding-inline: 10px;
  #Accessories
 \*-----------------------------------*/
 
-.accessories-img{
+/* .accessories-img{
   object-fit: contain;
   height: 250px!important;
+  background: transparent;
+} */
+
+.parent-div{
+  width: 45%!important;
 }
-
-
  }
 
 
@@ -1732,10 +1781,13 @@ padding-inline: 10px;
 
 .ref-section-top{
    margin-top: -100px;
- 
-  
 
 } 
+
+ /* Acssories */
+.parent-div{
+  width: 30%!important;
+}
  /**
    *   CONTACT
    */
@@ -2133,6 +2185,9 @@ padding-inline: 10px;
   }
   
 
+  .parent-div{
+    width: 23%!important;
+  }
   /* Washing-Machine */
 
   .washing-machine{
