@@ -65,51 +65,22 @@ function setNewColor(color){
 }
 
 
-
-// Refrigerator curve carousel
-// const wrapper = document.querySelector('.wrapper')
-
-// let pressed = false
-// let startX = 0
-
-// wrapper.addEventListener('mousedown', function (e) {
-//   pressed = true
-//   startX = e.clientX
-//   this.style.cursor = 'grabbing'
-// })
-
-// wrapper.addEventListener('mouseleave', function (e) {
-//   pressed = false
-// })
-
-// window.addEventListener('mouseup', function (e) {
-//   pressed = false
-//   wrapper.style.cursor = 'grab'
-// })
-
-// wrapper.addEventListener('mousemove', function (e) {
-//   if(!pressed) {
-//     return
-//   }
-
-//   this.scrollLeft += startX - e.clientX
-// })
-
-
-
 // Today's Deal
 const imgs = document.querySelectorAll('.img-select a');
 const imgs2 = document.querySelectorAll('.img-select-2 a');
 const imgs3 = document.querySelectorAll('.img-select-3 a');
 const imgs4 = document.querySelectorAll('.img-select-4 a');
+const imgs5 = document.querySelectorAll('.img-select-5 a');
 const imgBtns = [...imgs];
 const imgBtns2 = [...imgs2];
 const imgBtns3 = [...imgs3];
 const imgBtns4 = [...imgs4];
+const imgBtns5 = [...imgs5];
 let imgId = 1;
 let imgId2 = 1;
 let imgId3 = 1;
 let imgId4 = 1;
+let imgId5 = 1;
 
 
 
@@ -147,6 +118,14 @@ imgBtns4.forEach((imgItem4) => {
     })
 })
 
+imgBtns5.forEach((imgItem5) => {
+    imgItem5.addEventListener('click', (event) => {
+        event.preventDefault();
+        imgId5 = imgItem5.dataset.id;
+        slideImage5();
+    })
+})
+
 function slideImage(){
     const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
 
@@ -169,8 +148,14 @@ function slideImage4(){
 
     document.querySelector('.img-showcase-4').style.transform = `translateX(${- (imgId2 - 1) * displayWidth4}px)`;
 }
+function slideImage5(){
+    const displayWidth5 = document.querySelector('.img-showcase-5 img:first-child').clientWidth;
+
+    document.querySelector('.img-showcase-5').style.transform = `translateX(${- (imgId5 - 1) * displayWidth5}px)`;
+}
 
 window.addEventListener('resize', slideImage);
 window.addEventListener('resize', slideImage2);
 window.addEventListener('resize', slideImage3);
 window.addEventListener('resize', slideImage4);
+window.addEventListener('resize', slideImage5);

@@ -383,14 +383,16 @@ body{
 .img-display,
 .img-display-2,
 .img-display-3,
-.img-display-4
+.img-display-4,
+.img-display-5
 {
     overflow: hidden;
 }
 .img-showcase,
 .img-showcase-2,
 .img-showcase-3,
-.img-showcase-4
+.img-showcase-4,
+.img-showcase-5
 {
     display: flex;
     width: 100%;
@@ -400,7 +402,8 @@ body{
 .img-showcase img,
 .img-showcase-2 img,
 .img-showcase-3 img,
-.img-showcase-4 img
+.img-showcase-4 img,
+.img-showcase-5 img
 {
   width: 100%;
     min-width: 100%;
@@ -408,7 +411,8 @@ body{
 .img-select,
 .img-select-2,
 .img-select-3,
-.img-select-4
+.img-select-4,
+.img-select-5
 {
     display: flex;
 }
@@ -738,41 +742,26 @@ padding-inline: 10px;
 .accessories-price{
   font-size: var(--fs-5);
 }
-.acc-div{
-  height: 300px;
-  border: 1px solid red;
-}
+
 .image1{
-  transform: translateY(200px);
+  transform: translateY(-80px);
   animation: color-animation 1s linear infinite;
+  /* z-index: -1; */
+  position: absolute;
   z-index: -1;
+  
 }
-.image2{
-  z-index: 5;
-}
+
 .parent {
   position: relative;
 }
 
-.parent img {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.parent img:nth-child(1) {
-  /* Styling for the bottom image */
-  z-index: 2; /* Set the stacking order for the bottom image */
-}
-
-.parent img:nth-child(2) {
-  /* Styling for the top image */
-  z-index: 1; /* Set the stacking order for the top image (higher than the bottom image) */
-}
 
 .parent-div{
   position: relative;
-  height: 400px;
+  padding-block: 30px;
+  height: 100%;
+  width: 100%;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .parent-div img{
@@ -780,15 +769,11 @@ padding-inline: 10px;
   margin-inline: auto;
   padding: 20px;
 }
-.parent-div img:nth-child(1){
+.image2{
   z-index: 2;
 }
-.parent-div img:nth-child(2){
-  position: absolute;
-  z-index: -1;
-  top: -15px;
-  margin-inline: auto;
-}
+
+
 /*-----------------------------------*\
   #Mobile-Gallery
 \*-----------------------------------*/
@@ -1076,10 +1061,10 @@ padding-inline: 10px;
   height: 100%;
 }
 
-.gif-image{
+/* .gif-image{
   margin-block-start: -10px;
   padding-inline: 10px;
-}
+} */
 .headphone-title{
   font-size: var(--fs-4);
 }
@@ -1288,13 +1273,7 @@ padding-inline: 10px;
  
 }
 
-.container-1{
-  /* max-width: 1350px;
-  width: 100%; */
-  /* padding-bottom: 60px; */
- 
-  
-}
+
 .slide-container {
   margin: 0 30px;
   overflow: hidden;
@@ -1350,13 +1329,21 @@ padding-inline: 10px;
 .swiper-navBtn::before,
 .swiper-navBtn::after {
   font-size: 24px;
-  
-
 }
 
 .swiper-pagination-bullet {
   background-color: #333;
   
+}
+
+.icon-hover:hover {
+  border-color: #3b71ca !important;
+  background-color: white !important;
+  color: #3b71ca !important;
+}
+
+.icon-hover:hover i {
+  color: #3b71ca !important;
 }
 
 /* .swiper-navBtn {
@@ -1686,7 +1673,8 @@ padding-inline: 10px;
 .img-showcase img,
 .img-showcase-2 img,
 .img-showcase-3 img,
-.img-showcase-4 img{
+.img-showcase-4 img,
+.img-showcase-5 img{
   width: 100%;
   max-width: 350px!important;
   max-height: 500px!important;
@@ -2386,6 +2374,13 @@ padding-inline: 10px;
    .product-offer{
     color: #1A7F91;
    }
+   /* Accssories */
+   .parent-div img:nth-child(2){
+    position: absolute;
+    z-index: -1;
+    top: -33px;
+    margin-inline: auto;
+  }
 }
 
 /**
