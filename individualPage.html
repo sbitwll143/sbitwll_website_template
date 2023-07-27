@@ -69,9 +69,11 @@
 
                             <div class="py-5">
                               <button class="btn add-btn mr-5">Add to cart</button>
-                              <button class="btn buy-btn">Buy Now</button>
+                              <button class="btn buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy Now</button>
                             </div>
                           </div>
+                         
+
 
                         <ul class="product-description pt-5 col-md-6">
                             <li class="product-item">
@@ -136,6 +138,23 @@
                                             <p class="product-offer">2 Offers ></p>
                                     </div>
                                 </div>
+                            </li>
+
+                            <li class="mt-5 w-75">
+                              <div class="free-delivery d-flex text-left border p-4">
+                                <img src="assets/images/individual-product/delivery-van.png" class="mr-3" alt="">
+                                <div>
+                                  <h3>Free Delivery</h3>
+                                <a href="#">Enter your postal code for Delivery Availability</a>
+                                </div>
+                              </div>
+                              <div class="return-delivery d-flex text-left border p-4">
+                                <img src="assets/images/individual-product/recycle.png" class="mr-3" alt="">
+                                <div>
+                                  <h3>Free Delivery</h3>
+                                <a href="#">Enter your postal code for Delivery Availability</a>
+                                </div>
+                              </div>
                             </li>
                         </ul>
 
@@ -246,6 +265,30 @@
                           </div>
                     </div>
                 </div>
+
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Launch static backdrop modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
              </section>
 
     

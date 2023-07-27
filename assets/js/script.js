@@ -65,7 +65,7 @@ function setNewColor(color){
 }
 
 
-// Today's Deal
+// Today's Deal product cart sliding
 const imgs = document.querySelectorAll('.img-select a');
 const imgs2 = document.querySelectorAll('.img-select-2 a');
 const imgs3 = document.querySelectorAll('.img-select-3 a');
@@ -159,3 +159,4 @@ window.addEventListener('resize', slideImage2);
 window.addEventListener('resize', slideImage3);
 window.addEventListener('resize', slideImage4);
 window.addEventListener('resize', slideImage5);
+

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individual Page</title>
+
+     <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="assets/css/style1.css">
+ 
+   <!-- 
+  - bootstrap link
+-->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+  <!-- Remixicon cdn link -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display+SC:wght@700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+     <!--
+         # Cart Page
+     -->
+
+             <section class="section" id="cart" aria-labelledby="process-label">
+                <div class="container">
+                  <table width="100%">
+                    <thead class="table-bg text-white">
+                      <tr class="">
+                        <td>Product Details</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>shipping</td>
+                        <td>subtotal</td>
+                        <td>action</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-bottom">
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="assets/images/cart/cart-1.png" class="img-fluid" alt="">
+                            <div>
+                              <h3 class="cart-phone-title">Iphone 14 pro Max (128gb Deep Green)</h3>
+                              <div class="d-flex">
+                                <div class="cart-color cart-red mr-2"></div>
+                              <div class="cart-color cart-black mr-2"></div>
+                              <div class="cart-color cart-green mr-2"></div>
+                              <div class="cart-color cart-blue mr-2"></div>
+                              <div class="cart-color cart-pink"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          $29
+                        </td>
+                        <td class="d-flex align-items-center justify-content-around">
+                          <button id="decrement">
+                            <ion-icon name="remove-outline"></ion-icon>
+                          </button>
+                           <span id="quantity">1</span>
+                            <button id="increment">
+                            <ion-icon name="add-outline"></ion-icon>
+                          </button>
+                        </td>
+                        <td>Free</td>
+                        <td id="price"> $29</td>
+                        <td><ion-icon name="trash-outline"></ion-icon></td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="assets/images/cart/cart-2.png" class="img-fluid" alt="">
+                            <div>
+                              <h3 class="cart-phone-title">Iphone 14 pro Max (128gb Deep Green)</h3>
+                              <div class="d-flex">
+                                <div class="cart-color cart-red mr-2"></div>
+                              <div class="cart-color cart-black mr-2"></div>
+                              <div class="cart-color cart-green mr-2"></div>
+                              <div class="cart-color cart-blue mr-2"></div>
+                              <div class="cart-color cart-pink"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          $29
+                        </td>
+                        <td class="d-flex align-items-center justify-content-around">
+                          <button id="decrement">
+                            <ion-icon name="remove-outline"></ion-icon>
+                          </button>
+                           <span id="quantity">1</span>
+                            <button id="increment">
+                            <ion-icon name="add-outline"></ion-icon>
+                          </button>
+                        </td>
+                        <td>Free</td>
+                        <td id="price"> $29</td>
+                        <td><ion-icon name="trash-outline"></ion-icon></td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="assets/images/cart/Dell-Laptop.png" class="img-fluid" alt="">
+                            <div>
+                              <h3 class="cart-phone-title">Iphone 14 pro Max (128gb Deep Green)</h3>
+                              <div class="d-flex">
+                                <div class="cart-color cart-red mr-2"></div>
+                              <div class="cart-color cart-black mr-2"></div>
+                              <div class="cart-color cart-green mr-2"></div>
+                              <div class="cart-color cart-blue mr-2"></div>
+                              <div class="cart-color cart-pink"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          $29
+                        </td>
+                        <td class="d-flex align-items-center justify-content-around">
+                          <button id="decrement">
+                            <ion-icon name="remove-outline"></ion-icon>
+                          </button>
+                           <span id="quantity">1</span>
+                            <button id="increment">
+                            <ion-icon name="add-outline"></ion-icon>
+                          </button>
+                        </td>
+                        <td>Free</td>
+                        <td id="price"> $29</td>
+                        <td><ion-icon name="trash-outline"></ion-icon></td>
+                      </tr>
+                    </tbody>
+
+                  </table>
+
+                </div>
+             </section>
+
+             <section class="section">
+             <div class="container" id="cart-add">
+             <div class="row">
+              <div id="coupon" class=" mb-3 col-md-6">
+                <h3 class="pb-3">Apply Coupon</h3>
+                <div class="d-flex">
+                  <input type="text" class="" placeholder="Enter your coupon">
+                  <button class="coupon-button btn btn-primary">Apply</button>
+                </div>
+
+              </div>
+
+              <div id="subtotal" class=" mb-5 border p-5 col-md-6">
+                <h3 class="pb-3">Cart Totals</h3>
+                <table>
+                  <tr>
+                    <td>Sub Totals</td>
+                    <td id="subtotal1">$323</td>
+                  </tr>
+                  <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Total</strong></td>
+                    <td id="total"><strong>$323</strong></td>
+                  </tr>
+                </table>
+                <button class="btn btn-dark w-100 shopping-cart-button">Buy Now</button>
+
+              </div>
+             </div>
+             </div>
+
+             </section>
+
+    
+
+   
+
+
+
+    <!-- Swiper js link -->
+    <script src="assets/js/swiper-bundle.min.js"></script>         
+
+    <!-- Bootstrap js cdn link -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    
+     <!-- Custom js link -->
+
+
+     <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
