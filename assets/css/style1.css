@@ -1703,6 +1703,50 @@ color: var(--white);
 .cart-empty{
   padding-block-end: 80px;
 }
+
+/* Wishlist */
+
+.quantity-input span,
+.quantity-input h3,
+.quantity-input p,
+.quantity-price{
+  font-size: var(--fs-8);
+}
+
+.quantity-price{
+  font-weight: var(--fw-600);
+}
+
+#wishlist ion-icon{
+  font-size: 20px;
+}
+
+ #wishlist img{
+  margin-left: -10px;
+  width: 120px;
+  transform: translateY(20px);
+} 
+
+.wishlist h3,
+.wishlist-title{
+  font-size: var(--fs-4);
+  margin-top: 15px;
+}
+.wishlist-details-welcome{
+  font-size: var(--fs-8);
+}
+
+/* My Order */
+
+.left-oreder-info p,
+.right-oreder-info p{
+  font-size: 14px;
+  
+}
+.right-oreder-info p:first-child span{
+  color: #FEA628;
+  
+}
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -2222,6 +2266,39 @@ color: var(--white);
   margin-right: 10px;
   padding: 20px;
  
+}
+
+
+/* Wishlist */
+
+.quantity-input span,
+.quantity-input h3,
+.quantity-input p,
+.quantity-price{
+  font-size: var(--fs-7);
+}
+
+.quantity-price{
+  font-weight: var(--fw-600);
+}
+
+#wishlist ion-icon{
+  font-size: 22px;
+}
+
+ #wishlist img{
+  margin-left: -25px;
+  width: 150px;
+  transform: translateY(20px);
+} 
+
+.wishlist h3,
+.wishlist-title{
+  font-size: 3.5rem;
+  margin-top: 15px;
+}
+.wishlist-details-welcome{
+  font-size: var(--fs-7);
 }
  }
 
