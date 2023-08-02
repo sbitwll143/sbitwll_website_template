@@ -1747,6 +1747,321 @@ color: var(--white);
   color: #FEA628;
   
 }
+
+/* Error Page */
+
+.error-page{
+  padding-bottom: 80px;
+}
+.error-page h3{
+  font-size: 3.5rem;
+}
+
+.error-page p{
+  font-size: 1.2rem;
+}
+
+
+.seller-bg{
+  background: url("../images/sell-product/sell-product-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 450px;
+  height: 550px;
+  position: relative;
+ 
+}
+
+ .seller img{
+  width: 150px;
+  position: absolute;
+  top: 38%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.seller h3
+{
+/* margin-top: 120px; */
+margin-left: 60px;
+font-size: 3.5rem;
+transform: translateY(65px);
+
+}
+
+.seller h2{
+ 
+margin-left: 60px;
+font-size: 3.5rem;
+transform: translateY(250px);
+}
+
+.buyer{
+  height: 380px;
+  padding: 60px;
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+  margin-bottom: 50px;
+  margin-inline: auto;
+}
+
+.buyer img{
+  width: 150px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.buyer h3{
+margin-top: -20px;
+margin-left: 10px;
+font-size: 3.5rem;
+
+}
+.buyer h2{
+  margin-top: 200px;
+margin-left: 10px;
+font-size: 3.5rem;
+}
+.sell-product-title{
+  font-size: var(--fs-4);
+  margin-left: 200px;
+}
+
+
+
+.border-shadow:hover img
+{
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  padding: 20px;
+  /* transition: .5s ease-in-out; */
+  cursor: pointer;
+  /* opacity: 0.5; */
+  transition: 0.3s;
+  position: relative;
+  
+}
+
+.dotted-border .btn-change,
+.dotted-border .btn-remove,
+.dotted-border-1 .btn-remove-1,
+.dotted-border-1 .btn-change-1,
+.dotted-border-2 .btn-remove-2,
+.dotted-border-2 .btn-change-2,
+.dotted-border-3 .btn-remove-3,
+.dotted-border-3 .btn-change-3,
+.dotted-border-4 .btn-remove-4,
+.dotted-border-4 .btn-change-4,
+.dotted-border-5 .btn-remove-5,
+.dotted-border-5 .btn-change-5,
+.dotted-border-6 .btn-remove-6,
+.dotted-border-6 .btn-change-6,
+.dotted-border-7 .btn-remove-7,
+.dotted-border-7 .btn-change-7,
+.dotted-border-8 .btn-remove-8,
+.dotted-border-8 .btn-change-8,
+.dotted-border-9 .btn-remove-9,
+.dotted-border-9 .btn-change-9,
+.dotted-border-10 .btn-remove-10,
+.dotted-border-10 .btn-change-10,
+.dotted-border-11 .btn-remove-11,
+.dotted-border-11 .btn-change-11
+
+{
+  display: none;
+}
+
+.dotted-border:hover .btn-change
+ {
+  display: inline-block;
+  position: absolute;
+  bottom: 50%;
+  left: 11%;
+}
+
+.dotted-border:hover .btn-remove
+{
+  display: inline-block;
+  position: absolute;
+  bottom: 50%;
+  left: 19%;
+}
+
+.dotted-border-1:hover .btn-change-1
+ {
+  display: inline-block;
+  position: absolute;
+  bottom: 50%;
+  left: 32%;
+}
+.dotted-border-2:hover .btn-change-2
+ {
+  display: inline-block;
+  position: absolute;
+  bottom: 50%;
+  right: 32%;
+}
+.dotted-border-3:hover .btn-change-3
+ {
+  display: inline-block;
+  position: absolute;
+  bottom: 50%;
+  right: 18%;
+}
+
+
+.dotted-border-1:hover .btn-remove-1
+{
+  display: inline-block;
+  position: absolute;
+  bottom: 50%;
+  left: 40%;
+}
+.dotted-border-2:hover .btn-remove-2
+{
+  display: inline-block;
+  position: absolute;
+  bottom: 50%;
+  right: 40%;
+}
+.dotted-border-3:hover .btn-remove-3
+{
+  display: inline-block;
+  position: absolute;
+  bottom: 50%;
+  right: 10%;
+}
+
+.dotted-border-4:hover .btn-change-4
+
+ {
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  left: 11%;
+}
+
+.dotted-border-4:hover .btn-remove-4
+
+{
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  left: 19%;
+}
+.dotted-border-5:hover .btn-change-5
+
+ {
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  left: 32%;
+}
+
+.dotted-border-5:hover .btn-remove-5
+
+{
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  left: 40%;
+}
+
+.dotted-border-6:hover .btn-change-6
+ {
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  right: 40%;
+}
+
+.dotted-border-6:hover .btn-remove-6
+{
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  right: 32%;
+}
+.dotted-border-7:hover .btn-change-7
+ {
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  right: 18%;
+}
+
+.dotted-border-7:hover .btn-remove-7
+{
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+}
+.dotted-border-8:hover .btn-change-8
+ {
+  display: inline-block;
+  position: absolute;
+  bottom: -35%;
+  left: 11%;
+}
+
+.dotted-border-8:hover .btn-remove-8
+{
+  display: inline-block;
+  position: absolute;
+  bottom:-35%;
+  left: 19%;
+}
+.dotted-border-9:hover .btn-change-9
+ {
+  display: inline-block;
+  position: absolute;
+  bottom: -35%;
+  left: 32%;
+}
+
+.dotted-border-9:hover .btn-remove-9
+{
+  display: inline-block;
+  position: absolute;
+  bottom:-35%;
+  left: 40%;
+}
+
+.dotted-border-10:hover .btn-change-10
+ {
+  display: inline-block;
+  position: absolute;
+  bottom: -35%;
+  right: 40%;
+}
+
+.dotted-border-10:hover .btn-remove-10
+{
+  display: inline-block;
+  position: absolute;
+  bottom:-35%;
+  right: 32%;
+}
+.dotted-border-11:hover .btn-change-11
+ {
+  display: inline-block;
+  position: absolute;
+  bottom: -35%;
+  right: 18%;
+}
+
+.dotted-border-11:hover .btn-remove-11
+{
+  display: inline-block;
+  position: absolute;
+  bottom:-35%;
+  right: 10%;
+}
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -2300,6 +2615,202 @@ color: var(--white);
 .wishlist-details-welcome{
   font-size: var(--fs-7);
 }
+
+.seller-bg{
+  max-width: 360px;
+  height: 550px;
+}
+
+.buyer{
+  height: 365px;
+  max-width: 300px;
+  margin-top: 50px;
+}
+
+.seller img{
+  width: 130px;
+  top: 38%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+}
+
+.seller h3
+{
+margin-top: 30px;
+margin-left: 85px;
+font-size: 3.5rem;
+
+}
+
+.seller h2{
+  /* margin-top: 200px; */
+margin-left: 70px;
+font-size: 3.5rem;
+}
+
+
+.dotted-border:hover .btn-change
+ {
+ 
+  bottom: 60%;
+  left: 14%;
+}
+
+.dotted-border:hover .btn-remove
+{
+
+  bottom: 50%;
+  left: 14%;
+}
+
+.dotted-border-1:hover .btn-change-1
+ {
+ 
+  bottom: 60%;
+  left: 44%;
+}
+.dotted-border-2:hover .btn-change-2
+ {
+  
+  bottom: 60%;
+  right: 11%;
+}
+.dotted-border-3:hover .btn-change-3
+ {
+
+  bottom: 10%;
+  right: 75%;
+}
+
+
+.dotted-border-1:hover .btn-remove-1
+{
+ 
+  bottom: 50%;
+  left: 44%;
+}
+.dotted-border-2:hover .btn-remove-2
+{
+ 
+  bottom: 50%;
+  right: 11%;
+}
+.dotted-border-3:hover .btn-remove-3
+{
+ 
+  bottom: 1%;
+  right: 75%;
+}
+
+.dotted-border-4:hover .btn-change-4
+
+ {
+
+  bottom: 10%;
+  left: 45%;
+}
+
+.dotted-border-4:hover .btn-remove-4
+
+{
+ 
+  bottom: 1%;
+  left: 45%;
+}
+.dotted-border-5:hover .btn-change-5
+
+ {
+ 
+  bottom: 10%;
+  left: 75%;
+}
+
+.dotted-border-5:hover .btn-remove-5
+
+{
+ 
+  bottom: 1%;
+  left: 75%;
+}
+
+.dotted-border-6:hover .btn-change-6
+ {
+ 
+  bottom: -35%;
+  right: 75%;
+}
+
+.dotted-border-6:hover .btn-remove-6
+{
+
+  bottom: -45%;
+  right: 75%;
+}
+.dotted-border-7:hover .btn-change-7
+ {
+ 
+  bottom: -35%;
+  right: 43%;
+}
+
+.dotted-border-7:hover .btn-remove-7
+{
+
+  bottom: -45%;
+  right: 43%;
+}
+.dotted-border-8:hover .btn-change-8
+ {
+  bottom: -35%;
+  left: 75%;
+}
+
+.dotted-border-8:hover .btn-remove-8
+{
+ 
+  bottom: -45%;
+  left: 75%;
+}
+.dotted-border-9:hover .btn-change-9
+ {
+  
+  bottom: -90%;
+  left: 15%;
+}
+
+.dotted-border-9:hover .btn-remove-9
+{
+ 
+  bottom:-100%;
+  left: 15%;
+}
+
+.dotted-border-10:hover .btn-change-10
+ {
+
+  bottom: -90%;
+  right: 42%;
+}
+
+.dotted-border-10:hover .btn-remove-10
+{
+ 
+  bottom:-100%;
+  right: 42%;
+}
+.dotted-border-11:hover .btn-change-11
+ {
+
+  bottom: -90%;
+  right: 11%;
+}
+
+.dotted-border-11:hover .btn-remove-11
+{
+
+  bottom:-100%;
+  right: 11%;
+}
  }
 
 
@@ -2749,6 +3260,232 @@ color: var(--white);
     top: -33px;
     margin-inline: auto;
   }
+
+
+  .seller-bg{
+    max-width: 450px;
+    height: 550px;
+   
+  }
+  
+   .seller img{
+    width: 150px;
+    top: 38%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .seller h3
+  {
+  margin-bottom: -10px;
+  margin-left: 60px;
+  font-size: 3.5rem;
+  
+  }
+  
+  .seller h2{
+    /* margin-top: 200px; */
+  margin-left: 60px;
+  font-size: 3.5rem;
+  }
+  
+  .buyer{
+    height: 380px;
+    padding: 60px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 50px;
+  }
+  
+  .buyer img{
+    width: 150px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  .buyer h3{
+  margin-top: -20px;
+  margin-left: 10px;
+  font-size: 3.5rem;
+  
+  }
+  .buyer h2{
+    margin-top: 200px;
+  margin-left: 10px;
+  font-size: 3.5rem;
+  }
+  .sell-product-title{
+    font-size: var(--fs-4);
+    margin-left: 200px;
+  }
+
+
+
+  .dotted-border:hover .btn-change
+ {
+ 
+  bottom: 60%;
+  left: 10%;
+}
+
+.dotted-border:hover .btn-remove
+{
+
+  bottom: 50%;
+  left: 10%;
+}
+
+.dotted-border-1:hover .btn-change-1
+ {
+ 
+  bottom: 60%;
+  left: 35%;
+}
+.dotted-border-2:hover .btn-change-2
+ {
+  
+  bottom: 60%;
+  right: 33%;
+}
+.dotted-border-3:hover .btn-change-3
+ {
+
+  bottom: 60%;
+  right: 8%;
+}
+
+
+.dotted-border-1:hover .btn-remove-1
+{
+ 
+  bottom: 50%;
+  left: 35%;
+}
+.dotted-border-2:hover .btn-remove-2
+{
+ 
+  bottom: 50%;
+  right: 33%;
+}
+.dotted-border-3:hover .btn-remove-3
+{
+ 
+  bottom: 50%;
+  right: 8%;
+}
+
+.dotted-border-4:hover .btn-change-4
+
+ {
+
+  bottom: 10%;
+  left: 45%;
+}
+
+.dotted-border-4:hover .btn-remove-4
+
+{
+ 
+  bottom: 1%;
+  left: 45%;
+}
+.dotted-border-5:hover .btn-change-5
+
+ {
+ 
+  bottom: 10%;
+  left: 75%;
+}
+
+.dotted-border-5:hover .btn-remove-5
+
+{
+ 
+  bottom: 1%;
+  left: 75%;
+}
+
+.dotted-border-6:hover .btn-change-6
+ {
+ 
+  bottom: -35%;
+  right: 75%;
+}
+
+.dotted-border-6:hover .btn-remove-6
+{
+
+  bottom: -45%;
+  right: 75%;
+}
+.dotted-border-7:hover .btn-change-7
+ {
+ 
+  bottom: -35%;
+  right: 43%;
+}
+
+.dotted-border-7:hover .btn-remove-7
+{
+
+  bottom: -45%;
+  right: 43%;
+}
+.dotted-border-8:hover .btn-change-8
+ {
+  bottom: -35%;
+  left: 75%;
+}
+
+.dotted-border-8:hover .btn-remove-8
+{
+ 
+  bottom: -45%;
+  left: 75%;
+}
+.dotted-border-9:hover .btn-change-9
+ {
+  
+  bottom: -90%;
+  left: 15%;
+}
+
+.dotted-border-9:hover .btn-remove-9
+{
+ 
+  bottom:-100%;
+  left: 15%;
+}
+
+.dotted-border-10:hover .btn-change-10
+ {
+
+  bottom: -90%;
+  right: 42%;
+}
+
+.dotted-border-10:hover .btn-remove-10
+{
+ 
+  bottom:-100%;
+  right: 42%;
+}
+.dotted-border-11:hover .btn-change-11
+ {
+
+  bottom: -90%;
+  right: 11%;
+}
+
+.dotted-border-11:hover .btn-remove-11
+{
+
+  bottom:-100%;
+  right: 11%;
+}
 }
 
 /**
@@ -2867,6 +3604,173 @@ color: var(--white);
   max-width: 750px;
   margin-inline: auto;
   font-size: var(--fs-6);
+}
+
+
+
+
+.dotted-border:hover .btn-change
+ {
+ 
+  bottom: 50%;
+  left: 11%;
+}
+
+.dotted-border:hover .btn-remove
+{
+
+  bottom: 50%;
+  left: 19%;
+}
+
+.dotted-border-1:hover .btn-change-1
+ {
+ 
+  bottom: 50%;
+  left: 32%;
+}
+.dotted-border-2:hover .btn-change-2
+ {
+ 
+  bottom: 50%;
+  right: 32%;
+}
+.dotted-border-3:hover .btn-change-3
+ {
+
+  bottom: 50%;
+  right: 18%;
+}
+
+
+.dotted-border-1:hover .btn-remove-1
+{
+
+  bottom: 50%;
+  left: 40%;
+}
+.dotted-border-2:hover .btn-remove-2
+{
+ 
+  bottom: 50%;
+  right: 40%;
+}
+.dotted-border-3:hover .btn-remove-3
+{
+  
+  bottom: 50%;
+  right: 10%;
+}
+
+.dotted-border-4:hover .btn-change-4
+
+ {
+  
+  bottom: 5%;
+  left: 11%;
+}
+
+.dotted-border-4:hover .btn-remove-4
+
+{
+  
+  bottom: 5%;
+  left: 19%;
+}
+.dotted-border-5:hover .btn-change-5
+
+ {
+  
+  bottom: 5%;
+  left: 32%;
+}
+
+.dotted-border-5:hover .btn-remove-5
+
+{
+ 
+  bottom: 5%;
+  left: 40%;
+}
+
+.dotted-border-6:hover .btn-change-6
+ {
+
+  bottom: 5%;
+  right: 40%;
+}
+
+.dotted-border-6:hover .btn-remove-6
+{
+
+  bottom: 5%;
+  right: 32%;
+}
+.dotted-border-7:hover .btn-change-7
+ {
+
+  bottom: 5%;
+  right: 18%;
+}
+
+.dotted-border-7:hover .btn-remove-7
+{
+
+  bottom: 5%;
+  right: 10%;
+}
+.dotted-border-8:hover .btn-change-8
+ {
+ 
+  bottom: -35%;
+  left: 11%;
+}
+
+.dotted-border-8:hover .btn-remove-8
+{
+
+  bottom:-35%;
+  left: 19%;
+}
+.dotted-border-9:hover .btn-change-9
+ {
+ 
+  bottom: -35%;
+  left: 32%;
+}
+
+.dotted-border-9:hover .btn-remove-9
+{
+
+  bottom:-35%;
+  left: 40%;
+}
+
+.dotted-border-10:hover .btn-change-10
+ {
+
+  bottom: -35%;
+  right: 40%;
+}
+
+.dotted-border-10:hover .btn-remove-10
+{
+ 
+  bottom:-35%;
+  right: 32%;
+}
+.dotted-border-11:hover .btn-change-11
+ {
+
+  bottom: -35%;
+  right: 18%;
+}
+
+.dotted-border-11:hover .btn-remove-11
+{
+
+  bottom:-35%;
+  right: 10%;
 }
 }
 
