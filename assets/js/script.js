@@ -160,3 +160,5 @@ window.addEventListener('resize', slideImage3);
 window.addEventListener('resize', slideImage4);
 window.addEventListener('resize', slideImage5);
 
+
+

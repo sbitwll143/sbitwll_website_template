@@ -1632,16 +1632,20 @@ color: var(--white);
   color: var(--sonic-silver);
 }
 
-#contact-details ul li ion-icon{
+#contact-details ul li ion-icon,
+.order-left-panel ul li ion-icon{
   font-size: 20px;
 }
 
-#contact-details ul li{
+#contact-details ul li,
+.order-left-panel ul li{
   transition: .3s ease;
   padding-top: 20px;
 }
 
-#contact-details ul li:hover{
+#contact-details ul li:hover,
+.order-left-panel ul li:hover
+{
   background: linear-gradient(125deg, #060CDF 0%, #0451E8 40.49%, #038CF1 72.22%, #26EDFE 100%);
 
   width: 180px;
@@ -2062,6 +2066,16 @@ font-size: 3.5rem;
   bottom:-35%;
   right: 10%;
 }
+
+.oreder-details p{
+  font-size: var(--fs-7);
+}
+
+.my-order-thrash{
+  color: red;
+}
+
+
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
