@@ -2075,6 +2075,12 @@ font-size: 3.5rem;
   color: red;
 }
 
+/* Product Sell */
+.product-bg{
+  background: url('../images/product-sell/product-bg.png');
+  width: 100%;
+  height: 350px;
+}
 
 /*-----------------------------------*\
   #MEDIA QUERIES
@@ -2825,6 +2831,47 @@ font-size: 3.5rem;
   bottom:-100%;
   right: 11%;
 }
+
+
+.text-alignment-1{
+  margin-top: -50px;
+}
+.text-alignment-2{
+  margin-top: 45px;
+}
+.text-alignment-3{
+  margin-top: 45px;
+}
+.text-alignment-4{
+  margin-top: 35px;
+}
+.text-alignment-6{
+  margin-top: 50px;
+}
+.text-alignment-7{
+  margin-top: -150px;
+}
+.text-alignment-8{
+  margin-top: 50px;
+}
+.text-alignment-10{
+  margin-top: 60px;
+}
+.img-2{
+  transform: translateY(40px);
+}
+.img-5{
+  transform: translateY(-30px);
+}
+ .img-7{
+  transform: translate(28px,-80px);
+} 
+ .img-8{
+  transform: translateY(20px);
+} 
+ .img-10{
+  transform: translateY(40px);
+} 
  }
 
 
