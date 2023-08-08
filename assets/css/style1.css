@@ -2082,6 +2082,56 @@ font-size: 3.5rem;
   height: 350px;
 }
 
+.hemburger ion-icon{
+  font-size: 40px;
+}
+
+.fill-product-content h2{
+  font-size: 3rem;
+  font-weight: var(--fw-700);
+}
+
+.fill-form-section input{
+  font-size: 3rem;
+}
+.fill-form-section label{
+  font-size: 3rem;
+}
+
+.up-icon{
+  font-size: 3rem;
+}
+.fill-field-text-area{
+  width: 700px;
+}
+
+.border-dotted {
+  border: 1px dotted gray;
+  width: 200px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.border-dotted ion-icon{
+  font-size: 45px;
+}
+.border-dotted p{
+  font-size: 15px;
+  text-align: center;
+}
+
+.add-section h2{
+  font-size: 3rem;
+ 
+}
+
+.add-section p{
+  font-size: 1.5rem;
+}
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -2317,8 +2367,6 @@ font-size: 3.5rem;
 
 
  }
-
-
 
 
  /**
