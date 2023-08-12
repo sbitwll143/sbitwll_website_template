@@ -1432,6 +1432,10 @@ padding-inline: 10px;
   font-size: var(--fs-7);
   word-wrap: break-word;
 }
+
+.width-div{
+  max-width: 350px!important;
+}
 .btn{
   padding: 8px 26px!important;
   font-size: var(--fs-8)!important;
