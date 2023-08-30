@@ -239,7 +239,7 @@ body{
 
   
 }
-.offer-h3{font-size: var(--fs-2);}
+.offer-h3{font-size: var(--fs-3);}
 .offer-p{font-size: var(--fs-5);}
 .offer-p-sm{font-size: var(--fs-7);}
 .offer-btn{
@@ -270,8 +270,13 @@ body{
   border-radius: 8px; 
 
 }
+
+.offer-bg-4{
+  background: linear-gradient(97.4deg, #96C291 10.97%, #96eb8d 90.97%);
+  border-radius: 8px;
+}
 .offer-headphone-h3{
-  font-size: var(--fs-2);
+  font-size: var(--fs-3);
  
 }
 .offer-headphone-sub-title{
@@ -287,6 +292,11 @@ body{
   font-weight: var(--fw-600);
 }
 
+.offer-camera-p-sm{
+  color: var(--white);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
+}
 /* View all */
 .view-all{
   font-size: var(--fs-6);
@@ -1271,11 +1281,12 @@ padding-inline: 10px;
 }
 
 
-.slide-container {
+/* .slide-container {
   margin: 0 30px;
   overflow: hidden;
-}
+} */
 .card-1 {
+  min-width: 310px;
   padding-top: 15px;
   margin: 30px;
   background: #fff;
@@ -1283,14 +1294,15 @@ padding-inline: 10px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .card-1 .image-box {
-  height: 300px;
+  height: 280px;
  
 }
 .card-1 .image-box img {
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 250px;
   border-radius: 8px 8px 0 0;
   object-fit: contain;
+  margin-inline: auto;
 
 }
 .card-1 .profile-details {
@@ -1299,20 +1311,20 @@ padding-inline: 10px;
   column-gap: 12px;
   padding: 15px;
 }
-.card-1 .profile-details img {
+/* .card-1 .profile-details img {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-}
-.profile-details .name {
+} */
+/* .profile-details .name {
   font-size: 15px;
   font-weight: 500;
-}
-.profile-details .job {
+} */
+/* .profile-details .job {
   font-size: 12px;
   font-weight: 500;
   color: #4d4d4d;
-}
+} */
 
 .swiper-navBtn {
   color: #fff;
@@ -1333,7 +1345,72 @@ padding-inline: 10px;
   
 }
 
+.star-rating ion-icon{
+  font-size: 24px;
+}
 
+ .product-grid .product-button-group{
+  position: relative;
+  z-index: 1;
+ 
+} 
+.product-grid .add-to-cart{
+  color: var(--text-color);
+  background: #f4f4f4;
+  font-size: 14px;
+  width: calc(100% - 75px);
+  padding: 8px 3px;
+  /* margin: 0 auto; */
+  display: inline-block;
+  transition: all 0.25s ease 0s;
+  margin-left: 37px;
+}
+.product-grid .add-to-cart ion-icon{
+  margin-right: 8px;
+  display: none;
+  visibility: hidden;
+  transition: all 0.25s ease 0s;
+}
+.product-grid:hover .add-to-cart{
+  color:#fff;
+  background: var(--black);
+}
+.product-grid:hover .add-to-cart ion-icon{
+  display: inline-block;
+  visibility: visible;
+}
+.product-grid .product-like-icon,
+.product-grid .product-compare-icon{
+  color: var(--black);
+  background: #f4f4f4;
+  line-height: 34px;
+  width: 34px;
+  height: 34px;
+  opacity: 0;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  z-index: -1;
+  transition: all 0.25s ease 0s;
+}
+.product-grid .product-compare-icon{
+  left: auto;
+  right: 50px;
+}
+.product-grid:hover .product-like-icon{
+  opacity: 1;
+  left: 0;
+}
+.product-grid:hover .product-compare-icon{
+  opacity: 1;
+  right: 0;
+}
+
+.product-button-group ion-icon{
+  font-size: 20px;
+
+}
    /**
    * Product Page
    */
@@ -2421,9 +2498,10 @@ font-size: 3.5rem;
    * Offer 
    */
 
-  .offer-bg-2, .offer-bg-3, .offer-bg-1{
-    height: 450px!important;
+  .offer-bg-2, .offer-bg-3, .offer-bg-1, .offer-bg-4{
+   
     max-width: 45%!important;
+    min-height: 600px!important;
    
   }
 
@@ -2432,7 +2510,7 @@ font-size: 3.5rem;
   }
 
   .offer-btn-2, .offer-btn-1{
-    margin-top: 60px;
+    margin-top: 40px;
   }
   /**
    * SERVICE
@@ -3039,17 +3117,12 @@ font-size: 3.5rem;
    * Offer 
    */
 
-   .offer-bg-1, .offer-bg-2, .offer-bg-3{
-    
-    max-width: 30%!important;
-    min-height: 600px!important;
-   
-  } 
+
   .offer-btn-1{
     margin-top: 80px;
   }
   .offer-btn-2{
-    margin-top: 60px;
+    margin-top: 30px;
   }
  
 
@@ -3720,7 +3793,12 @@ font-size: 3.5rem;
 }
 
 
-
+.offer-bg-1, .offer-bg-2, .offer-bg-3, .offer-bg-4{
+    
+  max-width: 22%!important;
+  min-height: 600px!important;
+ 
+} 
 
 .dotted-border:hover .btn-change
  {
