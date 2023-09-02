@@ -336,12 +336,12 @@ body{
   transform: translateY(-25px)!important;
 }
 
-.storage-img h5{transform: translateY(0px);}
+.storage-img h5{transform: translateY(-61px);}
  .category-div-margin-top{
   margin-block-start: 5em!important;
 } 
 .category-title-h5{
-  /* transform: translateY(-30px); */
+  transform: translateY(-60px);
   color: var(--white);
   font-weight: var(--fw-600);
 
@@ -350,6 +350,17 @@ body{
 .img-div-height{
 
   height: 180px;
+}
+
+.category-bg .img-div-height img{
+   transition: all 0.4s ease;
+ cursor: pointer; 
+ /* transition: var(--transition); */
+}
+
+.category-bg:is(:hover, :focus-within) .img-div-height img {
+ transform: scale(1.1);
+ cursor: pointer;
 }
 
 /*-----------------------------------*\
@@ -3130,14 +3141,14 @@ font-size: 3.5rem;
    * ABOUT
    */
    .category-div-width{
-    max-width: 20%!important;
+    max-width: 15%!important;
     margin-inline: 5px;
-    height: 220px;
+    height: 170px;
   } 
 
-  .img-div-height img{
+  /* .img-div-height img{
     width: 160px;
-  }
+  } */
  
   /* Today's Deal Section Start*/
 
