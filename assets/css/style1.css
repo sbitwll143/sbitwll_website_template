@@ -677,6 +677,17 @@ padding-inline: 10px;
   display: block;
  
 }
+.bg-refrigerator img{
+  padding-top: 150px;
+}
+
+.gallery-icon-freez img{
+  margin-top: -150px;
+}
+
+.freez-description{
+  font-size: 1.5rem;
+}
 .refrigetor-container{
   margin-top: 0;
   display: none;
@@ -2639,8 +2650,11 @@ font-size: 3.5rem;
 
 .ref-section-top{
    margin-top: -100px;
-
 } 
+
+.bg-refrigerator img{
+  /* padding-top: 200px; */
+}
 
  /* Acssories */
 .parent-div{
@@ -3280,9 +3294,9 @@ font-size: 3.5rem;
     }
   
 
-    .margin-adjust{
+    /* .margin-adjust{
       margin-top: 200px;
-    }
+    } */
     
     .headphone-gallery-container {
       display: grid;
