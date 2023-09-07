@@ -204,7 +204,7 @@ body{
   #HEADER
 \*-----------------------------------*/
 
-.nav-bg-color{
+/* .nav-bg-color{
   background-image: var(--gradient-menu);
 }
 .navbar-brand{
@@ -213,12 +213,12 @@ body{
 .menu-bg-color{background-color: white!important;}
 
 .nav-link{
-  /* font-size: var(--fs-6)!important; */
+ 
   color: black!important;
 }
 .currency-list{
   display: none;
-}
+} */
 /*-----------------------------------*\
   #Offer Section
 \*-----------------------------------*/
