@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./signup.css">
+     <!-- 
+    - bootstrap link
+  -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+  <!-- Remixicon cdn link -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display+SC:wght@700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="416" viewBox="0 0 1440 416" fill="none">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-100" style="min-width: 1350px;" height="400" viewBox="0 0 1440 416" fill="none">
         <path d="M-5.99997 0H1470.98V294.048C1470.98 294.048 1622.6 365.648 1417.8 379.683C1305.57 387.373 1225.07 356.571 1055.71 356.571C728.804 356.571 655.689 394.959 409.525 410.998C163.361 427.037 -5.99992 405.652 -5.99997 330.135C-6.00003 254.618 -5.99997 0 -5.99997 0Z" fill="url(#paint0_linear_3574_21175)"/>
         <defs>
         <linearGradient id="paint0_linear_3574_21175" x1="-84.6764" y1="29.38" x2="-43.1972" y2="488.602" gradientUnits="userSpaceOnUse">
@@ -17,5 +31,39 @@
         </linearGradient>
         </defs>
         </svg>
+        <div class="d-flex">
+            <div class="left-item">
+            <p class="">Let’s get you all set up so you can verify your personal account and begin setting up your profile</p>
+            <img class="img-fluid" src="./assets/images/Login/chracter.png" alt="">
+            </div>
+            <div>
+                <div class="background">
+                    <div class="shape"></div>
+                    <div class="shape"></div>
+                </div>
+                <form>
+                    <h3>Sign up</h3>
+            
+                    <label for="username">First Name</label>
+                    <input type="text" placeholder="First Name" id="username">
+        
+                    <label for="username">Last Name</label>
+                    <input type="text" placeholder="Last Name" id="username">
+        
+                    <label for="username">Email</label>
+                    <input type="text" placeholder="Email or Phone" id="username">
+            
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password" id="password">
+            
+                    <button>Sign Up</button>
+                    
+                </form>
+            </div>
+        </div>
+
+
+        <!-- Bootstrap js cdn link -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
