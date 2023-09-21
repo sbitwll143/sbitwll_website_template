@@ -1473,8 +1473,9 @@ padding-inline: 10px;
    }
 
    .product-stock{
-    color: #00FF66;
+    color: #388e3c;
     font-size: 1.2rem!important;
+    font-weight: 500;
    }
    .size-dark{
     padding: 8px 20px;
