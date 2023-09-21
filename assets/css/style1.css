@@ -660,7 +660,9 @@ padding-inline: 10px;
  
 }
 
-
+.container{
+       --bs-gutter-x: 0!important;
+}
 
 .wrapper img {
   scroll-snap-align: center;
