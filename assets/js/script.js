@@ -148,17 +148,17 @@ function slideImage4(){
 
     document.querySelector('.img-showcase-4').style.transform = `translateX(${- (imgId2 - 1) * displayWidth4}px)`;
 }
-function slideImage5(){
-    const displayWidth5 = document.querySelector('.img-showcase-5 img:first-child').clientWidth;
+// function slideImage5(){
+//     const displayWidth5 = document.querySelector('.img-showcase-5 img:first-child').clientWidth;
 
-    document.querySelector('.img-showcase-5').style.transform = `translateX(${- (imgId5 - 1) * displayWidth5}px)`;
-}
+//     document.querySelector('.img-showcase-5').style.transform = `translateX(${- (imgId5 - 1) * displayWidth5}px)`;
+// }
 
 window.addEventListener('resize', slideImage);
 window.addEventListener('resize', slideImage2);
 window.addEventListener('resize', slideImage3);
 window.addEventListener('resize', slideImage4);
-window.addEventListener('resize', slideImage5);
+// window.addEventListener('resize', slideImage5);
 
 
 

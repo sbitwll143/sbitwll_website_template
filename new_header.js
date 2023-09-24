@@ -1,3 +1,5 @@
+
+'use strict';
 // mobile menu variables
 const mobileMenuOpenBtn = document.querySelectorAll('[data-mobile-menu-open-btn]');
 const mobileMenu = document.querySelectorAll('[data-mobile-menu]');
@@ -17,7 +19,7 @@ for (let i = 0; i < mobileMenuOpenBtn.length; i++) {
     overlay.classList.add('active');
   });
 
-  mobileMenuCloseBtn[i].addEventListener('click', mobileMenuCloseFunc);
+   mobileMenuCloseBtn[i].addEventListener('click', mobileMenuCloseFunc);
   overlay.addEventListener('click', mobileMenuCloseFunc);
 
   // accordion variables

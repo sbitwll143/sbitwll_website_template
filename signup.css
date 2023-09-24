@@ -140,14 +140,7 @@ button{
     background: #222;
 }
 
-/* Divider Line */
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
 @media(max-width: 1350px){
     
    

@@ -2496,7 +2496,7 @@
      * #REUSED STYLE 
      */
   
-    .container { max-width: 1200px; }
+    .container { max-width: 1000px; }
   
   
   
@@ -2534,7 +2534,7 @@
   
     .product-featured .display-number { --fs-5: 1.125rem; }
   
-    .product-grid { grid-template-columns: repeat(4, 1fr); }
+    .product-grid { grid-template-columns: repeat(3, 1fr); }
   
   
   

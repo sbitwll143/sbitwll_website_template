@@ -1335,20 +1335,8 @@ padding-inline: 10px;
   column-gap: 12px;
   padding: 15px;
 }
-/* .card-1 .profile-details img {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-} */
-/* .profile-details .name {
-  font-size: 15px;
-  font-weight: 500;
-} */
-/* .profile-details .job {
-  font-size: 12px;
-  font-weight: 500;
-  color: #4d4d4d;
-} */
+/* New card */
+
 
 .swiper-navBtn {
   color: #fff;
@@ -1378,13 +1366,84 @@ padding-inline: 10px;
   z-index: 1;
  
 } 
+
+.product-grid .showcase-actions {
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  font-size: 20px;
+  transform: translateX(50px);
+  transition: var(--transition-timing);
+  z-index: 3;
+}
+
+/* .product-grid .showcase:hover .showcase-actions { transform: translateX(0); } */
+  
+.product-grid .btn-action {
+  background: var(--white);
+  color: var(--sonic-silver);
+  margin-bottom: 5px;
+  border: 1px solid var(--cultured);
+  padding: 5px;
+  border-radius: var(--border-radius-sm);
+  transition: var(--transition-timing);
+}
+
+.product-grid .btn-action:hover {
+  background: var(--eerie-black);
+  color: var(--white);
+  border-color: var(--eerie-black);
+}
+
+.product-grid .showcase-content { padding: 15px 20px 0; }
+
+.product-grid .showcase-category {
+  color: var(--salmon-pink);
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.product-grid .showcase-title {
+  color: var(--sonic-silver);
+  font-size: 1.3rem;
+  font-weight: var(--weight-300);
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  transition: var(--transition-timing);
+}
+
+.product-grid .showcase-title:hover { color: var(--eerie-black); }
+
+.product-grid .showcase-rating {
+  display: flex;
+  color: var(--sandy-brown);
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+}
+
+.product-grid .price-box {
+  display: flex;
+  gap: 10px;
+  font-size: 1.5rem;
+  color: var(--eerie-black);
+  margin-bottom: 10px;
+}
+
+.product-grid .price { font-weight: 700; }
+
+.product-grid del { color: var(--sonic-silver); }
+
+
+/* 
 .product-grid .add-to-cart{
   color: var(--text-color);
   background: #f4f4f4;
   font-size: 14px;
   width: calc(100% - 75px);
   padding: 8px 3px;
-  /* margin: 0 auto; */
   display: inline-block;
   transition: all 0.25s ease 0s;
   margin-left: 37px;
@@ -1434,7 +1493,7 @@ padding-inline: 10px;
 .product-button-group ion-icon{
   font-size: 20px;
 
-}
+} */
    /**
    * Product Page
    */
