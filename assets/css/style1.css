@@ -364,6 +364,18 @@ body{
 }
 
 /*-----------------------------------*\
+  #Categories view all  pages
+\*-----------------------------------*/
+.categories-view-all-title{
+  font-size: 4rem;
+}
+.categories-view-all-subtitle{
+  font-size: 2rem;
+  color: #494848;
+  
+}
+
+/*-----------------------------------*\
   #Today's Deal Section
 \*-----------------------------------*/
 
@@ -1357,15 +1369,15 @@ padding-inline: 10px;
   
 }
 
-.star-rating ion-icon{
+/* .star-rating ion-icon{
   font-size: 24px;
-}
+} */
 
- .product-grid .product-button-group{
+ /* .product-grid .product-button-group{
   position: relative;
   z-index: 1;
  
-} 
+}  */
 
 .product-grid .showcase-actions {
   position: absolute;
@@ -1436,64 +1448,6 @@ padding-inline: 10px;
 
 .product-grid del { color: var(--sonic-silver); }
 
-
-/* 
-.product-grid .add-to-cart{
-  color: var(--text-color);
-  background: #f4f4f4;
-  font-size: 14px;
-  width: calc(100% - 75px);
-  padding: 8px 3px;
-  display: inline-block;
-  transition: all 0.25s ease 0s;
-  margin-left: 37px;
-}
-.product-grid .add-to-cart ion-icon{
-  margin-right: 8px;
-  display: none;
-  visibility: hidden;
-  transition: all 0.25s ease 0s;
-}
-.product-grid:hover .add-to-cart{
-  color:#fff;
-  background: var(--black);
-}
-.product-grid:hover .add-to-cart ion-icon{
-  display: inline-block;
-  visibility: visible;
-}
-.product-grid .product-like-icon,
-.product-grid .product-compare-icon{
-  color: var(--black);
-  background: #f4f4f4;
-  line-height: 34px;
-  width: 34px;
-  height: 34px;
-  opacity: 0;
-  transform: translateY(-50%);
-  position: absolute;
-  top: 50%;
-  left: 50px;
-  z-index: -1;
-  transition: all 0.25s ease 0s;
-}
-.product-grid .product-compare-icon{
-  left: auto;
-  right: 50px;
-}
-.product-grid:hover .product-like-icon{
-  opacity: 1;
-  left: 0;
-}
-.product-grid:hover .product-compare-icon{
-  opacity: 1;
-  right: 0;
-}
-
-.product-button-group ion-icon{
-  font-size: 20px;
-
-} */
    /**
    * Product Page
    */
