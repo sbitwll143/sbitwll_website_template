@@ -18,3 +18,18 @@
     height: 100%;
     object-fit: cover;
   }
+
+ .swiper-button-next{
+  background-color: #fff!important;
+  color: black!important;
+  height: 100px!important;
+  top: 25px!important;
+  right: -3px!important;
+ }
+ .swiper-button-prev{
+  background-color: #fff!important;
+  color: black!important;
+  height: 100px!important;
+  top: 25px!important;
+  left: 13px!important;
+ }
