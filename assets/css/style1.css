@@ -642,7 +642,7 @@ padding-inline: 10px;
 .budget-cart-bg-1,
 .budget-cart-bg-2,
 .budget-cart-bg-3{
-  height: 350px;
+  height: 400px;
 }
 /*-----------------------------------*\
  #Headphone
@@ -3712,6 +3712,11 @@ font-size: 3.5rem;
 
   bottom:-100%;
   right: 11%;
+}
+
+/* Tech Video Section */
+.tv-video-design video{
+  max-height: 445px;
 }
 }
 
