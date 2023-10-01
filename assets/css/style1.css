@@ -2535,7 +2535,9 @@ font-size: 3.5rem;
     /**
    * Offer 
    */
-
+  .offer{
+    margin-top: 120px;
+  }
   .offer-bg-2, .offer-bg-3, .offer-bg-1, .offer-bg-4{
    
     max-width: 45%!important;
@@ -3045,7 +3047,11 @@ font-size: 3.5rem;
 } 
  }
 
-
+ @media(min-width: 912px){
+  .offer{
+    margin-top: 200px;
+  }
+ }
  
 
 
@@ -3157,7 +3163,9 @@ font-size: 3.5rem;
     /**
    * Offer 
    */
-
+  .offer{
+    margin-block-start: 120px;
+  }
 
   .offer-btn-1{
     margin-top: 80px;
