@@ -236,8 +236,10 @@ body{
 .offer-bg-1 {
   background-color: #DFCCF1;
   border-radius: 8px;
+}
 
-  
+.offer {
+  margin-block-start: -72px;
 }
 .offer-h3{font-size: var(--fs-3);}
 .offer-p{font-size: var(--fs-5);}
@@ -299,7 +301,7 @@ body{
 }
 /* View all */
 .view-all{
-  font-size: var(--fs-6);
+  font-size: 1.4rem;
   font-weight: var(--fw-700);
   text-decoration: underline;
  
@@ -312,8 +314,8 @@ body{
 \*-----------------------------------*/
 .section-category-bg{
   background-color: var(--black);
-  width: 140px;
-  font-size: var(--fs-7);
+  width: 90px;
+  font-size: 1.3rem;
   font-weight: var(--fw-600);
   border-radius: var(--radius-6);
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
@@ -340,6 +342,8 @@ body{
  .category-div-margin-top{
   margin-block-start: 5em!important;
 } 
+
+
 .category-title-h5{
   transform: translateY(-60px);
   color: var(--white);
@@ -1196,7 +1200,7 @@ padding-inline: 10px;
 .btn-advertisement{
   color: var(--white);
   padding: 6px 30px;
-  box-shadow: rgba(231, 234, 236, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+ background-color: #03E6A1;
   border-radius: var(--radius-4);
   font-size: 1.2em;
   text-align: center;
@@ -1560,13 +1564,12 @@ padding-inline: 10px;
   outline: none!important;
 
 }
-.add-btn{
+/* .add-btn{
 
   background: linear-gradient(180deg, #FFF 0%, #D6D6D6 100%);
 box-shadow: 0px 11.271553993225098px 22.543107986450195px 0px rgba(51, 51, 51, 0.25), 0px 3.7571847438812256px 3.7571847438812256px 0px #FFF inset, 0px -3.7571847438812256px 3.7571847438812256px 0px #CCC inset;
 
-
-}
+} */
 .buy-btn{
   background: linear-gradient(180deg, #03DE9C 0%, #03A675 100%);
 box-shadow: 0px 17.88886833190918px 35.77773666381836px 0px rgba(1, 40, 28, 0.25), 0px 5.96295690536499px 5.96295690536499px 0px #03E6A1 inset, 0px -5.96295690536499px 5.96295690536499px 0px #029E6F inset;
@@ -3424,6 +3427,7 @@ font-size: 3.5rem;
   padding: 8px 25px;
   margin-inline-start: 20px;
   font-size: var(--fs-8);
+  background-color: #03E6A1;
 }
 
 .advertisement-title{
