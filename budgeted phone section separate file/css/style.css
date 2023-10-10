@@ -1,0 +1,135 @@
+
+
+
+
+
+/*-----------------------------------*\
+ #Budget Phone
+\*-----------------------------------*/
+@keyframes bounce {
+    0% { transform: translateY(-5px)  }
+    50% { transform: translateY(10px) }
+    100% { transform: translateY(-5px) }
+  }
+.related-product-img{
+ 
+    object-fit: contain!important;
+    height: 250px!important;
+  }
+.budget-cart-bg-1{
+    background-color: #002F65!important;
+  }
+  
+  .budget-cart-bg-2{
+    background-color: #8e44ad!important;
+  }
+  .budget-cart-bg-3{
+    background-color: #e1b12c!important;
+  }
+  
+  .budget-cart-bg-3 img{
+    z-index: 5;
+  }
+  .budgeted-product-description{
+    font-size: 1.2rem;
+    color: white;
+  }
+  
+  .budget-btn{
+    padding: 8px 20px;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 40px;
+    margin-block: 15px;
+  }
+  
+  .budget-btn-1{
+    background-color: #318DFF;
+  }
+  .budget-btn-2{
+    background-color: #FFB5F7;
+    color: #000;
+  }
+  .budget-btn-3{
+    background-color: #FFC857;
+    color: #000;
+  }
+  
+  .budget-chracter-1 img,
+  .budget-chracter-2 img,
+  .budget-chracter-3 img,
+  .budget-chracter-4 img
+  {
+    display: none
+  }
+  .budget-cart-bg-1,
+  .budget-cart-bg-2,
+  .budget-cart-bg-3{
+    height: 400px;
+  }
+
+  .img-card .img-hover img{
+    /* transition: all 0.4s ease;
+    cursor: pointer; */
+    transition: 3s;
+  }
+  .img-card:is(:hover, :focus-within) .img-hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  @media(min-width: 768px){
+    .related-product-img{
+ 
+        object-fit: contain;
+      }
+  }
+@media(min-width: 992px){
+    .related-item{
+        padding: 1em;
+      } 
+    
+      /*-----------------------------------*\
+     #Budget Phone
+    \*-----------------------------------*/
+    
+    .budgeted-product-item{
+        position: relative;
+      }
+      .budget-chracter-1 img{
+        position: absolute;
+        right: 5px;
+        bottom: -10px;
+        display: block;
+       
+      }
+      
+      .budget-chracter-2 img{
+        position: absolute;
+        top: -50px;
+        right: 5px;
+        display: block;
+        animation: bounce 3s infinite ease-in-out;
+      }
+      
+      .budget-chracter-3 img{
+        position: absolute;
+        left: -2px;
+        bottom: -10px;
+        display: block;
+      }
+      
+      .budget-chracter-4 img{
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        display: block;
+      }
+      
+      .budget-cart-bg-1,
+      .budget-cart-bg-2,
+      .budget-cart-bg-3{
+        height: 430px;
+      
+      }
+}

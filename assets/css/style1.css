@@ -1065,6 +1065,7 @@ padding-inline: 10px;
   font-size: var(--fs-8);
   text-align: left;
   background: linear-gradient(90deg, #FFFFFF 0%, #FF9566 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: var(--fw-600);
@@ -2673,9 +2674,7 @@ font-size: 3.5rem;
    margin-top: -100px;
 } 
 
-.bg-refrigerator img{
-  /* padding-top: 200px; */
-}
+
 
  /* Acssories */
 .parent-div{
